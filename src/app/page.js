@@ -5,7 +5,10 @@ import dynamic from "next/dynamic";
 import { Col, Container, Row } from "react-bootstrap";
 import Slider from 'react-slick';
 import { useInView } from "react-intersection-observer";
-import "odometer/themes/odometer-theme-default.css";
+// import "odometer/themes/odometer-theme-default.css";
+// import "@/styles/odometer.css";
+import "../assets/css/odometer.css";
+
 import "aos/dist/aos.css";
 // Assets & Components
 // import Header from "@/components/Header/page";
