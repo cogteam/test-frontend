@@ -36,14 +36,8 @@ export default function TrackAndTraceClient() {
         <div className="banner-inner">
             <Container className='d-flex align-items-center h-100 '>
             <div>
-            <h1 className='h4' data-aos="fade-up">Track and Trace <br/><span>Solutions </span></h1>
-                <p data-aos="fade-up" className=" col-md-8">Through our end-to-end Track & Trace and Supply Chain Digitalisation solutions powered by TraceLink, we help global life sciences organisations strengthen patient safety, ensure market compliance, and drive operational efficiency.
-
-</p>
-
-<p className="mb-0 col-md-8" data-aos="fade-up">
-    TraceLink connects every participant in the life sciences supply chain from manufacturers to dispensers, enabling real-time visibility, seamless collaboration, and actionable intelligence to better serve patients across 50+ countries, 291,000 members, and 1,600+ customers.
-</p>
+            <h1 className='h4' data-aos="fade-up">Track and Trace <span>Solutions </span></h1>
+                <p data-aos="fade-up" className=" col-md-8">Powered by TraceLink, our end-to-end Track & Trace and supply chain digitalisation solutions help life sciences organisations ensure patient safety, regulatory compliance, and operational efficiency across a global network.</p>
                 </div>
             </Container>
             </div>
@@ -278,7 +272,8 @@ export default function TrackAndTraceClient() {
 
       <div className="grey pad80 pb-0 choose-wrapper">
       <Container>
-        <h2 className="h4 text-center" data-aos="fade-up">Track & Trace Workflow</h2>
+        {/* <h2 className="h4 text-center" data-aos="fade-up">Track & Trace Workflow</h2> */}
+        <h2 className="h4 text-center" data-aos="fade-up">Enterprise Expertise</h2>
 
         <Row className="mt-4 mt-md-5 justify-content-center">
           
@@ -457,11 +452,12 @@ export default function TrackAndTraceClient() {
 
     <div className="pad80 grey discover-from" id="expert-driven">
                <Container>
-                   <h2 className="h4 text-center"  data-aos="fade-up">EXPERT-DRIVEN PHARMACOVIGILANCE <span>SOLUTIONS FOR GLOBAL SAFETY</span></h2>
+                   <h2 className="h4 text-center"  data-aos="fade-up">Achieve End-to-End Supply <br/><span>Chain Visibility
+</span></h2>
    
                    <Row className="mt-5">
                        <Col md={12} lg={6}>
-                           <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                           <Image src={IMAGES.Track} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                        </Col>
    
                        <Col md={12} lg={6}>

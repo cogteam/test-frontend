@@ -154,7 +154,7 @@ export default function NoteIQClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">ENHANCING REGULATORY <br />PROCESSES THROUGH NOTEIQ</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">ENHANCING <br />REGULATORY PROCESSES </h2>
             <p data-aos="fade-up" className="text-center col-7 m-auto"> NoteIQ simplifies even the most complex compliance processes by converting them into streamlined, automated workflows. With robust tracking, secure document control, and centralised management, organisations can ensure accuracy, reduce errors, and maintain full regulatory compliance with ease.</p>
         </Container>
     </div>
@@ -167,7 +167,7 @@ export default function NoteIQClient() {
                 onSelect={(k) => setKey(k)}
                 className="mb-3 justify-content-center border-0"
                 >
-                <Tab eventKey="vms" title="VMS">
+                <Tab eventKey="vms" title="VALIDATION MANAGEMENT SYSTEM">
                         <div className="vms-tab mt-5">
                             <h3 className="h5 text-center">VALIDATION MANAGEMENT SYSTEM</h3>
                             <p className="text-center">Manual and error-prone validation processes can slow operations. NoteIQ VMS streamlines <br/> and automates each step, ensuring compliance is efficient, accurate, and seamless.</p>
@@ -295,7 +295,7 @@ export default function NoteIQClient() {
                             </div>
                         </div>
                 </Tab>
-                <Tab eventKey="dms" title="DMS">
+                <Tab eventKey="dms" title="DOCUMENT MANAGEMENT SYSTEM">
                       <div className="vms-tab mt-5">
                             <h3 className="h5 text-center">DOCUMENT MANAGEMENT SYSTEM</h3>
                             <p className="text-center">Document management is often time-consuming and prone to errors. With NoteIQ DMS, organisations gain<br /> reliable control, advanced search capabilities, and secure collaboration, all in one streamlined solution.</p>
@@ -369,7 +369,7 @@ export default function NoteIQClient() {
                             </div>
                         </div>
                 </Tab>
-                <Tab eventKey="tms" title="TMS">
+                <Tab eventKey="tms" title="TRAINING MANAGEMENT SYSTEM">
                             <div className="vms-tab mt-5">
                             <h3 className="h5 text-center">TRAINING MANAGEMENT SYSTEM</h3>
                             <p className="text-center">Simplify the management of training compliance with NoteIQ TMS, which offers centralised <br/> administration, automated processes, and comprehensive tracking.</p>
@@ -415,7 +415,7 @@ export default function NoteIQClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">WHY CHOOSE NOTEIQ?</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">The Value We Deliver</h2>
             <p className="text-center" data-aos="fade-up">Accelerate compliance processes while minimising errors.<br /> Leverage a secure and scalable platform designed for organisations of any size.</p>
 
                 <Row className="mt-4 mt-md-5">
@@ -479,7 +479,7 @@ export default function NoteIQClient() {
                     <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH NOTEIQ</h2>    
                     <Row className="mt-4 mt-md-5">
                         <Col md={12} lg={6}>
-                            <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                            <Image src={IMAGES.Noteiqf} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                         </Col>    
                         <Col md={12} lg={6}>
                               <Commonfrom />

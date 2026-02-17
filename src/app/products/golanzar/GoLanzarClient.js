@@ -146,7 +146,7 @@ export default function GoLanzarClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">Transforming Launch <br/>Management with GoLanzar</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">Transforming <br/> Launch Management </h2>
 
             <h3 className="text-center mb-4" data-aos="fade-up">
                 Accelerate Launches with Confidence
@@ -214,7 +214,7 @@ export default function GoLanzarClient() {
                 onSelect={(k) => setKey(k)}
                 className="mb-3 mt-4 justify-content-center border-0"
                 >
-                <Tab eventKey="vms" title="TCC">
+                <Tab eventKey="vms" title="Team Coordination & Collaboration">
                        <div className="confi-box">
                                 <h5 className="text-center mb-4">Team Coordination & Collaboration</h5>
                                 <p className="text-center col-7 m-auto mb-5">
@@ -262,7 +262,7 @@ export default function GoLanzarClient() {
                                 </Slider>
                             </div> 
                 </Tab>
-                <Tab eventKey="dms" title="IAR">
+                <Tab eventKey="dms" title="Intelligent Automation & Reporting">
                       <div className="confi-box">
                                 <h5 className="text-center mb-4">Intelligent Automation & Reporting</h5>
                                 <p className="text-center col-7 m-auto mb-5">
@@ -319,7 +319,7 @@ export default function GoLanzarClient() {
                                 </Slider>
                             </div> 
                 </Tab>
-                <Tab eventKey="tms" title="FLSO">
+                <Tab eventKey="tms" title="Faster Launches. Smarter Operations.">
                           <div className="confi-box">
                                 <h5 className="text-center mb-4">Faster Launches. Smarter Operations.</h5>
                                 <p className="text-center col-7 m-auto mb-5">
@@ -381,7 +381,8 @@ export default function GoLanzarClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">WHY CHOOSE GoLanzar?</h2>
+            {/* <h2 className="h4 text-center" data-aos="fade-up">WHY CHOOSE GoLanzar?</h2> */}
+             <h2 className="h4 text-center" data-aos="fade-up">The Value We Deliver</h2>
             <p className="text-center" data-aos="fade-up">GoLanzar ensures that every launch is executed with precision, efficiency, and strategic<br/> excellence, empowering teams to “beat the clock” and deliver products to market on time, every time.</p>
 
                 <Row className="mt-4 mt-md-5 ">
@@ -463,10 +464,12 @@ export default function GoLanzarClient() {
 
     <div className="pad80 grey discover-from">
                         <Container>
-                            <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH GoLanzar</h2>    
+                            {/* <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH GoLanzar</h2>     */}
+                             <h2 className="h4 text-center"  data-aos="fade-up">Accelerate Your Pharmaceutical<br/> Launch Strategy
+</h2>    
                             <Row className="mt-4 mt-md-5">
                                 <Col md={12} lg={6}>
-                                    <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                                    <Image src={IMAGES.GoLanzarf} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                                 </Col>    
                                 <Col md={12} lg={6}>
                                       <Commonfrom />

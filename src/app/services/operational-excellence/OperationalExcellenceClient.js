@@ -46,9 +46,10 @@ const iconStyle = {
                 <div className="banner-inner">
                     <Container className='d-flex align-items-center h-100 '>
                     <div>
-                    <h1 className='h4' data-aos="fade-up">Operational <br/><span>Excellence
+                    <h1 className='h4' data-aos="fade-up">Operational <span>Excellence
     </span></h1>
-                        <p data-aos="fade-up" className=" col-md-8">With a strong foundation in operational excellence and lean manufacturing principles, Pivot Path’s Manufacturing Excellence Partner program drives transformation across global manufacturing and R&D sites. Supported by 400+ professionals and 20+ years of industry experience, we help organisations enhance productivity, reduce waste, and achieve sustainable growth through innovation and technology.</p>
+                        <p data-aos="fade-up" className=" col-md-8">Pivot Path’s Manufacturing Excellence Partner program drives transformation across global manufacturing and R&D sites, combining lean principles with 400+ experts and 20+ years of experience to improve productivity, reduce waste, and enable sustainable growth through technology and innovation.
+</p>
                     </div>
                 </Container>
                 </div>
@@ -284,7 +285,8 @@ const iconStyle = {
 
       <div className="grey pad80 choose-wrapper">
       <Container>
-        <h2 className="h4 text-center" data-aos="fade-up">Operational Excellence Flow</h2>
+        {/* <h2 className="h4 text-center" data-aos="fade-up">Operational Excellence Flow</h2> */}
+         <h2 className="h4 text-center" data-aos="fade-up">Driving Excellence: Our Offerings </h2>
 
         <Row className="mt-4 mt-md-5 justify-content-center">
           
@@ -418,22 +420,23 @@ const iconStyle = {
     </div>
 
 
-      <NextPage 
+      {/* <NextPage 
                   heading={<>Smarter CSV, 
            <span> Powered by NoteIQ
           </span></>}
                   para="Pivot Path's NoteIQ, the next generation compliance platform, streamlines the entire CSV lifecycle from URS to PQ by automating validation workflows, documentation, and approvals, ensuring accuracy, traceability, and continuous audit readiness. By unifying validation, document control, and training within a single secure cloud native platform, NoteIQ reduces manual effort, minimises compliance risk, and enables teams to scale confidently while meeting global regulatory standards such as 21 CFR Part 11 and Annex 11."
                   link="/products/noteiq"
                   image={IMAGES.NOTEIQBANNER} 
-                />
+                /> */}
 
     <div className="pad80 grey discover-from" id="expert-driven">
                <Container>
-                   <h2 className="h4 text-center"  data-aos="fade-up">EXPERT-DRIVEN PHARMACOVIGILANCE <span>SOLUTIONS FOR GLOBAL SAFETY</span></h2>
+                   <h2 className="h4 text-center"  data-aos="fade-up">Drive Sustainable <br/>
+<span> Manufacturing Excellence</span></h2>
    
                    <Row className="mt-5">
                        <Col md={12} lg={6}>
-                           <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                           <Image src={IMAGES.Operational_f} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                        </Col>
    
                        <Col md={12} lg={6}>

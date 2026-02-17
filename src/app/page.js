@@ -5,15 +5,24 @@ import dynamic from "next/dynamic";
 import { Col, Container, Row } from "react-bootstrap";
 import Slider from 'react-slick';
 import { useInView } from "react-intersection-observer";
-// import "odometer/themes/odometer-theme-default.css";
-// import "@/styles/odometer.css";
-import "../assets/css/odometer.css";
-
+import "odometer/themes/odometer-theme-default.css";
 import "aos/dist/aos.css";
 // Assets & Components
 // import Header from "@/components/Header/page";
 // import Loader from "@/components/Load/page";
 // import Footer from "@/components/Footer/page";
+import Automation from "../assets/images/Automation-and-intelligent.svg";
+import Techfirst from "../assets/images/logo/Tech-first.svg";
+import Built from "../assets/images/Built-in.svg";
+import realtime from "../assets/images/Real-time insights.svg";
+import Applied from "../assets/images/Applied-scientific.svg";
+
+import Execution from "../assets/images/logo/Execution-focused.svg";
+import Pharma from "../assets/images/logo/Pharma.svg";
+import Regulatory from "../assets/images/logo/Regulatory.svg";
+
+import circle from "../assets/images/circle.svg"
+
 import { IMAGES } from "../assets/images";
 const ServicesSection = dynamic(() => import("@/components/ServicesSection/page"), { 
   ssr: true,
@@ -59,6 +68,30 @@ const BANNER_DATA = [
   },
 ];
 
+const aislider = {
+  arrows: false,
+  fade: false,
+  infinite: true,
+  speed: 1200,
+  dots: true,
+
+  responsive: [
+    {
+      breakpoint: 768, // mobile & tablet
+      settings: {
+        autoplay: true,
+        autoplaySpeed: 6000,
+        draggable: true,
+        swipe: true,
+        loop: true,
+      }
+    },{
+      breakpoint: 9999, // desktop
+      settings: "unslick" // slider disabled on desktop
+    }
+  ]
+};
+
 
 // ==========================================
 // MAIN COMPONENT
@@ -92,6 +125,7 @@ export default function Home() {
     infinite: true,
     draggable: false,
     loop: true,
+       dots: true,
   };
 
   const settingsText = {
@@ -99,7 +133,7 @@ export default function Home() {
     swipeToSlide: true,
     focusOnSelect: true,
     arrows: false,
-    dots: false,
+ 
   autoplay: true,
    autoplaySpeed: 6500,
     speed: 1200,
@@ -146,7 +180,7 @@ export default function Home() {
       {/* BANNER SECTION */}
       {/* OPTIMIZATION 3: Min-Height to prevent CLS (Layout Shift) */}
       {/* Add a CSS class or inline style ensuring this div has height before slider loads */}
-      <div className="banner position-relative" style={{ overflow: "hidden" }}>
+      <div className="banner banner-home position-relative" style={{ overflow: "hidden" }}>
         
         <Slider {...settingsMain} asNavFor={nav2} ref={slider1} className="banner-slider">
           {BANNER_DATA.map((item, index) => (            
@@ -193,6 +227,79 @@ export default function Home() {
         </Slider>
       </div>
 
+
+
+
+ <div className="pad80 home-ai">
+  <Container>
+     <h2 className="h4 text-center" data-aos="fade-up">Shaping the future<br/> of<span> life science</span></h2>
+
+     <p className="text-center" data-aos="fade-up">We are at the intersection of life science expertise & technology.</p>
+          
+          {/* <Row className="col-8 m-auto mb-5 traingle-box" >
+              <Col lg={4} md={4}>
+                  <div className="lie-s">
+                      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs></defs><polygon fill="#0e90a2" className="cls-1" points="3.1 83.76 114.92 83.76 114.92 197.46 196.9 116.24 196.9 2.54 83.57 2.54 3.1 83.76"/></svg>
+                      <h5>Consulting.</h5>
+                  </div>
+              </Col>
+              <Col lg={4} md={4}>
+                  <div className="lie-s">
+                     <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs></defs><polygon fill="#19a574" className="cls-1" points="3.1 83.76 114.92 83.76 114.92 197.46 196.9 116.24 196.9 2.54 83.57 2.54 3.1 83.76"/></svg>
+                      <h5>Solutions.</h5>
+                  </div>
+              </Col>
+              <Col lg={4} md={4}>
+                  <div className="lie-s">
+                      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs></defs><polygon fill="#90c43c" className="cls-1" points="3.1 83.76 114.92 83.76 114.92 197.46 196.9 116.24 196.9 2.54 83.57 2.54 3.1 83.76"/></svg>
+                      <h5>Services.</h5>
+                  </div>
+              </Col>
+          </Row> */}
+
+
+          <Row className="mt-5">
+            <Col lg={12} md={12} className="p-0">
+               <div className="circle-home">
+                 <Image src={circle} alt="circle" className="w-100 h-auto" data-aos="fade-up" />
+               </div>
+            </Col>
+             <Col lg={12} md={12} className="p-0">
+              <Slider {...aislider} className="col-11 m-auto ai-slider row">
+                <div className="p-0 col-md-6">
+                <div className="ai-view ">
+                      <h4>Technology-Led  Innovation</h4>
+                      <ul>
+                        <li><span><Image src={Techfirst} alt="" /></span> <p className="mb-0">Tech-first, AI-driven <br className="d-none" />solutions</p></li>
+                        <li><span><Image src={Automation} alt="" /></span>  <p className="mb-0">Automation and intelligent<br className="d-none" />  solutions at scale</p></li>
+                        <li><span><Image src={realtime} alt="" /></span>  <p className="mb-0">Real-time insights &<br className="d-none" /> integrated  workflows</p></li>
+                        <li><span><Image src={Built} alt="" /></span>  <p className="mb-0">Built-in compliance &<br className="d-none" /> accuracy</p></li>
+                      </ul>
+                </div>
+              </div>
+             <div className="p-0  col-md-6">
+                <div className="ai-view border-0">
+                      <h4>Rooted in Pharma Expertise</h4>
+                      <ul>
+                        <li><span><Image src={Pharma} alt="" /></span>  <p className="mb-0">Pharma-native <br className="d-none" />expertise</p></li>
+                        <li><span><Image src={Regulatory} alt="" /></span>  <p className="mb-0">Regulatory and compliance<br className="d-none" />  insight</p></li>
+                        <li><span><Image src={Applied} alt="" /></span>  <p className="mb-0">Applied scientific and <br className="d-none" />operational expertise</p></li>
+                         <li><span><Image src={Execution} alt="" /></span>  <p className="mb-0">Execution-focused <br className="d-none" />experience</p></li>
+                      </ul>
+                </div>
+             </div>
+          </Slider>
+            </Col>
+          </Row>
+
+
+          
+  
+  </Container>
+</div>
+
+
+
       {/* AI NEXT GEN SECTION - Static Content doesn't need hydration usually, but AOS needs it */}
       <div className="grey pad80 pb-0">
         <Container>
@@ -212,7 +319,7 @@ export default function Home() {
         <Container>
           <h2 className="h4 text-center" data-aos="fade-up">BUILT ON EXPERTISE, <br /><span>DRIVEN BY IMPACT</span></h2>
           <p className="text-center col-7 m-auto" data-aos="fade-up">
-            We believe impact is created when deep expertise meets true collaboration. Our client-centric mindset...
+            We believe impact is created when deep expertise meets true collaboration. 
           </p>
 
           <div className="bult-expertise mt-5" style={{ backgroundImage: `url(${IMAGES.EXPERTISES_HOME.src})` }}>
@@ -227,7 +334,7 @@ export default function Home() {
               <Col md={6}>
                 <div className="bult-box">
                   <div className="bult-number"><Odometer value={values.second} format="d" />+</div>
-                  <p>CLIENTS ACROSS 5 <br />CONTINENTS</p>
+                  <p>CLIENTS </p>
                 </div>
               </Col>
               <Col md={6}>
@@ -239,7 +346,7 @@ export default function Home() {
               <Col md={6}>
                 <div className="bult-box">
                   <div className="bult-number"><Odometer value={values.four} format="d" />+</div>
-                  <p>PROJECTS DELIVERED</p>
+                  <p>PROJECTS </p>
                 </div>
               </Col>
             </Row>

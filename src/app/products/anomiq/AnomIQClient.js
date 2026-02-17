@@ -23,8 +23,9 @@ export default function AnomIQClient() {
                 <div>
                      {/* Ensure IMAGES.ANOMIQLOGO is defined in your index.js */}
                      <Image src={IMAGES.ANOMIQLOGO} className="" alt="Anom IQ WHITE"  />
-                <h1 className='h4 text-white' >Intelligent Early  <br className="d-none d-md-block" /><span>Warning System</span></h1>
-                    <p  className=" col-md-7 mb-0 text-white"> Reimagining Quality Oversight for Life Sciences with AI-Driven Anomaly Detection AnomIQ is an AI-powered platform that proactively detects and resolves anomalies across QC labs and manufacturing systems, automating compliance, enhancing visibility and ensuring continuous operational excellence.</p>
+                <h1 className='h4 text-white' >Anomaly Management  <br className="d-none d-md-block" /><span>Platform</span></h1>
+                    <p  className=" col-md-7 mb-0 text-white">AnomIQ is an AI-powered platform that proactively detects and resolves anomalies across QC labs and manufacturing systems, automating compliance, enhancing visibility and ensuring continuous operational excellence.
+</p>
                 </div>
             </Container>
             </div>
@@ -128,7 +129,7 @@ export default function AnomIQClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">Strengthening Compliance <br /> Through AnomIQ</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">Strengthening Compliance </h2>
             <p data-aos="fade-up" className="text-center col-md-8 m-auto">  AnomIQ automates anomaly detection, categorisation, and investigation across enterprise and standalone systems. It bridges the gap between IT operations and quality oversight, ensuring early detection, faster decision-making, and consistent compliance across all manufacturing and laboratory environments.</p>
         </Container>
     </div>
@@ -141,7 +142,7 @@ export default function AnomIQClient() {
                 onSelect={(k) => setKey(k)}
                 className="mb-3 justify-content-center border-0"
                 >
-                <Tab eventKey="vms" title="CDWM">
+                <Tab eventKey="vms" title="Configurable Detection & Workflow Management">
                         <div className="vms-tab mt-5">
                             <h3 className="h5 text-center mb-4">Configurable Detection & <br />Workflow Management</h3>
                             <p className="text-center col-7 m-auto">Tailor anomaly detection parameters and workflows to meet site-specific or organisational compliance requirements.</p>
@@ -174,7 +175,7 @@ export default function AnomIQClient() {
                             </div>
                         </div>
                 </Tab>
-                <Tab eventKey="dms" title="ATAC">
+                <Tab eventKey="dms" title="Advanced Traceability & Access Control">
                       <div className="vms-tab mt-5">
                             <h3 className="h5 text-center mb-4">Advanced Traceability & <br />Access Control</h3>
                             <p className="text-center">Maintain complete oversight with role-based permissions, secure access,<br/> and end-to-end audit trails.</p>
@@ -206,7 +207,7 @@ export default function AnomIQClient() {
                             </div>
                         </div>
                 </Tab>
-                <Tab eventKey="tms" title="CMIR">
+                <Tab eventKey="tms" title="Continuous Monitoring & Intelligent Review">
                             <div className="vms-tab mt-5">
                             <h3 className="h5 text-center mb-4"> Continuous Monitoring & <br /> Intelligent Review</h3>
                             <p className="text-center">Ensure continuous compliance through automated scanning, structured reviews,<br/> and actionable analytics.</p>
@@ -245,7 +246,8 @@ export default function AnomIQClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">Value Delivered</h2>
+            {/* <h2 className="h4 text-center" data-aos="fade-up">Value Delivered</h2> */}
+            <h2 className="h4 text-center" data-aos="fade-up">The Value We Deliver</h2>
                 <Row className="mt-4 mt-md-5">
                     <Col md={6} lg={4} className="mb-4">
                         <div className="choose-box">
@@ -316,10 +318,11 @@ export default function AnomIQClient() {
 
      <div className="pad80 grey discover-from">
                         <Container>
-                            <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH AnomIQ</h2>    
+                            <h2 className="h4 text-center"  data-aos="fade-up">Enable Proactive Compliance <br/>and Anomaly Detection
+</h2>    
                             <Row className="mt-4 mt-md-5">
                                 <Col md={12} lg={6}>
-                                    <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                                    <Image src={IMAGES.AnomIqf} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                                 </Col>    
                                 <Col md={12} lg={6}>
                                       <Commonfrom />

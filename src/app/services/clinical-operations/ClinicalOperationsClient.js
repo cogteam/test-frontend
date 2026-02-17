@@ -267,20 +267,21 @@ export default function ClinicalOperationsClient() {
         </Container>
     </div>
 
-    <NextPage 
+    {/* <NextPage 
                  heading={<>Next-Gen Pharmacovigilance  <span>with NovaVigil</span></>}
                  para="Pivot Path delivers AI-powered literature surveillance through NovaVigil, our intelligent pharmacovigilance platform. NovaVigil streamlines literature monitoring and ICSR processing by automating article screening, data extraction, and case narrative generation while keeping expert reviewers in control of clinical decisions. By handling repetitive tasks and maintaining complete audit trails, it enables life sciences teams to meet regulatory timelines, scale case volumes without proportional headcount, and focus their expertise on patient safety rather than manual data entry."
                  link="/products/novavigil"
                  image={IMAGES.NOVAVIGILBANNER} 
-               />
+               /> */}
 
     <div className="pad80 grey discover-from" id="expert-driven">
                <Container>
-                   <h2 className="h4 text-center"  data-aos="fade-up">EXPERT-DRIVEN PHARMACOVIGILANCE <span>SOLUTIONS FOR GLOBAL SAFETY</span></h2>
+                   <h2 className="h4 text-center"  data-aos="fade-up">Optimise Clinical<br /> <span>Operations Execution</span>
+</h2>
    
                    <Row className="mt-5">
                        <Col md={12} lg={6}>
-                           <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                           <Image src={IMAGES.Clinical} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                        </Col>
    
                        <Col md={12} lg={6}>

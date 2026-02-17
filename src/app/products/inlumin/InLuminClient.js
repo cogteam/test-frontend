@@ -26,8 +26,10 @@ export default function InLuminClient() {
                 <Container className='d-flex align-items-center h-100 '>
                 <div>
                 <Image src={IMAGES.InLumin_Logo || IMAGES.INLUMINLOGO} className="" alt="inlumin"/>
-                   <h1 className='h4 text-white' >Reimagining Procure-to-Pay <br className="d-none d-md-block"/>for Life Sciences with a <br className="d-none d-md-block"/><span>Next-Gen Platform</span></h1>
-                    <p  className=" col-md-11 text-white mb-0">InLumin is a next-generation Procure-to-Pay (P2P) platform that streamlines procurement, enhances financial governance, and seamlessly connects teams and vendors — enabling organisations to turn complexity into clarity.</p>
+                   {/* <h1 className='h4 text-white' >Reimagining Procure-to-Pay <br className="d-none d-md-block"/>for Life Sciences with a <br className="d-none d-md-block"/><span>Next-Gen Platform</span></h1> */}
+                    <h1 className='h4 text-white' >Simplify Procurement with <br  className="d-none d-md-block" /><span>Transparency & Governance</span></h1>
+                    <p  className=" col-md-7 text-white mb-0">Streamline every step of procurement with a platform that brings clarity, control, and speed. From requisition to payment, InLumin simplifies complex workflows, reduces errors, and connects your teams and vendors in one unified, intelligent system.
+</p>
                 </div>
             </Container>
             </div>
@@ -119,7 +121,7 @@ export default function InLuminClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center mb-0" data-aos="fade-up">Transforming Procurement <br /> with InLumin</h2>
+            <h2 className="h4 text-center mb-0" data-aos="fade-up">Transforming Procurement </h2>
         </Container>
     </div>
 
@@ -131,7 +133,7 @@ export default function InLuminClient() {
                 onSelect={(k) => setKey(k)}
                 className="mb-3 justify-content-center border-0"
                 >
-                <Tab eventKey="vms" title="DGP">
+                <Tab eventKey="vms" title="Digitising Procurement with Precision">
                         <div className="vms-tab mt-5">
                             <h3 className="h5 text-center mb-4">Digitising Procurement with Precision</h3>
                             <p className="text-center col-7 m-auto">  InLumin converts complex, manual P2P workflows into automated, streamlined processes. It centralises requisitions, approvals, 3-way matching, exception handling, and vendor communications - improving speed, accuracy, and compliance.</p>
@@ -178,7 +180,7 @@ export default function InLuminClient() {
                             </div>
                         </div>
                 </Tab>
-                <Tab eventKey="dms" title="SPAT">
+                <Tab eventKey="dms" title="Seamless Productivity Across Teams">
                       <div className="vms-tab mt-5">
                             <h3 className="h5 text-center">Seamless Productivity Across Teams</h3>
                             <div className="grey3">
@@ -223,7 +225,7 @@ export default function InLuminClient() {
                             </div>
                         </div>
                 </Tab>
-                <Tab eventKey="tms" title="CDMO">
+                <Tab eventKey="tms" title="Case in Point – P2P Transformation at a Pharma CDMO">
                             <div className="vms-tab mt-5">
                             <h3 className="h5 text-center">Case in Point – P2P Transformation <br />at a Pharma CDMO</h3>
                             <p className="text-center">A leading pharma CDMO struggled with P2P inefficiencies that affected vendor ties, financial accuracy, and operational agility.<br/> ERP alone could not resolve delayed payments, missing invoices, and low visibility.</p>
@@ -274,10 +276,12 @@ export default function InLuminClient() {
 
    <div className="pad80 grey discover-from">
                        <Container>
-                           <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH InLumin</h2>    
+                           {/* <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH InLumin</h2>     */}
+                            <h2 className="h4 text-center"  data-aos="fade-up">Bring Clarity and Control to<br/>  Procure-to-Pay Operations
+</h2>   
                            <Row className="mt-4 mt-md-5">
                                <Col md={12} lg={6}>
-                                   <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                                   <Image src={IMAGES.InLuminf} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                                </Col>    
                                <Col md={12} lg={6}>
                                      <Commonfrom />

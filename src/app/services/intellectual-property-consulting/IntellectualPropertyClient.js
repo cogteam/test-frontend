@@ -35,9 +35,8 @@ export default function IntellectualPropertyClient() {
                 <div>
                 <h1 className='h4' data-aos="fade-up">Intellectual   <br className="d-none d-md-block" /><span> Property Consulting
 </span></h1>
-                    <p data-aos="fade-up" className="col-md-8 mb-3">Managing IP in today’s fast-changing landscape is complex. Organisations face challenges in protecting innovations, navigating regulations, and staying first to market. </p>
+                    <p data-aos="fade-up" className="col-md-8 mb-3">Our IP Consulting services offer strategic support to simplify IP management, enhance asset value, and reduce risks from idea to market launch.
 
-                    <p data-aos="fade-up" className="col-md-8">Our IP Consulting services offer strategic support to simplify IP management, enhance asset value, and reduce risks from idea to market launch.
  </p>
                 </div>
             </Container>
@@ -272,20 +271,21 @@ export default function IntellectualPropertyClient() {
         </Container>
     </div>
 
-     <NextPage 
+     {/* <NextPage 
                    heading={<>Next-Gen Pharmacovigilance  <span>with NovaVigil</span></>}
                   para="Pivot Path delivers AI-powered literature surveillance through NovaVigil, our intelligent pharmacovigilance platform. NovaVigil streamlines literature monitoring and ICSR processing by automating article screening, data extraction, and case narrative generation while keeping expert reviewers in control of clinical decisions. By handling repetitive tasks and maintaining complete audit trails, it enables life sciences teams to meet regulatory timelines, scale case volumes without proportional headcount, and focus their expertise on patient safety rather than manual data entry."
                   link="/products/novavigil"
                   image={IMAGES.NOVAVIGILBANNER} 
-                />
+                /> */}
 
     <div className="pad80 grey discover-from" id="expert-driven">
                <Container>
-                   <h2 className="h4 text-center"  data-aos="fade-up">EXPERT-DRIVEN PHARMACOVIGILANCE <span>SOLUTIONS FOR GLOBAL SAFETY</span></h2>
+                   <h2 className="h4 text-center"  data-aos="fade-up">Protect, Strengthen, <br/><span>and Monetise Innovation
+</span></h2>
    
                    <Row className="mt-5">
                        <Col md={12} lg={6}>
-                           <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                           <Image src={IMAGES.Intellectual} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                        </Col>
    
                        <Col md={12} lg={6}>

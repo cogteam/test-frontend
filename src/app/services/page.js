@@ -8,7 +8,7 @@ export const metadata = {
     description: "Discover our solutions in Quality & Compliance, Digital Manufacturing, Pharmacovigilance, Commercialization, and Human Capital.",
     // Ensure this path matches the image you want to show on social media
     images: ["/assets/images/services/services-banner.webp"], 
-    url: "https://arcolab.com/services",
+    url: "",
     type: "website",
   },
 };

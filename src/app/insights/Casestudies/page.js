@@ -5,13 +5,18 @@ import Link from 'next/link';
 import { Col, Row } from 'react-bootstrap';
 import api, { domainUrl } from "../../../lib/axios"; 
 import InsightsGridItem from '../../../components/InsightsGridItem/page';
+import CasepaperModal from '../CasestuidesModal/page';
 
 const IMAGE_BASE_URL = domainUrl; 
 
 export default function Casestudies() {
+    const [activeTab, setActiveTab] = useState("casestudies");
+
     const [caseStudies, setCaseStudies] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
+
+    const [show, setShow] = useState(false);
 
     useEffect(() => {
         Aos.init({ duration: 1000, once: true });
@@ -55,16 +60,25 @@ export default function Casestudies() {
     }
 
     return (
-        <div className="case-grid">
-            <Row>
-                {caseStudies.length > 0 ? (
-                    caseStudies.map(item => (
-                        <InsightsGridItem key={item.id} item={item} />
-                    ))
-                ) : (
-                    <Col className="text-center p-5">No Case Studies found.</Col>
-                )}
-            </Row>
-        </div>
+        <>
+            <div className="case-grid">
+                <Row>
+                    {caseStudies.length > 0 ? (
+                        caseStudies.map(item => (
+                            <InsightsGridItem key={item.id} item={item} onOpen={() => setShow(true)}  />
+                        ))
+                    ) : (
+                        <Col className="text-center p-5">No Case Studies found.</Col>
+                    )}
+                </Row>
+            </div>
+        
+        <CasepaperModal  show={show}
+        handleClose={() => setShow(false)}
+        activeTab={activeTab} />
+        </>
+
+
+
     );
 }

@@ -130,10 +130,13 @@ export default function Footer(){
                                     <h6 data-aos="fade-up">PRODUCTS</h6>
                                         <ul>
                                              <li data-aos="fade-up"><Link href="/products/noteiq">NoteIQ</Link></li>
-                                             <li data-aos="fade-up"><Link href="/products/novavigil">NovaVigil</Link></li>
+                                             <li data-aos="fade-up"><Link href="/products/anomiq">AnomIQ</Link></li>
                                              <li data-aos="fade-up"><Link href="/products/golanzar">GoLanzar</Link></li>
                                              <li data-aos="fade-up"><Link href="/products/inlumin">InLumin</Link></li>
-                                             <li data-aos="fade-up"><Link href="/products/anomiq">AnomIQ</Link></li>
+                                             <li data-aos="fade-up"><Link href="/products/novavigil">NovaVigil</Link></li>
+                                             
+                                             
+                                             
                                         </ul>
                                 </div>
                             </Col>
@@ -142,8 +145,8 @@ export default function Footer(){
                                     <h6 data-aos="fade-up">SERVICES</h6>
                                         <ul>
                                              <li data-aos="fade-up"><Link href="/services/#drug-safety-and-intelligence" scroll={true}>Drug Safety & Intelligence</Link></li>
-                                             <li data-aos="fade-up"><Link href="/services/#drug-research-and-development" scroll={true}>Drug Research & Development</Link></li>
-                                             <li data-aos="fade-up"><Link href="/services/#quality-and-compliance" scroll={true}>Quality & Compliance</Link></li>
+                                             <li data-aos="fade-up"><Link href="/services/#drug-research-and-development" scroll={true}>Integrated IP & Clinical Operations</Link></li>
+                                             <li data-aos="fade-up"><Link href="/services/#quality-and-compliance" scroll={true}>Quality & Digital Compliance</Link></li>
                                              <li data-aos="fade-up"><Link href="/services/#digital-innovation-and-transformation" scroll={true}>Digital Innovation & Transformation</Link></li>
                                              <li data-aos="fade-up"><Link href="/services/#human-capital" scroll={true} >Human Capital</Link></li>
                                         </ul>
@@ -165,7 +168,8 @@ export default function Footer(){
                             <Col>
                                 <div className="quick-links addlink">
                                     <h6  data-aos="fade-up">CONTACT</h6>
-                                    <address className="d-inline-block"  data-aos="fade-up">Bangalore, India </address>|<address className="d-inline-block" data-aos="fade-up">Hyderabad, India </address>|
+                                    <address className="d-inline-block"  data-aos="fade-up">Bangalore, India </address>| <address className="d-inline-block"  data-aos="fade-up">Mysuru, India </address>|
+                                    <address className="d-inline-block" data-aos="fade-up">Hyderabad, India </address> |
                                     <a href="mailto:info@pivotpath.com" className="d-inline-block"  data-aos="fade-up">
                                        info@pivotpath.com 
                                     </a> | 

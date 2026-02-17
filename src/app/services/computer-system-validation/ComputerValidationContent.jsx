@@ -42,9 +42,10 @@ const DotItem = ({ text }) => (
         <div className="banner-inner">
           <Container className='d-flex align-items-center h-100'>
             <div>
-              <h1 className='h4' data-aos="fade-up">Computer System <br /> <span>Validation Services</span></h1>
+              <h1 className='h4' data-aos="fade-up">Computer System <br /> <span>Validation </span></h1>
               <p data-aos="fade-up" className="col-md-7">
-                With extensive experience across regulated environments and a proven track record of successful validation projects, we deliver end-to-end Computer System Validation (CSV) services that ensure data integrity, regulatory compliance, and operational excellence across the pharmaceutical and life sciences ecosystem.
+               We provide end-to-end Computer System Validation (CSV) services that ensure data integrity, regulatory compliance, and operational excellence across pharmaceutical and life sciences environments.
+
               </p>
             </div>
           </Container>
@@ -259,13 +260,14 @@ const DotItem = ({ text }) => (
       <div className="pad80 grey discover-from" id="expert-driven">
         <Container>
           <h2 className="h4 text-center" data-aos="fade-up">
-            EXPERT-DRIVEN PHARMACOVIGILANCE SOLUTIONS FOR GLOBAL SAFETY
+            Validate Systems with <br/><span>Confidence & Compliance</span>
+
           </h2>
           <Row className="mt-5">
             <Col md={12} lg={6}>
               <div className="position-relative w-100 h-100" style={{ minHeight: '400px' }}>
                  <Image 
-                   src={IMAGES.Fromimg} 
+                   src={IMAGES.Computer} 
                    alt="Expert Driven Solutions" 
                    className="w-100 h-100 pe-lg-5 object-fit-cover" 
                    data-aos="fade-up"

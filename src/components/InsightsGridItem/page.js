@@ -3,10 +3,19 @@ import Link from "next/link";
 import { Col } from "react-bootstrap";
 import { domainUrl } from "../../lib/axios";
 
+import { useEffect, useState } from "react";
+import CaseModal from "@/app/insights/WhitepaperModal/page";
+import Casestudiesmodal from "@/app/insights/CasestuidesModal/page";
+import CaseModalWhitepaper from "@/app/insights/WhitepaperModal/page";
+import WhitepaperModal from "@/app/insights/WhitepaperModal/page";
+
 const IMAGE_BASE_URL = domainUrl;
 
 // Utility function to format the date
 const formatDate = (dateString) => {
+
+
+
   if (!dateString) return "";
   try {
     return new Date(dateString).toLocaleDateString("en-US", {
@@ -19,7 +28,20 @@ const formatDate = (dateString) => {
   }
 };
 
-export default function InsightsGridItem({ item }) {
+export default function InsightsGridItem({ item, onOpen }) {
+
+  
+  const [show, setShow] = useState(false);
+   const [show1, setShow1] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const handleClose1 = () => setShow(false);
+  const handleShow1 = () => setShow(true);
+
+  const [source, setSource] = useState("");
+
+
   if (!item || !item.id) return null;
 
   // Use full external link directly
@@ -32,13 +54,20 @@ export default function InsightsGridItem({ item }) {
   const excerpt = item.sub_title || "Click to read more...";
 
   return (
-    <Col lg={3} md={4} sm={6} className="mb-4">
-      <div className="case-grid-4 mb-0">
+    <>
+    <Col lg={3} md={6}  className="mb-4">
+      <div className="case-grid-4 mb-0"  >
         {/* Use <a> instead of <Link> since it's an external link */}
-        <a
-          href={itemLink}
-          target="_blank"
-          rel="noopener noreferrer"
+        <a   
+        // onClick={() => {
+        //     console.log("clicked");
+        //     setShow(true);
+        //   }}
+        onClick={onOpen}
+           style={{cursor:"pointer"}}
+          // href={itemLink}
+          // target="_blank"
+          // rel="noopener noreferrer"
           className="text-decoration-none"
         >
           <div className="overflow-hidden">
@@ -56,5 +85,14 @@ export default function InsightsGridItem({ item }) {
         </a>
       </div>
     </Col>
+
+
+
+
+ {/* <WhitepaperModal show={show} handleClose={() => setShow(false)}   source={source} /> */}
+
+  {/* <Casestudiesmodal show={show1} handleClose1={() => setShow(false)}   source={source} /> */}
+
+</>
   );
 }

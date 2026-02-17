@@ -8,18 +8,18 @@ import { IMAGES } from "@/assets/images"; // Ensure path is correct
 const SERVICE_ITEMS = [
   {
     id: 1,
-    link: "/services/#pharmacovigilance-and-clinical-services",
+    link: "/services/#drug-safety-and-intelligence",
     img: IMAGES.PHARMACOVIGILANCE,
     icon: IMAGES.PHARMACOVIGILANCEICON,
-    title: "PHARMACOVIGILANCE & CLINICAL SERVICES",
+    title: "Drug Safety & Intelligence",
     desc: "We protect patients and ensure your studies remain compliant and reliable."
   },
   {
     id: 2,
-    link: "/services/#manufacturing-and-supply-chain",
+    link: "/services/#drug-research-and-development",
     img: IMAGES.MANUFACTURINGIMG,
     icon: IMAGES.MANUFACTURINGICON,
-    title: "DIGITAL MANUFACTURING & SUPPLY CHAIN AUTOMATION",
+    title: "Drug Research & Development",
     desc: "We optimise supply chains to keep your products moving with consistency and speed."
   },
   {
@@ -27,15 +27,15 @@ const SERVICE_ITEMS = [
     link: "/services/#quality-and-compliance",
     img: IMAGES.QUALITY,
     icon: IMAGES.QUALITYICON,
-    title: "QUALITY & COMPLIANCE",
+    title: "Quality & Digital Compliance",
     desc: "We help you meet global standards with confidence and operational discipline."
   },
   {
     id: 4,
-    link: "/services/#commercialization",
+    link: "/services/#digital-innovation-and-transformation",
     img: IMAGES.COMMERCIALIZATIONIMG,
     icon: IMAGES.COMMERCIALIZATIONICON,
-    title: "COMMERCIALIZATION",
+    title: "Digital Innovation & Transformation",
     desc: "We turn innovation into measurable commercial success."
   },
   {

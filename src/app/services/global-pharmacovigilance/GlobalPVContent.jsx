@@ -14,7 +14,7 @@ import NextPage from "@/components/NextPage/page";
 // Images
 import { IMAGES } from "@/assets/images/index.js";
 import dots from "../../../assets/images/services/dots.svg";
-import DetectPharmaIQbanner from "../../../assets/images/services/Global-Pharmacovigilanc.webp";
+import DetectPharmaIQbanner from "../../../assets/images/services/Global-Pharmacovigilanc1.webp";
 
 export default function Detectharmaiq() {
   // useEffect(() => {
@@ -64,7 +64,7 @@ export default function Detectharmaiq() {
       {/* <Header /> */}
 
       <div
-        className="inner-head inner-head-products product-wrapper"
+        className="inner-head inner-head-products product-wrapper detectPharmaIQbanner1"
         style={{ backgroundImage: `url(${DetectPharmaIQbanner.src})` }}
       >
         <div className="banner-inner">
@@ -198,7 +198,7 @@ export default function Detectharmaiq() {
             <Col md={6} lg={4} className="mb-dflex mt-2 mt-md-4" data-aos="fade-up">
               <div className="challenges-box h-100">
                 <Image src={IMAGES.Audit} className="ComplexRegulations" alt="" />
-                <Image src={IMAGES.Auditwhite} className="white-icon" alt="" />
+                <Image src={IMAGES.Auditwhite2} className="white-icon" alt="" />
                 <h6>Audit-Ready Quality Processes</h6>
                 <p>Compliance-driven operations designed to meet the highest regulatory standards at all times.</p>
               </div>
@@ -683,7 +683,7 @@ export default function Detectharmaiq() {
       </div>
 
        <NextPage 
-               heading={<>Next-Gen Pharmacovigilance <span>with NovaVigil</span></>}
+               heading={<>Next-Gen Pharmacovigilance<br /> <span>with NovaVigil</span></>}
               para="Pivot Path delivers AI-powered literature surveillance through NovaVigil, our intelligent pharmacovigilance platform. NovaVigil streamlines literature monitoring and ICSR processing by automating article screening, data extraction, and case narrative generation while keeping expert reviewers in control of clinical decisions. By handling repetitive tasks and maintaining complete audit trails, it enables life sciences teams to meet regulatory timelines, scale case volumes without proportional headcount, and focus their expertise on patient safety rather than manual data entry."
               link="/products/novavigil"
               image={IMAGES.NOVAVIGILBANNER} 
@@ -692,12 +692,12 @@ export default function Detectharmaiq() {
       <div className="pad80 grey discover-from">
         <Container>
           <h2 className="h4 text-center" data-aos="fade-up">
-            EXPERT-DRIVEN PHARMACOVIGILANCE <span>SOLUTIONS FOR GLOBAL SAFETY</span>
+           Advance Your Global <br /> <span>Pharmacovigilance Strategy</span>
           </h2>
 
           <Row className="mt-5">
             <Col md={12} lg={6}>
-              <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5" data-aos="fade-up" />
+              <Image src={IMAGES.Global_f} alt="fromimg" className="w-100 h-100 pe-5" data-aos="fade-up" />
             </Col>
 
             <Col md={12} lg={6}>

@@ -4,30 +4,26 @@ import { IMAGES } from "@/assets/images";
 
 export const VALUES_DATA = [
   { 
-    title: "Efficiency", 
-    desc: "Boost productivity by streamlining workflows while driving consistency, creativity, and continuous learning.", 
-    icon: IMAGES.EFFICIENCY 
-  },
-  { 
-    title: "Collaboration", 
-    desc: "Work together to create innovative solutions, overcome complex challenges, and build stronger connections.", 
-    icon: IMAGES.COLLABORATION 
-  },
-  { 
-    title: "Customer Centricity", 
-    desc: "Place clients at the heart of every decision, understand their unique needs, and design tailored solutions.", 
-    icon: IMAGES.CUSTOMER_CENTRICITY 
-  },
-  { 
     title: "Integrity", 
-    desc: "Act with honesty and ethics, take responsibility, keep commitments, and stay true to your values.", 
+    desc: "We act ethically, honestly, and transparently in all our interactions and decisions.", 
     icon: IMAGES.INTEGRITY 
   },
   { 
-    title: "Excellence", 
-    desc: "To attain efficiency by streamlining and optimising workflows, leading to increased productivity to drive outcomes.", 
-    icon: IMAGES.EXCELLENCE 
+    title: "Respect", 
+    desc: "We treat every individual with dignity, fairness, and consideration, valuing diverse perspectives and fostering an inclusive environment.", 
+    icon: IMAGES.EFFICIENCY 
   },
+  { 
+    title: "Accountability", 
+    desc: "We take ownership of our actions, decisions, and outcomes, and honour our commitments.", 
+    icon: IMAGES.COLLABORATION 
+  },
+  { 
+    title: "Compliance", 
+    desc: "We adhere to all applicable laws, regulations, policies, and standards, recognizing our responsibility to customers, partners, and patients.", 
+    icon: IMAGES.CUSTOMER_CENTRICITY 
+  },  
+  
 ];
 
 export const TEAM_DATA = [
@@ -50,7 +46,7 @@ export const TEAM_DATA = [
     link: "https://www.linkedin.com/in/gopal-muralidharan-3ab5b014/",
     bio: [
       "35+ years of experience in both pre-clinical and clinical research areas in the USA for about 15years with American Cynamide (Lederle Laboratories) and Wyeth research before returning to India as President and CSO of Lotus Labs, Bangalore.",
-      "Co-founded Semler Research Center, where he served as CEO, and later held the position of Chief Technology Officer at Advinus Therapeutics before joining Arcolab.",
+      "Co-founded Semler Research Center, where he served as CEO, and later held the position of Chief Technology Officer at Advinus Therapeutics before joining Pivot Path.",
       "Holds a bachelor’s degree in Pharmacy (B .Pharm) and PhD from University of Saskatchewan, Canada, in Drug Metabolism and Pharmacokinetics."
     ]
   },
@@ -153,7 +149,7 @@ export const TEAM_DATA = [
     bio: [
       "19+ years of experience in driving excellence in the field of human resources.",
       "He has led and contributed to numerous HR assignments, spanning areas such as organization design, job evaluation, HR systems and processes enhancement, performance management, and total rewards.",
-      "Before joining Arcolab, he held the position of Cluster Business Leader and Principal Consultant in HR Consulting vertical at Mercer."
+      "Before joining Pivot Path, he held the position of Cluster Business Leader and Principal Consultant in HR Consulting vertical at Mercer."
     ]
   },
   {
@@ -221,7 +217,7 @@ export const TEAM_DATA = [
     link: "https://www.linkedin.com/in/vimla-dsouza-0a042314/",
     bio: [
       "19+ years of experience in Clinical Research (BA/BE, Phase II/III) and Pharmacovigilance, with strong expertise in clinical operations and medical oversight.",
-      "Worked with organizations such as Lotus Labs, Apotex Research, Asiatic Clinical Research, Quintiles Research, Novo Nordisk, and Arcolab Pvt. Ltd., leading initiatives in Clinical Strategy, Medical Complaint Assessment, and Audit Readiness.",
+      "Worked with organizations such as Lotus Labs, Apotex Research, Asiatic Clinical Research, Quintiles Research, Novo Nordisk, and Pivot Path, leading initiatives in Clinical Strategy, Medical Complaint Assessment, and Audit Readiness.",
       "MBBS from Shri Siddhartha Medical College, Tumkur, Karnataka."
     ]
   },
@@ -232,7 +228,7 @@ export const TEAM_DATA = [
     link: "https://www.linkedin.com/in/prakash-reddy-85a55a170/?originalSubdomain=in",
     bio: [
       "25+ years of experience in the Information Technology and Pharmaceutical sectors, leading enterprise infrastructure and digital transformation initiatives.",
-      "Worked with Arcolab, Strides Pharma Science, and Remed Labs, with expertise in Datacenter & Cloud Management, Network Design (LAN/WAN), Turnkey Integrations, and IT Cost Optimization.",
+      "Worked with Pivot Path, Strides Pharma Science, and Remed Labs, with expertise in Datacenter & Cloud Management, Network Design (LAN/WAN), Turnkey Integrations, and IT Cost Optimization.",
       "Diploma in Electronics and Bachelor of Computer Applications, Bangalore, Karnataka."
     ]
   },

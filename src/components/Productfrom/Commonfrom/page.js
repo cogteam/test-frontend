@@ -220,8 +220,8 @@ export default function Commonfrom(){
 
                   {/* Submit */}
                   <Col md={12} data-aos="fade-up">
-                    <button className="btns3" type="submit">
-                      <span>BOOK A DEMO</span>
+                    <button className="btns3 text-uppercase" type="submit">
+                      <span>Get in Touch</span>
                     </button>
                   </Col>
                 </Row>

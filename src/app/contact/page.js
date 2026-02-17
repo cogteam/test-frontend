@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import Link from "next/link";
-import { FaEnvelope, FaLocationDot } from "react-icons/fa6";
+import { FaEnvelope, FaLocationDot, FaPhone } from "react-icons/fa6";
 import { useForm } from "react-hook-form";
 import Loader from "@/lib/Loader";
 import api from "../../lib/axios";
@@ -106,9 +106,10 @@ export default function Contact() {
                       if (!/^[A-Za-z ]$/.test(keyValue)) e.preventDefault();
                     }}
                   />
-                </Form.Group>
-                {errors.first_name && <p className="error">{errors.first_name.message}</p>}
+                  {errors.first_name && <p className="error">{errors.first_name.message}</p>}
                 <p className="error">{validErrors.first_name}</p>
+                </Form.Group>
+                
               </Col>
 
               {/* Email */}
@@ -126,9 +127,10 @@ export default function Contact() {
                       },
                     })}
                   />
-                </Form.Group>
-                {errors.email && <p className="error">{errors.email.message}</p>}
+                     {errors.email && <p className="error">{errors.email.message}</p>}
                 <p className="error">{validErrors.email}</p>
+                </Form.Group>
+             
               </Col>
 
               {/* Phone */}
@@ -148,9 +150,10 @@ export default function Contact() {
                         e.preventDefault();
                     }}
                   />
-                </Form.Group>
-                {errors.phone && <p className="error">{errors.phone.message}</p>}
+                  {errors.phone && <p className="error">{errors.phone.message}</p>}
                 <p className="error">{validErrors.phone}</p>
+                </Form.Group>
+                
               </Col>
 
               {/* Services Dropdown */}
@@ -167,9 +170,10 @@ export default function Contact() {
                     <option value="commercialization">Commercialization</option>
                     <option value="human-capital">Human Capital</option>
                   </Form.Select>
-                </div>
-                {errors.services && <p className="error">{errors.services.message}</p>}
+                    {errors.services && <p className="error">{errors.services.message}</p>}
                 <p className="error">{validErrors.services}</p>
+                </div>
+              
               </Col>
 
               {/* Message */}
@@ -184,9 +188,10 @@ export default function Contact() {
                       required: { value: true, message: "This field is required" },
                     })}
                   />
-                </Form.Group>
-                {errors.message && <p className="error">{errors.message.message}</p>}
+                   {errors.message && <p className="error">{errors.message.message}</p>}
                 <p className="error">{validErrors.message}</p>
+                </Form.Group>
+               
               </Col>
 
               <Col md={12} className="text-center" data-aos="fade-up">
@@ -206,7 +211,7 @@ export default function Contact() {
       <div className="pad80 address-wrapper grey">
         <Container>
           <Row>
-            <Col md={4}>
+            <Col md={4} className="pe-0">
               <div className="address" data-aos="fade-up">
                 <address>
                   <FaLocationDot />
@@ -216,7 +221,7 @@ export default function Contact() {
               </div>
             </Col>
 
-            <Col md={4}>
+            <Col md={4} className="ps-0 border-left-1">
               <div className="address" data-aos="fade-up">
                 <address>
                   <FaLocationDot />
@@ -226,14 +231,14 @@ export default function Contact() {
             </Col>
 
             <Col md={4}>
-              <div className="address" data-aos="fade-up">
-                <FaEnvelope />
-                <Link href="mailto:info@pivotpath.comm" className="d-block mb-3">
-                  info@pivotpath.com
+              <div className="address d-flex align-items-center flex-wrap justify-content-center" data-aos="fade-up">
+               
+                <div><Link href="mailto:info@pivotpath.comm" className="d-block ">
+                  <FaEnvelope className="d-inline-block  mb-0 me-3" style={{ width: "20px" }} /> info@pivotpath.com
                 </Link>
                 <Link href="tel:918026586233" className="d-block">
-                  +91 80 26586233
-                </Link>
+                  <FaPhone className="d-inline-block  mb-0  me-3" style={{ width: "20px", marginLeft:"-22px" }} /> +91 80 26586233
+                </Link></div>
               </div>
             </Col>
           </Row>

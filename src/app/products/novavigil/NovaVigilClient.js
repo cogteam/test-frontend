@@ -163,7 +163,7 @@ export default function NovaVigilClient() {
                 onSelect={(k) => setKey(k)}
                 className="mb-3 justify-content-center border-0"
                 >
-                <Tab eventKey="vms" title="ILS">
+                <Tab eventKey="vms" title="Intelligent Literature Screening">
                         <div className="vms-tab mt-5">
                             <h3 className="h5 text-center">Intelligent Literature Screening</h3>
                             <p className="text-center col-7 m-auto">Manual review is slow and error-prone. NovaVigil automates detection, extraction, and case structuring, reducing processing time from approximately three hours to under one.</p>
@@ -236,7 +236,7 @@ export default function NovaVigilClient() {
                             </div>
                         </div>
                 </Tab>
-                <Tab eventKey="dms" title="SWM">
+                <Tab eventKey="dms" title="Scalable Workflow Management">
                       <div className="vms-tab mt-5">
                             <h3 className="h5 text-center">Scalable Workflow Management</h3>
                             <p className="text-center">NovaVigil handles fluctuations in literature volume without compromising compliance or quality,<br/> ensuring your team stays ahead regardless of workload intensity.</p>
@@ -308,7 +308,7 @@ export default function NovaVigilClient() {
                             </div>
                         </div>
                 </Tab>
-                <Tab eventKey="tms" title="CDCC">
+                <Tab eventKey="tms" title="Comprehensive Data & Compliance Control">
                             <div className="vms-tab mt-5">
                             <h3 className="h5 text-center">Comprehensive Data & <br />Compliance Control</h3>
                             <p className="text-center">Ensure transparency, accountability, and audit readiness throughout <br />the pharmacovigilance process with complete oversight and traceability.</p>
@@ -387,7 +387,7 @@ export default function NovaVigilClient() {
 
     <div className="grey pad80 choose-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">WHY CHOOSE NovaVigil?</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">The Value We Deliver</h2>
             <p className="text-center" data-aos="fade-up">NovaVigil empowers pharmacovigilance teams to work smarter, ensuring patient<br/> safety, regulatory excellence, and operational efficiency—bringing AI to life in life sciences.</p>
 
                 <Row className="mt-4 mt-md-5">
@@ -460,10 +460,12 @@ export default function NovaVigilClient() {
 
     <div className="pad80 grey discover-from">
                     <Container>
-                        <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH NOVAVIGIL</h2>    
+                        {/* <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH NOVAVIGIL</h2>     */}
+                        <h2 className="h4 text-center"  data-aos="fade-up">Transform Pharmacovigilance with<br/> Intelligent Automation
+</h2>    
                         <Row className="mt-4 mt-md-5">
                             <Col md={12} lg={6}>
-                                <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                                <Image src={IMAGES.NovaVigilf} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                             </Col>    
                             <Col md={12} lg={6}>
                                   <Commonfrom />

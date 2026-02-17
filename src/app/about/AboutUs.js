@@ -7,13 +7,45 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { IMAGES } from "../../assets/images";
 import { VALUES_DATA, BOARD_DATA } from "./aboutData";
+import epic from "../../assets/images/epic.webp";
+import Slider from "react-slick";
+import e_epic from "../../assets/images/logo/e_epic.webp";
+import p_epic from "../../assets/images/logo/p_epic.webp";
+import i_epic from "../../assets/images/logo/i_epic.webp";
+import c_epic from "../../assets/images/logo/c_epic.webp";
 
 // 3. Lazy Load Leadership Section (Reduces initial JS bundle)
 const LeadershipSection = dynamic(() => import("@/components/LeadershipSection/page"), {
   loading: () => <div className="grey pad80" style={{ minHeight: '500px' }}>Loading...</div>
 });
 
+const epicslider = {
+  arrows: false,
+  fade: false,
+  infinite: true,
+  speed: 1200,
+  dots: true,
+   loop: false,
 
+  responsive: [
+    {
+      breakpoint: 768, // mobile & tablet
+      settings: {
+        autoplay: true,
+        autoplaySpeed: 6000,
+        draggable: true,
+        swipe: true,
+        loop: false,
+        centerPadding: "20px",
+        centerMode: true,
+      }
+    },
+    {
+      breakpoint: 9999, // desktop
+      settings: "unslick" // slider disabled on desktop
+    }
+  ]
+};
 
 const BANNER_DATA = [
   {
@@ -55,7 +87,7 @@ export default function AboutUs() {
         <div className="position-absolute w-100 h-100 top-0 start-0" style={{ zIndex: 0 }}>
              <Image 
                 src={IMAGES.Aboutbanner} 
-                alt="Arcolab Innovation Center" 
+                alt="Pivot Path Innovation Center" 
                 priority // Keep priority for LCP
                 placeholder="blur" // Adds a blur effect while loading (if imports are static)
                 sizes="100vw"
@@ -78,7 +110,7 @@ export default function AboutUs() {
         <Container>
           <h2 className="h4 text-center mb-0" data-aos="fade-up">Building the Future of <br /><span>Life Sciences, Together.</span></h2>
           {/* <p className="col-lg-6 text-center m-auto" data-aos="fade-up">
-            Arcolab is designed as a center of excellence with the purpose of offering a wide range of life science services.
+            Pivot Path is designed as a center of excellence with the purpose of offering a wide range of life science services.
           </p> */}
 
 
@@ -88,7 +120,7 @@ export default function AboutUs() {
                <div className="d-flex vision-box-inner-align  mb-md-5">
                   <div className="vision-box-inner p-0">
                     {/* <h3>POSITIONING</h3> */}
-                    <p className="mb-0 mt-3">Pivot Path is a life sciences solutioning organization that integrates technology, platforms and domain
+                    <p className="mb-0 mt-3 mb-text-center">Pivot Path is a life sciences solutioning organization that integrates technology, platforms and domain
 expertise to deliver transformative solutions for customers across the globe.</p>
 
 
@@ -148,44 +180,88 @@ solutioning to deliver measurable outcomes for our customers.</p>
                 </ul>
               </div>
             </Col>
-
-
-             
-
-
           </Row>
-        </Container>
-
-       
+        </Container>       
       </div>
+
+    <div className="pad80 grey2 epic-wrapper" >
+          <Container>
+              <h2 className="h4 text-center" data-aos="fade-up">Our   <span>culture compass</span></h2>
+              <p className="text-center" data-aos="fade-up">At Pivot Path, culture guides how we think, decide, and act. Our Cultural Compass ensures that<br/> as a newly formed organization, we grow responsibly while delivering meaningful impact in life<br/> sciences. It reflects what we stand for, what we expect, and how we create value for our customers,<br/> partners, and patients.</p>
+
+                <h2 className="mt-5  text-center" data-aos="fade-up">Core Values</h2>
+
+                <Image src={epic} alt="epic" className="w-100 h-auto epic-img mb-5 mt-5" />
+
+              <Slider {...epicslider} className="row epicmb">
+                <Col md={3}>
+                  <div className="epic-box">
+                      <h6 className="e"  data-aos="fade-up"  style={{ backgroundImage: `url(${e_epic.src})` }}>E</h6>
+                      {/* <Image src={e_epic} alt="epic" className="w-100" />  */}
+                      <h4  data-aos="fade-up">Excellence</h4>
+                      <p  data-aos="fade-up">We set the highest standards for quality and rigor. We pursue mastery in our craft and continuous improvement in everything we deliver.</p>
+                  </div>
+                </Col>
+                <Col md={3}>
+                  <div className="epic-box" >
+                    <h6 className="e" data-aos="fade-down" style={{ backgroundImage: `url(${p_epic.src})` }}>P</h6>
+                     {/* <Image src={p_epic} alt="epic" className="w-100" />  */}
+                      <h4 data-aos="fade-up">Partnership</h4>
+                      <p data-aos="fade-up">We work together across teams, functions, and with our customers. Success is collective, built on trust and shared purpose.</p>
+                  </div>
+                </Col>
+                <Col md={3}>
+                  <div className="epic-box" >
+                    <h6 className="e" data-aos="fade-Up" style={{ backgroundImage: `url(${i_epic.src})` }}>I</h6>
+                     {/* <Image src={i_epic} alt="epic" className="w-100" />  */}
+                      <h4 data-aos="fade-up">Innovation</h4>
+                      <p data-aos="fade-up">We challenge the status quo and build the future. We embrace bold ideas, learn from failure, and create transformative solutions.</p>
+                  </div>
+                </Col>
+                <Col md={3}>
+                  <div className="epic-box" >
+                    <h6 className="e" data-aos="fade-down" style={{ backgroundImage: `url(${c_epic.src})` }}>C</h6>
+                    {/* <Image src={c_epic} alt="epic" className="w-100" />  */}
+                      <h4 data-aos="fade-up">Customer Centricity</h4>
+                      <p data-aos="fade-up">We put customer and patient outcomes first. Every decision we make is guided by the impact it creates for those we serve.</p>
+                  </div>
+                </Col>
+              </Slider>
+          </Container>
+    </div>
 
 
       
 
       {/* 6. VALUES SECTION */}
-      <div className="pad80 grey2 values-wrapper" id="values">
+      <div className="pad80 grey2 pt-0 values-wrapper" id="values">
         <Container>
-          <h2 className="h4 text-center" data-aos="fade-up">OUR <span>VALUES</span></h2>
-          {/* <p className="col-lg-7 text-center m-auto" data-aos="fade-up">
-            At Arcolab, our core values form the bedrock of our actions.
-          </p> */}
+          {/* <h2 className="h4 text-center" data-aos="fade-up">Fundamental <span>VALUES</span></h2> */}
+           <h2 className="mb-3 text-center" data-aos="fade-up">Fundamental Values</h2>
+          <p className="col-lg-7 text-center m-auto" data-aos="fade-up">
+              They are the foundation of trust and responsibility at Pivot Path. They are non-negotiable guardrails that protect our people, our customers,
+and our mission. Without them, nothing else matters.
+          </p>
 
           <Row className="mt-4 mt-md-5">
-            <Col md={6} lg={4} data-aos="fade-up">
-              <div className="values-box values-box2 p-0 position-relative">
+            <Col md={12} lg={4} data-aos="fade-up">
+              <div className="values-box values-box2 p-0 h-auto position-relative">
                 {/* Optimized Static Image */}
                 <Image 
                   src={IMAGES.Values1} 
                   alt="Our Values" 
-                  style={{ width: '100%', height: 'auto' }}
+                  style={{ width: '100%', height: '546px !important' }}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="h-100"
                 />
               </div>
             </Col>
-            {VALUES_DATA.map((val, i) => (
-              <Col md={6} lg={4} key={i} data-aos="fade-up" data-aos-delay={i * 100}>
-                <div className="values-box">
+            
+            <Col lg={8} md={12}>
+              <Row>
+                {VALUES_DATA.map((val, i) => (
+              <Col md={6} lg={6} key={i} data-aos="fade-up" data-aos-delay={i * 100}>
+                <div className="values-box values-box2">
                   {/* Fixed width/height for icons prevents reflows */}
                   <Image src={val.icon} alt={val.title} width={60} height={60} />
                   <div className="values-caption">
@@ -195,6 +271,8 @@ solutioning to deliver measurable outcomes for our customers.</p>
                 </div>
               </Col>
             ))}
+              </Row>
+            </Col>
           </Row>
         </Container>
       </div>
@@ -293,7 +371,7 @@ solutioning to deliver measurable outcomes for our customers.</p>
           <Row className="mt-4 mt-md-5">
             {BOARD_DATA.map((director, i) => (
               <Col lg={4} md={6} key={i} data-aos="fade-up" data-aos-delay={i * 100}>
-                <div className="team-box mb-lg-0">
+                <div className="team-box team-dtls2 mb-lg-0">
                   <div className="overflow-hidden position-relative">
                     {/* Size optimization for Team Cards */}
                     <Image 

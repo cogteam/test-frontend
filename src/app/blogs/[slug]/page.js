@@ -12,6 +12,7 @@ import { FaFacebookF, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 // Axios setup import
 import api, { domainUrl } from "../../../lib/axios";
+import Aos from "aos";
 const IMAGE_BASE_URL = domainUrl;
 
 // Format Date Helper

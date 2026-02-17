@@ -4,11 +4,17 @@ import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import api from "../../../lib/axios";
 import InsightsGridItem from "../../../components/InsightsGridItem/page";
+import Casestudiesmodal from "../CasestuidesModal/page";
+import WhitepaperModal from "../WhitepaperModal/page";
 
-export default function Whitepaper() {
+export default function Whitepaper({ activeTab }) {
   const [whitepapers, setWhitepapers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const [show, setShow] = useState(false);
+  const [source, setSource] = useState(null);
+
 
   useEffect(() => {
     Aos.init({ duration: 1000, once: true });
@@ -53,16 +59,29 @@ export default function Whitepaper() {
   }
 
   return (
-    <div className="case-grid">
+   <>
+     <div className="case-grid">
       <Row>
         {whitepapers.length > 0 ? (
           whitepapers.map((item) => (
-            <InsightsGridItem key={item.id} item={item} />
+            <InsightsGridItem key={item.id} item={item} onOpen={() => {
+                setSource(item);   // 👈 poora item store
+                setShow(true);
+              }} />
           ))
         ) : (
           <Col className="text-center p-5">No White Papers found.</Col>
         )}
       </Row>
     </div>
+
+
+    <WhitepaperModal
+        show={show}
+        handleClose={() => setShow(false)}
+        source={source}
+      />
+   
+   </>
   );
 }

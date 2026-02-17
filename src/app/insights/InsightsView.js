@@ -8,6 +8,7 @@ import Highlightblog from './highlitedblog/page';
 
 export default function InsightsView() {
     const [key, setKey] = useState('casestudies');
+    const [activeTab, setActiveTab] = useState("casestudies");
    
     return (
         <>
@@ -25,15 +26,17 @@ export default function InsightsView() {
                 <Container>
                     <Tabs
                         id="insights-tabs"
-                        activeKey={key} 
-                        onSelect={(k) => setKey(k)}
+                        //activeKey={key} 
+                        //onSelect={(k) => setKey(k)}
+                        activeKey={activeTab}
+                        onSelect={(k) => setActiveTab(k)}
                         className="justify-content-center mb-5 border-0"
                     >
                         <Tab eventKey="casestudies" title="Case Studies">
-                           <Casestudies />
+                           <Casestudies activeTab={activeTab}  />
                         </Tab>
                         <Tab eventKey="whitepaper" title="White Paper">
-                           <Whitepaper />
+                           <Whitepaper activeTab={activeTab} />
                         </Tab>
                     </Tabs>
                 </Container>

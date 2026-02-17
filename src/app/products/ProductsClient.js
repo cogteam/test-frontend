@@ -12,38 +12,46 @@ const productsData = [
   {
     id: "noteiq",
     title: "NoteIQ",
+    titleimg: IMAGES.NoteIQLogoFull,
     desc: "Automating GxP compliance with intelligence and precision.",
     image: IMAGES.NOTEIQLISTING,
     link: "/products/noteiq",
   },
   {
-    id: "novavigil",
-    title: "NovaVigil",
-    desc: "AI-driven vigilance for faster, accurate safety insights.",
-    image: IMAGES.NOVAVIGILLISTING,
-    link: "/products/novavigil",
+    id: "anomiq",
+    title: "AnomIQ",
+    titleimg: IMAGES.AnomIQLogoFull,
+    desc: "Proactive anomaly detection for confident compliance.",
+    image: IMAGES.ANOMIQLISTING,
+    link: "/products/anomiq",
   },
-  {
+   {
     id: "golanzar",
     title: "GoLanzar",
+    titleimg: IMAGES.GolanzarLogoFull,
     desc: "Powering faster, smarter pharmaceutical launches.",
     image: IMAGES.GOLANZARLISTING,
     link: "/products/golanzar",
   },
+   
   {
     id: "inlumin",
     title: "InLumin",
+      titleimg: IMAGES.InluminLogoFull,
     desc: "Procurement made clear, compliant, and effortless.",
     image: IMAGES.INLUMINLISTING,
     link: "/products/inlumin",
   },
   {
-    id: "anomiq",
-    title: "AnomIQ",
-    desc: "Proactive anomaly detection for confident compliance.",
-    image: IMAGES.ANOMIQLISTING,
-    link: "/products/anomiq",
+    id: "novavigil",
+    title: "NovaVigil",
+     titleimg: IMAGES.NovaVigilLogoFull,
+    desc: "AI-driven vigilance for faster, accurate safety insights.",
+    image: IMAGES.NOVAVIGILLISTING,
+    link: "/products/novavigil",
   },
+
+  
 ];
 
 // --- Sub-Components ---
@@ -68,7 +76,7 @@ const Arrow = () => (
   </div>
 );
 
-const ProductCard = ({ title, desc, image, link }) => (
+const ProductCard = ({ title, desc, image, link, titleimg }) => (
   <Col lg={4} md={6} className="mb-4" data-aos="fade-up">
     <Link href={link} className="blog-list d-block h-100">
       <div className="overflow-hidden mb-3">
@@ -81,7 +89,8 @@ const ProductCard = ({ title, desc, image, link }) => (
           style={{ objectFit: "cover" }}
         />
       </div>
-      <h3>{title}</h3>
+      {/* <h3>{title}</h3> */}
+      <Image src={titleimg} alt={title} className="h-auto product-logo" />
       <p>{desc}</p>
       <Arrow />
     </Link>
@@ -149,6 +158,7 @@ export default function ProductsClient() {
                 desc={product.desc}
                 image={product.image}
                 link={product.link}
+                 titleimg={product.titleimg}
               />
             ))}
           </Row>

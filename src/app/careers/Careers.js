@@ -183,17 +183,15 @@ if (data.resume && data.resume.length > 0) {
             <div className='inner-head grey career-wrapper career-banner'>
                 <Container className='d-flex align-items-center h-100 '>
                     <div>
-                        <h1 className='h4 text-black' data-aos="fade-up"><span>Careers</span></h1>
-                        <p data-aos="fade-up" className="text-black">Think beyond boundaries. Grow beyond limits.<br/>
-Join Pivot Path and shape the future of innovation.
- </p>
+                        <h1 className='h4 text-white' data-aos="fade-up">Careers</h1>
+                        <p data-aos="fade-up" className="text-black">Think beyond boundaries. Grow beyond limits.<br/> Join Pivot Path and shape the future of innovation.  </p>
                     </div>
                 </Container>
             </div>
 
 
 
-             <div className='pad80'>
+             <div className='pad80 carrer-head2'>
                 <Container>
                     
                         <h2 className='h4 text-center' data-aos="fade-up">Working at <span>Pivot Path</span></h2>
@@ -433,9 +431,10 @@ Join Pivot Path and shape the future of innovation.
                     pattern: { value: /^[A-Za-z ]+$/, message: "Only alphabetic characters allowed" }
                 })}
             />
-        </Form.Group>
-        {errors.first_name && <p className="error">{errors.first_name?.message}</p>}
+            {errors.first_name && <p className="error">{errors.first_name?.message}</p>}
         <p className="error">{validErrors.first_name}</p>
+        </Form.Group>
+        
     </Col>
 
     <Col md={6}>
@@ -448,9 +447,10 @@ Join Pivot Path and shape the future of innovation.
                     pattern: { value: /^\S+@\S+\.\S+$/, message: "Invalid email format" }
                 })}
             />
-        </Form.Group>
-        {errors.email && <p className="error">{errors.email?.message}</p>}
+             {errors.email && <p className="error">{errors.email?.message}</p>}
         <p className="error">{validErrors.email}</p>
+        </Form.Group>
+       
     </Col>
 
     <Col md={6}>
@@ -463,9 +463,10 @@ Join Pivot Path and shape the future of innovation.
                     pattern: { value: /^\d{10,15}$/, message: "Invalid mobile number" }
                 })}
             />
-        </Form.Group>
-        {errors.phone && <p className="error">{errors.phone?.message}</p>}
+             {errors.phone && <p className="error">{errors.phone?.message}</p>}
         <p className="error">{validErrors.phone}</p>
+        </Form.Group>
+       
     </Col>
 
     {/* --- NEW LINKEDIN URL FIELD --- */}
@@ -473,7 +474,7 @@ Join Pivot Path and shape the future of innovation.
         <Form.Group className="mb-4 wow fadeInUp" controlId="LinkedIn URL" data-aos="fade-up">
             <Form.Control
                 type="text"
-                placeholder="LinkedIn URL (e.g., https://linkedin.com/in/username)"
+                placeholder="LinkedIn URL"
                 {...register("linkedin_url", {
                     required: "LinkedIn URL is required",
                     pattern: {
@@ -482,9 +483,10 @@ Join Pivot Path and shape the future of innovation.
                     },
                 })}
             />
-        </Form.Group>
-        {errors.linkedin_url && <p className="error">{errors.linkedin_url?.message}</p>}
+            {errors.linkedin_url && <p className="error">{errors.linkedin_url?.message}</p>}
         <p className="error">{validErrors.linkedin_url}</p>
+        </Form.Group>
+        
     </Col>
 
     <Col md={12}>
@@ -495,8 +497,9 @@ Join Pivot Path and shape the future of innovation.
                 placeholder="Message"
                 {...register("personal_note", { required: "Message is required" })}
             />
+             {errors.personal_note && <p className="error">{errors.personal_note.message}</p>}
         </Form.Group>
-        {errors.personal_note && <p className="error">{errors.personal_note.message}</p>}
+       
     </Col>
 
     <Col md={12}>
@@ -518,8 +521,9 @@ Join Pivot Path and shape the future of innovation.
                 />
             </span>
             <span className="file-name">{fileName}</span>
-        </div>
-        {errors.resume && <p className="error mt-3">{errors.resume?.message}</p>}
+             
+        </div>{errors.resume && <p className="error mt-3">{errors.resume?.message}</p>}
+       
     </Col>
 
     {/* --- NEW CHECKBOX FIELD --- */}
@@ -531,22 +535,23 @@ Join Pivot Path and shape the future of innovation.
             className="custom-checkbox"
             label={
                 <span className="label-text">
-                    I agree to the processing of my personal data and the{" "}
+                   I consent to the {" "}
                     <Link href="/privacy-policy" target="_blank" className="textprimary text-decoration-underline">
                         Privacy Policy
                     </Link>
-                    *
+                    
                 </span>
             }
             {...register("agreement", { 
                 required: "You must agree to the privacy policy to submit your application" 
             })}
         />
+         {errors.agreement && <p className="error">{errors.agreement.message}</p>}
     </Form.Group>
-    {errors.agreement && <p className="error">{errors.agreement.message}</p>}
+   
 </Col>
 
-    <Col md={12} className="text-center" data-aos="fade-up">
+    <Col md={12} className="text-center carre-top" data-aos="fade-up">
         <button className="btns3" disabled={isLoading}>
             <span>{isLoading ? 'SUBMITTING...' : 'SUBMIT'}</span>
         </button>

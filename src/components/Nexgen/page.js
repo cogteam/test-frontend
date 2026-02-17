@@ -70,17 +70,19 @@ export default function Nexgen() {
            {/* ... Your content slides remain exactly the same ... */}
           <div className="next-gen-box">
             <div className="next-gen-img position-relative">
-              <Image src={IMAGES.NOTEIQBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+                <div className="overflow-hidden position-relative next-gen-img2">
+                 <Image src={IMAGES.NOTEIQBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+                </div>
               <div className="nextgen-data">
                 <Image src={IMAGES.NOTEIQLOGO} alt="" />
                 <p>
                   A cutting-edge platform engineered to revolutionize validation, documentation and training management delivering unmatched compliance and productivity.
                 </p>
                 <ul>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Agile Deployment Integration & Scalability.</li>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Automated Validation & Document Lifecycle Suite.</li>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Life Science Regulatory Excellence.</li>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Engineered on Cutting Edge Technology.</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Agile Deployment Integration & Scalability</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Automated Validation & Document Lifecycle Suite</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Life Science Regulatory Excellence</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Engineered on Cutting Edge Technology</li>
                 </ul>
                 <Link href="/products/noteiq" className="text-uppercase btns-line position-relative">
                   KNOW MORE
@@ -88,30 +90,33 @@ export default function Nexgen() {
               </div>
             </div>
           </div>
-
-          <div className="next-gen-box">
+            <div className="next-gen-box">
             <div className="next-gen-img position-relative">
-              <Image src={IMAGES.NOVAVIGILBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+             <div className="overflow-hidden position-relative next-gen-img2">
+                <Image src={IMAGES.ANOMIQBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+            </div> 
               <div className="nextgen-data">
-                <Image src={IMAGES.NOVAVIGILLOGO} alt="" />
+                <Image src={IMAGES.ANOMIQLOGO} alt="" style={{ width: "160px" }} />
                 <p>
-                  NovaVigil transforms pharmacovigilance with intelligent automation and real-time insights, enabling teams to detect risks faster, stay compliant, and protect patient safety with precision.
+                  AnomIQ automates anomaly detection and compliance management, helping teams identify issues early, maintain data integrity and achieve confident regulatory compliance.
                 </p>
                 <ul>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Intelligent Automation & Scalability</li>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Enhanced Accuracy & Compliance</li>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Seamless Data Integration</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Proactive Monitoring & Insights</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Automated Workflows & Governance</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Scalable Oversight</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> AI-Powered Transparency</li>
                 </ul>
-                <Link href="/products/novavigil" className="text-uppercase btns-line position-relative">
+                <Link href="/products/anomiq" className="text-uppercase btns-line position-relative">
                   KNOW MORE
                 </Link>
               </div>
             </div>
           </div>
-
-          <div className="next-gen-box">
+            <div className="next-gen-box">
             <div className="next-gen-img position-relative">
-              <Image src={IMAGES.GOLANZARBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+           <div className="overflow-hidden position-relative next-gen-img2">
+                <Image src={IMAGES.GOLANZARBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+              </div>
               <div className="nextgen-data">
                 <Image src={IMAGES.GOLANZARLOGO} alt="" />
                 <p>
@@ -129,9 +134,11 @@ export default function Nexgen() {
             </div>
           </div>
 
-          <div className="next-gen-box">
+<div className="next-gen-box">
             <div className="next-gen-img position-relative">
+              <div className="overflow-hidden position-relative next-gen-img2">
               <Image src={IMAGES.INLUMINBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+              </div>
               <div className="nextgen-data">
                 <Image src={IMAGES.INLUMINLOGO} alt="" />
                 <p>
@@ -149,26 +156,36 @@ export default function Nexgen() {
             </div>
           </div>
 
+
+
+
+
           <div className="next-gen-box">
             <div className="next-gen-img position-relative">
-              <Image src={IMAGES.ANOMIQBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+               <div className="overflow-hidden position-relative next-gen-img2">
+              <Image src={IMAGES.NOVAVIGILBANNER} alt="" style={{ height: "600px" }} className="w-100" />
+            </div>
               <div className="nextgen-data">
-                <Image src={IMAGES.ANOMIQLOGO} alt="" style={{ width: "250px" }} />
+                <Image src={IMAGES.NOVAVIGILLOGO} alt="" />
                 <p>
-                  AnomIQ automates anomaly detection and compliance management, helping teams identify issues early, maintain data integrity and achieve confident regulatory compliance.
+                  NovaVigil transforms pharmacovigilance with intelligent automation and real-time insights, enabling teams to detect risks faster, stay compliant, and protect patient safety with precision.
                 </p>
                 <ul>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Proactive Monitoring & Insights</li>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Automated Workflows & Governance</li>
-                  <li><Image src={IMAGES.DOTS} alt="" /> Scalable Oversight</li>
-                  <li><Image src={IMAGES.DOTS} alt="" /> AI-Powered Transparency</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Intelligent Automation & Scalability</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Enhanced Accuracy & Compliance</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Seamless Data Integration</li>
                 </ul>
-                <Link href="/products/anomiq" className="text-uppercase btns-line position-relative">
+                <Link href="/products/novavigil" className="text-uppercase btns-line position-relative">
                   KNOW MORE
                 </Link>
               </div>
             </div>
           </div>
+
+        
+
+          
+        
         </Slider>
 
         {/* Navigation Slider */}
@@ -178,10 +195,12 @@ export default function Nexgen() {
           className="nextgen-head"
         >
           <div className="nexgen-head2 text-uppercase"><h4>NOTEIQ</h4></div>
-          <div className="nexgen-head2 text-uppercase"><h4>NOVAVIGIL</h4></div>
+          <div className="nexgen-head2 text-uppercase"><h4>AnomIQ</h4></div>
+
           <div className="nexgen-head2 text-uppercase"><h4>GOLANZAR</h4></div>
           <div className="nexgen-head2 text-uppercase"><h4>INLUMIN</h4></div>
-          <div className="nexgen-head2 text-uppercase"><h4>AnomIQ</h4></div>
+            <div className="nexgen-head2 text-uppercase"><h4>NOVAVIGIL</h4></div>
+          
         </Slider>
       </div>
     </>

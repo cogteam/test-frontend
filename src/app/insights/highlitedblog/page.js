@@ -118,16 +118,16 @@ export default function Highlightblog() {
                     <Row>
                         {/* Main Highlighted Blog (First Blog) */}
                         {mainBlog && (
-                            <Col lg={8} md={6} className="" data-aos="fade-up">
+                            <Col lg={8} md={12} className="" data-aos="fade-up">
                                 <Link
                                     href={`/blogs/${mainBlog.slug}`}
-                                    className="blog-list d-block p-0 border-0 mb-0 h-100"
+                                    className="blog-list bloglist-high2 d-block p-0 border-0 mb-0 h-100"
                                 >
                                     <div className="overflow-hidden position-relative h-100">
                                         <img 
                                             // COMBINE BASE URL with the image path from the API
                                             src={`${IMAGE_BASE_URL}${mainBlog.image}`} 
-                                            className="w-100 h-100" 
+                                            className="w-100 h-100 mb-hight" 
                                             alt={mainBlog.image_alt_text || mainBlog.title} 
                                         />
                                         <div className="caption">
@@ -141,7 +141,7 @@ export default function Highlightblog() {
 
                         {/* Side Highlighted Blogs (Remaining two) */}
                         {sideBlogs.length > 0 && (
-                            <Col lg={4} md={6} className="d-flex flex-column gap-4" data-aos="fade-up">
+                            <Col lg={4} md={12} className="d-flex flex-column gap-4 high-tab" data-aos="fade-up">
                                 {sideBlogs.map((blog) => (
                                     <Link
                                         key={blog.id} 
@@ -166,7 +166,7 @@ export default function Highlightblog() {
                         )}
                     </Row>
 
-                    <div className="text-center mt-0 mt-md-5" data-aos="fade-up">
+                    <div className="text-center mt-0 mt-md-5 mb-hight" data-aos="fade-up">
                         <Link href="/blogs" className="btns3 btn4full"><span>Read More</span></Link>
                     </div>
                 </Container>

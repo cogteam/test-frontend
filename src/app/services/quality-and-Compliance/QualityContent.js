@@ -38,7 +38,7 @@ export default function QualityContent() {
         <div className="banner-inner">
           <Container className='d-flex align-items-center h-100'>
             <div>
-              <h1 className='h4' data-aos="fade-up">Quality & Compliance <br /> <span>Services</span></h1>
+              <h1 className='h4' data-aos="fade-up">Quality &   <span>Compliance</span></h1>
               <p data-aos="fade-up" className="col-md-7">
                 Designed to ensure continuous adherence to industry standards, strengthen audit readiness, and build robust quality management frameworks that support long-term compliance excellence.
               </p>
@@ -138,13 +138,13 @@ export default function QualityContent() {
       <div className="pad80 grey discover-from" id="expert-driven">
         <Container>
           <h2 className="h4 text-center" data-aos="fade-up">
-            EXPERT-DRIVEN PHARMACOVIGILANCE <br/> <span>SOLUTIONS FOR GLOBAL SAFETY</span>
+            Reinforce Quality Systems & <br/> <span> Inspection Readiness</span>
           </h2>
           <Row className="mt-5">
             <Col md={12} lg={6}>
               <div className="position-relative w-100 h-100" style={{ minHeight: '400px' }}>
                  <Image 
-                   src={IMAGES.Fromimg} 
+                   src={IMAGES.Quality} 
                    alt="Expert Driven Solutions" 
                    className="w-100 h-100 pe-lg-5 object-fit-cover" 
                    data-aos="fade-up"

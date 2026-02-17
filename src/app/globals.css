@@ -325,13 +325,13 @@ transform: scale(1);
   background-repeat: no-repeat;
 }
 .human-capital-digitisation-banner{
-  background-image: url('../assets/images/human-capital-digitisation-services.webp');
+  background-image: url('../assets/images/human-capital-digitisation-services1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 .clincal-operations-banner{
-  background-image: url('../assets/images/banner/clinical-operations.webp');
+  background-image: url('../assets/images/banner/clinical-operations1.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -742,6 +742,7 @@ input:focus {
     right: 0;
     left: 0;
     max-width: 560px;
+    z-index: 1;
 }
 
 .nextgen-data img {
@@ -1440,20 +1441,23 @@ object-fit: cover;
 .grey2{
   background: #F6F6E8;
 }
-
+.vms-wrapper ul {
+  flex-wrap: nowrap;
+}
 .vms-wrapper .nav-link {
     background-color: transparent !important;
     border: none;
     border-radius: 0;
     border-bottom: 2px solid #d3d3d3;
-    font-size: 22px;
+    font-size: 16px;
     color: #6a6a64;
     font-weight: 600;
-    padding: 10px 30px;
+    padding: 10px 0px;
+    text-transform: uppercase;
 }
 
 .vms-wrapper .nav-item{
-  margin: 0 20px;
+  margin: 0 10px;
 }
 
 .vms-wrapper .nav-link.active {
@@ -1598,15 +1602,20 @@ object-fit: cover;
   margin: 0;
 }
 
-.slick-dots li button:before {
+.banner-home .slick-dots li button:before {
     border-radius: 0;
     content: '' !important;
     background: #000;
-    height: 2px !important;
+    height: 4px !important;
+}
+.banner-home .slick-dots li button:before, 
+.banner-home .slick-dots li button, 
+.banner-home .slick-dots li{
+  width: 40px;
 }
 
-.slick-dots li.slick-active button:before {
-background: #20A670;
+.banner-home  .slick-dots li.slick-active button:before {
+/* background: #20A670; */
 }
 .slick-dots {
   position: initial !important;
@@ -1621,7 +1630,9 @@ background: #20A670;
 .benefits-box:hover img{
   transform: scale(1.3);
 }
-
+.ai-view ul li:last-child{
+  margin-bottom: 0;
+}
 .vision-box {
     padding: 20px ;
     transition: all 0.5s ease;
@@ -2594,3 +2605,368 @@ ease-in-out;
     font-size: 12px;
     margin-top: 5px;
 }
+
+
+.inner-head.inner-head-products.product-wrapper, .inner-head.grey.career-wrapper.career-banner{
+  position: relative;
+}
+
+.inner-head.inner-head-products.product-wrapper::after{
+  content: '';
+  background: #00000099;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+ .inner-head.grey.career-wrapper.career-banner p {
+  color: #fff !important;
+ }
+ .inner-head.grey.career-wrapper.career-banner::after{
+  content: '';
+  background: #00000069;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+.banner-inner, .inner-head.grey.career-wrapper.career-banner .container{
+  position: relative;
+  z-index: 1;
+}
+
+
+.inner-head.inner-head-products.product-wrapper p, .inner-head.inner-head-products.product-wrapper .h4{
+  color: #fff;
+}
+
+.border-left-1 {
+  border-left: solid 1px #fff;
+}
+.custommodal  .modal-dialog{
+    max-width: 650px;
+}
+.custommodal .h4{
+  font-family: 'CeraPro-Bold';
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px !important;
+}
+
+.custommodal {
+    background: #00000091;
+}
+.custommodal .btn-close {
+   width: 30px;
+    border-radius: 0;
+    opacity: 1;
+    position: absolute;
+    right: -39px;
+    top: 7px;
+    height: 30px;
+    background: #060621 url('../assets//images/cross2.svg') no-repeat;
+    background-size: 40%;
+    background-position: 50%;
+}
+
+.custommodal .modal-header {
+    padding: 0;
+    border-bottom: none;
+    text-align: center;
+    justify-content: center;
+}
+
+.custommodal .modal-content {
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    padding: 40px;
+}
+
+.clients-banner{
+  position: relative;
+}
+.clients-banner::after{
+   content: '';
+  background: #00000069;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.article-data span.seprator {
+    padding: 0 5px;
+}
+
+footer p.success-msg {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.services-box .card::after {
+    content: '';
+    background: linear-gradient(359deg, #000000, transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+}
+
+.team-box::after {
+    content: '';
+    background: linear-gradient(359deg, #000000, transparent);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20%;
+}
+
+.team-box-data{
+  z-index: 1;
+}
+
+.team-hoverdata{
+  z-index: 2;
+}
+
+.banner-home .slick-dots {
+    margin-top: 0 !important;
+    position: absolute !important;
+    bottom: 20px !important;
+    z-index: 1;
+}
+
+.next-gen-img2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(90deg, black, transparent);
+    right: 0;
+}
+
+.product-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+.lie-s {
+  padding: 0 20px;
+  position: relative;
+}
+
+.lie-s h5 {
+    position: absolute;
+    bottom: 50px;
+    font-size: 22px;
+    margin-bottom: 0;
+    left: 37px;
+}
+.traingle-box {
+    margin-top: 4rem !important;
+}
+.traingle-box .col-md-4:first-child h5{
+  left: 13px;
+}
+.traingle-box .col-md-4:nth-child(2) h5{
+  left: 27px;
+}
+.ai-view {
+    border-right: solid 1px #e7e7e7;
+    padding: 0 60px;
+}
+.ai-view h6{
+  text-align: center;
+}
+
+.ai-view li{
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.ai-view h4 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'CeraPro-Regular';
+}
+
+.ai-view ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.ai-view ul li::after {
+    content: '';
+    height: 1px;
+    width: 94%;
+    transition: all ease-in-out .5s;
+    background: #c1c1c1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.ai-view ul li {
+    /* border-bottom: solid 1px #c1c1c1; */
+    padding: 10px 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ai-view ul li span {
+    width: 65px;
+    height: 65px;
+    border: solid 2px #c1c1c1;
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.ai-view li img {
+    width: 34px;
+    height: auto;
+}
+
+.epic-box h4 {
+  font-size: 26px;
+}
+
+.epic-box p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.team-dtls2::after{
+  content: none;
+}
+.epic-img{
+  display: none;
+}
+.e{
+  text-align: center;
+  font-size: 530px;
+    line-height: .8;
+    margin-bottom: 20px;
+    position: relative;
+    left: -39px;
+    background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.custommodal .modal-dialog {
+    max-width: 700px;
+}
+
+.dropdown-toggle::after {
+   
+    position: absolute;
+    top: 20px;
+    right: -20px;
+}
+
+#product-dropdown, #services-dropdown{
+    padding: 0 !important;
+    margin: 0 30px !important;
+}
+
+#product-dropdown a, #services-dropdown a{
+  margin: 0 !important;
+}
+
+.epic-box img {
+  height: auto !important;
+  margin-bottom: 20px;
+}
+
+
+.values-box.values-box2 {
+  height: 258px;
+}
+
+.query-dynamic h5 {
+  font-size: 30px;
+}
+
+.casestidumodal.custommodal .modal-dialog {
+    max-width: 500px;
+}
+
+.ai-view ul {
+      /* max-width: 480px; */
+    margin: 0 auto;
+}
+
+.ai-view ul li p {
+  position: relative;
+  top: -13px;
+  left: 30px;
+}
+.circle-home {
+    padding-right: 0;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.circle-home{
+  position: relative;
+}
+
+
+
+.ai-slider .slick-dots li button:before, 
+.ai-slider .slick-dots li button, 
+.ai-slider .slick-dots li{
+  width:20px;
+}
+
+
+.ai-slider .slick-dots li button:before {
+    font-size: 0;
+    background: #000;
+    height: 3px;
+}
+
+.submenu2 .dropdown-menu {
+    position: absolute !important;
+    left: 100%;
+    top: 0;
+    border-bottom: none;
+}
+
+
+.submenu2 .dropdown-toggle::after {
+    position: absolute;
+    top: 24px;
+    right: 20px;
+}
+
+#services-dropdown ~ .dropdown-menu {
+  width: 290px;
+}
+
+.submenu2 .dropdown-item{
+  /* border: none; */
+}
+
+.submenu2 .dropdown-menu{
+      background: #f5f5f5;
+      border-radius: 0;
+}
+

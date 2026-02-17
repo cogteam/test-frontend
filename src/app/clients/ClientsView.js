@@ -34,7 +34,7 @@ export default function ClientsView() {
         <>
                {/* <Header /> */}
        
-               <div className="inner-head grey product-wrapper position-relative" style={{ backgroundColor: '#1a1a1a' }}>
+               <div className="inner-head grey product-wrapper position-relative clients-banner" style={{ backgroundColor: '#1a1a1a' }}>
                                   <div className="position-absolute w-100 h-100 top-0 start-0" style={{ zIndex: 0 }}>
                                        <Image 
                                           src={IMAGES.Client_Banner} 

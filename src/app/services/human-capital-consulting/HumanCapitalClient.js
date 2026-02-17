@@ -11,7 +11,13 @@ import { IMAGES } from "@/assets/images/index.js";
 
 export default function HumanCapitalClient() {
 
-  
+     const scrollToForm = (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    const section = document.getElementById("expert-driven");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
 
   const [key, setKey] = useState('vms');
 
@@ -50,16 +56,15 @@ export default function HumanCapitalClient() {
                 <Container className='d-flex align-items-center h-100 '>
                 <div>
                 <h1 className='h4 text-white' data-aos="fade-up "> Human Capital  <br className="d-none d-md-block" /><span>Consulting</span></h1>
-                    <p data-aos="fade-up" className=" col-md-7 text-white mb-0"> In today’s fast-evolving industrial landscape, traditional manufacturing is often held back by inefficiencies in data management, limited scalability, and fragmented decision-making. Through digital transformation, we help manufacturers bridge these gaps by creating connected, intelligent, and future-ready ecosystems that drive agility, transparency, and growth. </p>
+                    <p data-aos="fade-up" className=" col-md-7 text-white mb-0">Building high-performing, future-ready organisations through strategic people solutions, strong leadership frameworks, and optimised workforce capabilities. </p>
                 </div>
             </Container>
             </div>
         </div>
 
-    <div className="grey pad80">
+    {/* <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up"> Empowering Manufacturing Excellence through Data, Intelligence, and Innovation
-</h2>
+            <h2 className="h4 text-center" data-aos="fade-up"> Empowering Manufacturing Excellence through Data, Intelligence, and Innovation</h2>
            
             <Slider {...settings} className="mt-5 justify-content-center">
                 <Col md={4} lg={4}>
@@ -138,58 +143,213 @@ export default function HumanCapitalClient() {
                 </Col>
             </Slider>
         </Container>
-    </div>
+    </div> */}
 
-    <div className="grey challenges-wrapper service-value">
+    <div className="grey challenges-wrapper service-value pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">Building the Digital Backbone for Next-Generation Manufacturing</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">Our Value Proposition</h2>
             <Row className="mt-5">
-                <Col md={6} lg={6} className="mb-dflex">
+                <Col md={6} lg={4} className="mb-dflex">
                     <div className="challenges-box h-100" data-aos="fade-up">
-                        <Image src={IMAGES.Human_Equipment} className="ComplexRegulations" alt="" />
-                         <Image src={IMAGES.Human_EquipmentIcon} className="white-icon" alt="" />
-                        <h6>Equipment Connectivity and Data Acquisition</h6>
-                        <p> Facilitates seamless integration of shop floor systems, including PLC, DCS, scales, controllers, and energy meters, through standard industrial communication protocols such as Ethernet, Modbus, RS232, OPC UA, TCP/IP, BACNET, and OPC DA. This ensures reliable, real-time data exchange with customer MES and IT systems.</p>
+                        <Image src={IMAGES.Business_Aligned} className="ComplexRegulations" alt="" />
+                         <Image src={IMAGES.Business_Aligned_white} className="white-icon" alt="" />
+                        <h6>Business-Aligned People Strategy</h6>
+                        <p>  We ensured human capital initiatives directly supported organisational growth and strategic objectives.</p>
                     </div>
                 </Col>
                 
-                <Col md={6} lg={6} className="mb-dflex mt-2 mt-md-0">
+                <Col md={6} lg={4} className="mb-dflex mt-2 mt-md-0">
                     <div className="challenges-box h-100" data-aos="fade-up">
                         <Image src={IMAGES.Human_Data} className="ComplexRegulations" alt="" />
                          <Image src={IMAGES.Human_DataIcon} className="white-icon" alt="" />
-                        <h6>Data Storage and Processing</h6>
-                        <p> Aggregates and securely stores data from sensors, machines, and control systems in a structured format within a centralised Data Lake or Data Warehouse. This foundation enables efficient data access, improved analytics, and enhanced visibility across operations.</p>
+                        <h6>Data-Driven Insights</h6>
+                        <p>  We used workforce analytics and performance data to enable informed decision-making.</p>
                     </div>                   
                 </Col>
 
-                 <Col md={6} lg={6} className="mb-dflex mt-2 mt-md-4">
+                 <Col md={6} lg={4} className="mb-dflex mt-2 mt-md-0">
                     <div className="challenges-box h-100" data-aos="fade-up">
-                        <Image src={IMAGES.Human_Manufacturing} className="ComplexRegulations" alt="" />
-                         <Image src={IMAGES.Human_ManufacturingIcon} className="white-icon" alt="" />
-                        <h6>Manufacturing Applications</h6>
-                        <p> Incorporates specialised software solutions for managing and optimising production workflows, including E-logbooks and BMR/BPR systems for comprehensive digital tracking of batches, processes, and compliance documentation.</p>
+                        <Image src={IMAGES.Sustainable_Capability} className="ComplexRegulations" alt="" />
+                         <Image src={IMAGES.Sustainable_Capability_white} className="white-icon" alt="" />
+                        <h6>Sustainable Capability Building</h6>
+                        <p> We focused on long-term capability development, not short-term fixes.</p>
                     </div>
                 </Col>
                 
-                <Col md={6} lg={6} className="mb-dflex mt-2 mt-md-4">
+                <Col md={6} lg={4} className="mb-dflex mt-2 mt-md-4">
                     <div className="challenges-box h-100" data-aos="fade-up">
-                        <Image src={IMAGES.Human_DataAnalytics} className="ComplexRegulations" alt="" />
-                         <Image src={IMAGES.Human_DataAnalyticsIcon} className="white-icon" alt="" />
-                        <h6>Data Analytics and Visualisation</h6>
-                        <p> Delivers real-time insights and performance monitoring through advanced AI and ML-driven analytics and visualisation tools, empowering predictive decision-making and continuous operational excellence.</p>
+                        <Image src={IMAGES.Practical_Implementation} className="ComplexRegulations" alt="" />
+                         <Image src={IMAGES.Practical_Implementation_white} className="white-icon" alt="" />
+                        <h6>Practical, Implementation-Focused Approach</h6>
+                        <p>  We delivered actionable solutions designed for real-world application.</p>
+                    </div>                   
+                </Col>
+                <Col md={6} lg={4} className="mb-dflex mt-2 mt-md-4">
+                    <div className="challenges-box h-100" data-aos="fade-up">
+                        <Image src={IMAGES.Future_Ready_Organisations} className="ComplexRegulations" alt="" />
+                         <Image src={IMAGES.Future_Ready_Organisations_white} className="white-icon" alt="" />
+                        <h6>Future-Ready Organisations</h6>
+                        <p>  We helped businesses build adaptable, resilient workforces prepared for evolving market demands.</p>
                     </div>                   
                 </Col>
             </Row>
         </Container>
     </div>
 
+    <div className="grey2 pad80 sr-services">
+            <Container>
+                <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">Our Services</h2>
+              <Tabs
+        id="controlled-tab-example"
+        activeKey={key}
+        onSelect={(k) => setKey(k)}
+        className="mb-3 justify-content-center border-0 sr-tabs"
+    >
+        <Tab className="col7" eventKey="vms" title="Workforce Strategy & Planning">
+            <div className="sr-tabs-dtls">
+                <Row>
+                    <Col md={12} lg={6}>
+                        <div className="overflow-hidden">
+                            <Image src={IMAGES.IP_Strategy} className="w-100" alt="srtabs" />
+                        </div>
+                    </Col>
+                    <Col md={12} lg={6}>
+                        <div className="sr-tab-dlts d-flex flex-column justify-content-between align-items-start h-100">
+                            <div>
+                                <h3>Workforce Strategy & Planning</h3>
+                                <p className="pt-md-2"> Designing scalable workforce models, role structures, and talent roadmaps that support evolving business needs.</p>
+    
+                                
+                            </div>
+                            {/* <a href="#expert-driven" onClick={scrollToForm} className="sr-btn mt-4 d-inline-block" style={{ cursor: 'pointer' }}>
+                                <span>Connect with us</span>
+                            </a> */}
+                        </div>
+                    </Col>
+                </Row>
+            </div>
+        </Tab>
+    
+        <Tab className="col7" eventKey="dms" title="Organisational Design & Development">
+            <Row>
+                <Col md={12} lg={6}>
+                    <div className="overflow-hidden">
+                        <Image src={IMAGES.IP_Portfolio} className="w-100" alt="srtabs" />
+                    </div>
+                </Col>
+                <Col md={12} lg={6}>
+                    <div className="sr-tab-dlts d-flex flex-column justify-content-between align-items-start h-100">
+                        <div>
+                            <h3>Organisational Design & Development</h3>
+                            <p className="pt-md-2">Creating agile, efficient organisational structures that improve collaboration, accountability, and operational effectiveness.</p>
+                        </div>
+                        {/* <a href="#expert-driven" onClick={scrollToForm} className="sr-btn mt-4 d-inline-block" style={{ cursor: 'pointer' }}>
+                            <span>Connect with us</span>
+                        </a> */}
+                    </div>
+                </Col>
+            </Row>
+        </Tab>
+    
+        <Tab className="col7" eventKey="tms" title="Talent Management & Capability Building">
+            <Row>
+                <Col md={12} lg={6}>
+                    <div className="overflow-hidden">
+                        <Image src={IMAGES.IP_Protection} className="w-100" alt="srtabs" />
+                    </div>
+                </Col>
+                <Col md={12} lg={6}>
+                    <div className="sr-tab-dlts d-flex flex-column justify-content-between align-items-start h-100">
+                        <div>
+                            <h3>Talent Management & Capability Building</h3>
+                            <p className="pt-md-2"> Strengthening talent pipelines through competency frameworks, performance systems, and targeted development programs.</p>
+    
+                           
+                        </div>
+                        {/* <a href="#expert-driven" onClick={scrollToForm} className="sr-btn mt-4 d-inline-block" style={{ cursor: 'pointer' }}>
+                            <span>Connect with us</span>
+                        </a> */}
+                    </div>
+                </Col>
+            </Row>
+        </Tab>
+    
+        <Tab className="col7" eventKey="rm" title="Leadership Development">
+            <Row>
+                <Col md={12} lg={6}>
+                    <div className="overflow-hidden">
+                        <Image src={IMAGES.IP_Commercialisation} className="w-100" alt="srtabs" />
+                    </div>
+                </Col>
+                <Col md={12} lg={6}>
+                    <div className="sr-tab-dlts d-flex flex-column justify-content-between align-items-start h-100">
+                        <div>
+                            <h3>Leadership Development</h3>
+                            <p className="pt-md-2"> Equipping leaders with the skills, mindset, and tools needed to drive transformation, manage change, and inspire high-performing teams.</p>
+                        </div>
+                        {/* <a href="#expert-driven" onClick={scrollToForm} className="sr-btn mt-4 d-inline-block" style={{ cursor: 'pointer' }}>
+                            <span>Connect with us</span>
+                        </a> */}
+                    </div>
+                </Col>
+            </Row>
+        </Tab>
+    
+        <Tab className="col7" eventKey="pv" title="HR Process Optimisation">
+            <Row>
+                <Col md={12} lg={6}>
+                    <div className="overflow-hidden">
+                        <Image src={IMAGES.IP_Litigation} className="w-100" alt="srtabs" />
+                    </div>
+                </Col>
+                <Col md={12} lg={6}>
+                    <div className="sr-tab-dlts d-flex flex-column justify-content-between align-items-start h-100">
+                        <div>
+                            <h3>HR Process Optimisation</h3>
+                            <p className="pt-md-2"> Improving HR operations through streamlined processes, policy frameworks, and governance models that enhance efficiency and compliance.</p>
+    
+                        </div>
+                        {/* <a href="#expert-driven" onClick={scrollToForm} className="sr-btn mt-4 d-inline-block" style={{ cursor: 'pointer' }}>
+                            <span>Connect with us</span>
+                        </a> */}
+                    </div>
+                </Col>
+            </Row>
+        </Tab>
+
+        {/* <Tab className="col7" eventKey="Change" title="Change Management & Culture Transformation">
+            <Row>
+                <Col md={12} lg={6}>
+                    <div className="overflow-hidden">
+                        <Image src={IMAGES.IP_Litigation} className="w-100" alt="srtabs" />
+                    </div>
+                </Col>
+                <Col md={12} lg={6}>
+                    <div className="sr-tab-dlts d-flex flex-column justify-content-between align-items-start h-100">
+                        <div>
+                            <h3>Change Management & Culture Transformation</h3>
+                            <p className="pt-md-2"> Improving HR operations through streamlined processes, policy frameworks, and governance models that enhance efficiency and compliance.</p>
+    
+                        </div>
+                       
+                    </div>
+                </Col>
+            </Row>
+        </Tab> */}
+
+
+    </Tabs>
+            </Container>
+        </div>
+
     <div className="pad80 grey discover-from">
                <Container>
-                   <h2 className="h4 text-center"  data-aos="fade-up">EXPERT-DRIVEN PHARMACOVIGILANCE SOLUTIONS FOR GLOBAL SAFETY</h2>
+                   <h2 className="h4 text-center"  data-aos="fade-up">Unlock Manufacturing Value <br/> <span>Through Data & Intelligence</span>
+</h2>
    
                    <Row className="mt-5">
                        <Col md={12} lg={6}>
-                           <Image src={IMAGES.Fromimg} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                           <Image src={IMAGES.human_C} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                        </Col>
    
                        <Col md={12} lg={6}>

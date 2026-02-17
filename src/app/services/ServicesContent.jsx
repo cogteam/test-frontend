@@ -49,10 +49,14 @@ export default function ServicesContent() {
         
         <Container className="d-flex align-items-center h-100 position-relative" style={{ zIndex: 1 }}>
           <div>
-            <h1 className="h4 mt-0 text-white" data-aos="fade-up">Services</h1>
+            {/* <h1 className="h4 mt-0 text-white" data-aos="fade-up">Services</h1>
             <p className="text-white" data-aos="fade-up" data-aos-delay="100">
               Specialised services that strengthen performance, streamline compliance,<br/> 
               and unlock lasting operational excellence.
+            </p> */}
+            <h1 className="h4 mt-0 text-white" data-aos="fade-up">Consulting & Managed <span>Services</span></h1>
+            <p className="text-white" data-aos="fade-up" data-aos-delay="100">
+              We partner with organizations to unlock new opportunities through a powerful blend of<br/>  deep domain expertise, structured consulting, and dependable managed services.
             </p>
           </div>
         </Container>
@@ -89,7 +93,7 @@ export default function ServicesContent() {
 
             {/* CATEGORY: PHARMACOVIGILANCE */}
             <Col lg={12} className="text-center mt-5 mb-4" data-aos="fade-up" id="drug-research-and-development">
-              <h2 className="h4">Drug Research & <span>Development</span></h2>
+              <h2 className="h4">Integrated IP & <span>Clinical Operations</span></h2>
             </Col>
 
 
@@ -132,12 +136,31 @@ export default function ServicesContent() {
               </Link>
             </Col>
 
+            <Col lg={4} md={6} data-aos="fade-up">
+              <Link href="/services/mobile-clinical" className="blog-list d-block">
+                <div className="overflow-hidden">
+                  <Image
+                    src={IMAGES.MOBILECLINICAL}
+                    width={500}
+                    height={300}
+                    alt="Mobile Clinical Services"
+                    className="w-100 h-auto"
+                    style={{ objectFit: "cover" }}
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                  />
+                </div>
+                <h3>Mobile Clinical <br/>Services </h3>
+                <p>Bringing clinical trial care directly to patients, anywhere.</p>
+                <Arrow />
+              </Link>
+            </Col>
+
 
 
 
             {/* CATEGORY: QUALITY & COMPLIANCE */}
             <Col lg={12} className="text-center mt-5 mb-4" data-aos="fade-up" id="quality-and-compliance">
-              <h2 className="h4">Quality & <span>Compliance</span></h2>
+              <h2 className="h4">Quality & Digital <span>Compliance</span></h2>
             </Col>
 
             <Col lg={4} md={6} data-aos="fade-up">
@@ -172,7 +195,7 @@ export default function ServicesContent() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
-                <h3>Quality & Compliance <br/> Services</h3>
+                <h3>Quality &   Compliance<br/> Services</h3>
                 <p>Strengthening quality systems with expert, end-to-end compliance support.</p>
                 <Arrow />
               </Link>
@@ -244,24 +267,7 @@ export default function ServicesContent() {
 
           
 
-  <Col lg={4} md={6} data-aos="fade-up">
-              <Link href="/services/mobile-clinical" className="blog-list d-block">
-                <div className="overflow-hidden">
-                  <Image
-                    src={IMAGES.MOBILECLINICAL}
-                    width={500}
-                    height={300}
-                    alt="Mobile Clinical Services"
-                    className="w-100 h-auto"
-                    style={{ objectFit: "cover" }}
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                  />
-                </div>
-                <h3>Mobile Clinical <br/>Services</h3>
-                <p>Bringing clinical trial care directly to patients, anywhere.</p>
-                <Arrow />
-              </Link>
-            </Col>
+  
            
 
             {/* CATEGORY: PHARMACOVIGILANCE */}
@@ -365,13 +371,13 @@ export default function ServicesContent() {
                     src={IMAGES.TALENTACQUISITION}
                     width={500}
                     height={300}
-                    alt="Talent Acquisition Services"
+                    alt="Talent Acquisition "
                     className="w-100 h-auto"
                     style={{ objectFit: "cover" }}
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
-                <h3>Talent Acquisition<br/> Services</h3>
+                <h3>Talent Acquisition<br/>  Services</h3>
                 <p>Connecting you with specialised talent to power your growth.</p>
                 <Arrow />
               </Link>

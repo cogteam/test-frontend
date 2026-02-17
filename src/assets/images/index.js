@@ -27,6 +27,12 @@ import GolanzarLogo from './banner/GOLANZAR-WHITE-new.svg';
 import InluminLogo from './banner/INLUMIN-WHITE.svg';
 import AnomIQLogo from './banner/Anom-IQ-WHITE.svg';
 
+import NoteIQLogoFull from '../images/logo/NOTEIQ.svg';
+import NovaVigilLogoFull from '../images/logo/NOVAVIGIL.svg';
+import GolanzarLogoFull from '../images/logo/GOLANZAR.svg';
+import InluminLogoFull from '../images/logo/INLUMIN.svg';
+import AnomIQLogoFull from '../images/logo/ANTOM-IQ.svg';
+
 import GolanzarHome from "./banner/GoLanzar-banner.webp";
 import InluminHome from "./banner/inlumin-banner.webp";
 import NoteiqHome from "./banner/NoteIQbanner.webp";
@@ -40,12 +46,12 @@ import GolanzarListing from './listing/GoLanzar-listing.webp';
 import InluminListing from './listing/InLumin-listing.webp';
 import NoteIQListing from './listing/NoteIQ-listing.webp';
 import NovaVigilListing from './listing/NovaVigil-listing.webp';
-import ClinicalOperations from './listing/clinical-operations.webp';
+import ClinicalOperations from './listing/clinical-operations1.webp';
 import ComputerSystem from './listing/computer-system.webp';
 import DigitalManufacturing from './listing/digital-manufacturing.webp';
-import GlobalPharmacovill from './listing/global-pharmacovill.webp';
+import GlobalPharmacovill from './listing/global-pharmacovill1.webp';
 import HumanCapital from './listing/human-capital.webp';
-import HumanCapitalDigitisation from './listing/human-capital-digitisation-services.webp';
+import HumanCapitalDigitisation from './listing/human-capital-digitisation-services1.webp';
 import IntellectualProperty from './listing/Intellectual.webp';
 import MobileClinical from './listing/mobile-clinical.webp';
 import OperationalExcellence from './listing/operational-excellence.webp';
@@ -101,9 +107,9 @@ import vision_logo from "./vision-logo.svg";
 import mission_logo from "./mission-logo.svg";
 import vision_logo_white from "./vision-logo-white.svg";
 import mission_logo_white from "./mission-logo-white.svg";
-import Collaboration from "./Collaboration.svg";
-import CustomerCentricity from "./CustomerCentricity.svg";
-import Efficiency from "./Efficiency.svg";
+import Collaboration from "./logo/Accountability.svg";
+import CustomerCentricity from "./logo/Compliance.svg";
+import Efficiency from "./logo/Respect.svg";
 import Excellence from "./Excellence.svg";
 import Integrity from "./Integrity.svg";
 
@@ -139,7 +145,7 @@ import Client_Banner from './client-banner.webp';
 
 import Aboutbanner from './about-us-banner.webp';
 import Challengesimages from "./vision-mission-img.webp";
-import Values1 from "./values1.png";
+import Values1 from "./values1.webp";
 
 import GxP from './services/quality/GxP-Audit-Services.webp';
 import ISO from './services/quality/ISO-Certification-Consulting.webp';
@@ -161,6 +167,26 @@ import Regulatoryicon from "./services/quality/Regulatory-Expertise-icon.svg"
 // --------------------------------------------------
 
 import fromimg from "./from-img.png";
+
+import AnomIqf from "./AnomIq-f.webp";
+import GoLanzarf from "./GoLanzar-f.webp";
+import InLuminf from "./InLumin-f.webp";
+import Noteiqf from "./noteiq-f.webp";
+import NovaVigilf from "./NovaVigil-f.webp";
+
+
+import Clinical from "./Clinical-Operations-f.webp";
+import Computer from "./Computer-System-Validation-f.webp";
+import Digital from "./Digital-Manufacturing-f.webp";
+import Global_f from "./Global-Pharmcovigilance-f.webp";
+import human_C from "./human-capital-consulting-f.webp";
+import human_D from "./human-capital-digitalistion-f.webp";
+import Intellectual from "./Intellectual-Property-Consulting-f.webp";
+import mobile from "./mobile-clinical-services-f.webp";
+import Operational_f from "./Operational-Excellence-f.webp";
+import Quality from "./Quality-&-Compliance-service-f.webp";
+import talent from "./talent-aquastion-services-f.webp";
+import Track from "./Track-&-Trace-Solutions-f.webp";
 
 import Audit from "./services/computer/Audit-Readines.svg"
 import Business from "./services/computer/Business-Impac.svg"
@@ -196,7 +222,7 @@ import Multi from "./services/Multi-Geography.svg"
 import Reducing from "./services/Reducing-Costs.svg"
 import Robust from "./services/Robust.svg"
 import SMEs from "./services/SMEs.svg"
-import Auditwhite from "./services/Audit-Ready-white.svg"
+import Auditwhite2 from "./services/Audit-Ready2.svg"
 import Effectivelywhite from "./services/Effectively-white.svg"
 import Multiwhite from "./services/Multi-Geography-white.svg"
 import Reducingwhite from "./services/Reducing-Costs-white.svg"
@@ -373,6 +399,22 @@ import Human_DataIcon from "./services/Human/Data-Storage-and-Processing-icon.sv
 import Human_EquipmentIcon from "./services/Human/Equipment-Connectivity-and-Data-Acquisition-icon.svg"
 import Human_ManufacturingIcon from "./services/Human/Manufacturing-Applications-icon.svg"
 import Human_Banner from './services/Human/banner.webp';
+
+
+
+import Business_Aligned from './services/Human/Business-Aligned-People-Strategy.svg';
+import Business_Aligned_white from './services/Human/Business-Aligned-People-Strategy-white.svg';
+
+import Future_Ready_Organisations from './services/Human/Future-Ready-Organisations.svg';
+import Future_Ready_Organisations_white from './services/Human/Future-Ready-Organisations-white.svg';
+
+import Practical_Implementation from './services/Human/Practical-Implementation-Focused-Approach.svg';
+import Practical_Implementation_white from './services/Human/Practical-Implementation-Focused-Approach-white.svg';
+
+import Sustainable_Capability from './services/Human/Sustainable-Capability-Building.svg';
+import Sustainable_Capability_white from './services/Human/Sustainable-Capability-Building-white.svg';
+
+
 
 // --- NEW TALENT ACQUISITION IMPORTS ---
 import Talent_Campus from './services/talent/Campus-Hiring.webp';
@@ -624,6 +666,21 @@ import Vision from "./vision.webp";
 // ----------------------------------------------------------------------------------------
 
 export const IMAGES = {
+
+  Business_Aligned: Business_Aligned,
+  Business_Aligned_white: Business_Aligned_white,
+
+  Future_Ready_Organisations: Future_Ready_Organisations,
+  Future_Ready_Organisations_white: Future_Ready_Organisations_white,
+
+  Practical_Implementation: Practical_Implementation,
+  Practical_Implementation_white: Practical_Implementation_white,
+
+  Sustainable_Capability: Sustainable_Capability,
+  Sustainable_Capability_white: Sustainable_Capability_white,
+
+
+
 
   Vision: Vision,
 
@@ -1014,7 +1071,7 @@ export const IMAGES = {
   Reducing: Reducing,
   Robust: Robust,
   SMEs: SMEs,
-  Auditwhite: Auditwhite,
+  Auditwhite2: Auditwhite2,
   Effectivelywhite: Effectivelywhite,
   Multiwhite: Multiwhite,
   Reducingwhite: Reducingwhite,
@@ -1051,6 +1108,30 @@ export const IMAGES = {
 
   // General & Home
   Fromimg: fromimg,
+
+  //Products
+  AnomIqf: AnomIqf,
+  GoLanzarf: GoLanzarf,
+  InLuminf: InLuminf,
+  Noteiqf: Noteiqf,
+  NovaVigilf: NovaVigilf,
+
+  //Service
+  Clinical: Clinical,
+  Computer: Computer,
+  Digital: Digital,
+  Global_f: Global_f,
+  human_C: human_C,
+  human_D: human_D,
+  Intellectual: Intellectual,
+  mobile: mobile,
+  Operational_f: Operational_f,
+  Quality: Quality,
+  talent: talent,
+  Track: Track,
+
+
+
   Aboutbanner: Aboutbanner,
   Challengesimages: Challengesimages,
   Values1: Values1,
@@ -1129,6 +1210,14 @@ export const IMAGES = {
   NOTEIQBANNER: NoteiqHome,
   NOVAVIGILBANNER: NovavigilHme,
   ANOMIQBANNER: AnomIQBanner,
+
+  NoteIQLogoFull: NoteIQLogoFull,
+  NovaVigilLogoFull: NovaVigilLogoFull,
+  GolanzarLogoFull: GolanzarLogoFull,
+  InluminLogoFull: InluminLogoFull,
+  AnomIQLogoFull: AnomIQLogoFull,
+
+
   DOTS: DOTS,
 
   // Listings
