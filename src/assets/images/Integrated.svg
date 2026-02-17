@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="2112.71" y1="-4167" x2="2117.44" y2="-4167" gradientTransform="translate(-46191.8 -91228.51) scale(21.91 -21.91)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0e90a2"/>
+      <stop offset=".32" stop-color="#19a574"/>
+      <stop offset="1" stop-color="#90c43c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="2005.94" y1="-4424.86" x2="2010.67" y2="-4424.86" gradientTransform="translate(-21365.24 -47125.95) scale(10.67 -10.67)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="2124.51" y1="-4281.39" x2="2129.24" y2="-4281.39" gradientTransform="translate(-54718.01 -64494.75) scale(25.76 -15.1)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_15967" data-name="Group 15967">
+    <g id="Validation-Filled">
+      <path id="Path_27048" data-name="Path 27048" class="cls-3" d="M184.48,45.69c-2.4-5.76,1.79-16.09-2.55-20.41-4.34-4.32-14.67-.15-20.41-2.55-5.56-2.37-9.85-12.67-16.27-12.67s-10.69,10.32-16.21,12.63c-5.8,2.4-16.12-1.79-20.46,2.55-4.34,4.34-.15,14.67-2.55,20.46-2.31,5.52-12.63,9.8-12.63,16.21s10.32,10.71,12.63,16.22c2.4,5.75-1.79,16.07,2.55,20.41s14.67.15,20.41,2.55c5.56,2.37,9.85,12.68,16.26,12.68s10.71-10.32,16.22-12.64c5.75-2.4,16.06,1.79,20.41-2.55,4.34-4.34.15-14.67,2.55-20.41,2.37-5.56,12.68-9.85,12.68-16.27s-10.32-10.69-12.63-16.21h0ZM140.54,82.69l-17.51-17.51,6.63-6.63,10.84,10.83,24.94-24.93,6.63,6.63-31.58,31.58.06.03Z"/>
+    </g>
+    <g id="Group_15171" data-name="Group 15171">
+      <path id="Path_26171" data-name="Path 26171" class="cls-1" d="M88.65,87.53c0,13.95-11.3,25.25-25.25,25.26-13.95,0-25.25-11.3-25.26-25.25,0-13.95,11.3-25.25,25.25-25.26h0c13.94,0,25.25,11.3,25.25,25.25Z"/>
+    </g>
+    <path id="Path_27049" data-name="Path 27049" class="cls-2" d="M124.81,189.93H2.9c3.89-40.32,29.69-71.47,60.95-71.47s57.08,31.17,60.96,71.47h0Z"/>
+  </g>
+</svg>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1545.43" y1="-6802.13" x2="1550.55" y2="-6802.13" gradientTransform="translate(-50972.77 -8995.36) scale(32.99 -1.35)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0e90a2"/>
+      <stop offset=".32" stop-color="#19a574"/>
+      <stop offset="1" stop-color="#90c43c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1354.93" y1="-3438.31" x2="1360.05" y2="-3438.31" gradientTransform="translate(-8952.4 -95051.19) scale(6.62 -27.68)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="1357.9" y1="-3399.4" x2="1363.01" y2="-3399.4" gradientTransform="translate(-8842 -121458.5) scale(6.55 -35.76)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="1363.12" y1="-3499.61" x2="1368.23" y2="-3499.61" gradientTransform="translate(-8833.69 -71304.55) scale(6.55 -20.41)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-5" x1="1368.09" y1="-3594.91" x2="1373.21" y2="-3594.91" gradientTransform="translate(-8825.77 -51967.3) scale(6.55 -14.5)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_15435" data-name="Group 15435">
+    <rect id="Rectangle_648" data-name="Rectangle 648" class="cls-5" x="15.57" y="190.87" width="168.87" height="6.91"/>
+    <rect id="Rectangle_649" data-name="Rectangle 649" class="cls-1" x="15.89" y="43.57" width="33.88" height="141.66"/>
+    <rect id="Rectangle_650" data-name="Rectangle 650" class="cls-3" x="59.01" y="2.22" width="33.55" height="183.01"/>
+    <rect id="Rectangle_651" data-name="Rectangle 651" class="cls-2" x="101.53" y="80.75" width="33.55" height="104.48"/>
+    <rect id="Rectangle_652" data-name="Rectangle 652" class="cls-4" x="142.09" y="111.04" width="33.55" height="74.2"/>
+  </g>
+</svg>

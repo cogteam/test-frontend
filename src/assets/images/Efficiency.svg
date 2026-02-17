@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-2" d="M2.68,185.5h97.32L2.68,47.81v137.69ZM100,185.5h97.32V47.81l-97.32,137.69ZM48.95,63.82c0,27.24,22.08,49.32,49.32,49.32s49.32-22.08,49.32-49.32S125.5,14.5,98.26,14.5s-49.32,22.08-49.32,49.32"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="1843.24" y1="2452.22" x2="1844.4" y2="2452.22" gradientTransform="translate(-371017.59 493658.1) scale(201.27 -201.27)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a91a3"/>
+      <stop offset=".3" stop-color="#1ca677"/>
+      <stop offset="1" stop-color="#73be44"/>
+    </linearGradient>
+    <clipPath id="clippath-1">
+      <path class="cls-2" d="M306.22,142.06c-21.08,0-38.61-5.02-38.61-5.02l38.61,57,38.61-57s-12.26,5.02-38.61,5.02M286.55,78.77c-10.86,10.86-10.86,28.48,0,39.34,10.86,10.86,28.48,10.86,39.34,0,10.86-10.86,10.86-28.47,0-39.34-5.43-5.43-12.55-8.15-19.67-8.15s-14.24,2.72-19.67,8.15M210.61,98.43l57,38.61s-5.02-17.53-5.02-38.61c0-26.35,5.02-38.61,5.02-38.61l-57,38.61ZM267.61,59.83s12.26-5.02,38.61-5.02c20.99,0,38.46,4.98,38.61,5.02.04.14,5.02,17.61,5.02,38.61,0,26.35-5.02,38.61-5.02,38.61l57-38.61-57-38.61L306.22,2.82l-38.61,57Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="1841.8" y1="2465.93" x2="1843.11" y2="2465.93" gradientTransform="translate(-190505.54 255479.77) scale(103.56 -103.56)" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath-2">
+      <path class="cls-2" d="M10.17,405h78.01L10.17,326.99v78.01ZM124.25,405h78.01v-78.01l-78.01,78.01ZM74.69,308.96c0,17.41,14.12,31.53,31.53,31.53s31.53-14.12,31.53-31.53-14.12-31.53-31.53-31.53-31.53,14.12-31.53,31.53M10.17,212.91v78.01l78.01-78.01H10.17ZM124.25,212.91l78.01,78.02v-78.02h-78.01Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="1838.95" y1="2454.59" x2="1840.26" y2="2454.59" gradientTransform="translate(-380932.12 508729.41) scale(207.13 -207.13)" xlink:href="#linear-gradient"/>
+    <clipPath id="clippath-3">
+      <path class="cls-2" d="M216.39,308.95c0,50.88,39.57,92.53,89.61,95.83,2.13.14,4.27.21,6.43.21,2.4,0,4.78-.09,7.14-.26,47.35-3.48,85.16-41.29,88.64-88.65.06-.85.11-1.7.15-2.56h-34.33s0,0,0,.01c-2.24,30.46-26.55,54.78-57.01,57.01-1.52.11-3.05.17-4.59.17-1.39,0-2.77-.05-4.14-.14-32.18-2.13-57.63-28.91-57.63-61.64s27.66-61.77,61.77-61.77v-34.27c-53.04,0-96.04,43-96.04,96.04M366.22,212.91l-30,30.28h41.69v42.39l30.56-30.28v-42.39h-42.25Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="1837.56" y1="2457.95" x2="1838.87" y2="2457.95" gradientTransform="translate(-324650.19 434855.04) scale(176.79 -176.79)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g class="cls-9">
+    <rect class="cls-8" x="-29.27" y="-29.27" width="258.54" height="258.54" transform="translate(-41.42 100) rotate(-45)"/>
+  </g>
+  <g class="cls-5">
+    <rect class="cls-1" x="171" y="-36.78" width="270.43" height="270.43" transform="translate(20.09 245.36) rotate(-45)"/>
+  </g>
+  <g class="cls-7">
+    <rect class="cls-4" x="-29.61" y="173.13" width="271.66" height="271.66" transform="translate(-187.36 165.6) rotate(-45)"/>
+  </g>
+  <g class="cls-6">
+    <rect class="cls-3" x="176.61" y="173.13" width="271.65" height="271.65" transform="translate(-126.96 311.42) rotate(-45)"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="1948.59" y1="-3525.96" x2="1953.71" y2="-3525.96" gradientTransform="translate(-69704.19 -63640.94) scale(35.78 -18.06)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0e90a2"/>
+      <stop offset=".32" stop-color="#19a574"/>
+      <stop offset="1" stop-color="#90c43c"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="1948.59" y1="-3690.91" x2="1953.71" y2="-3690.91" gradientTransform="translate(-69704.25 -40930.07) scale(35.78 -11.12)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="1948.59" y1="-3693.39" x2="1953.71" y2="-3693.39" gradientTransform="translate(-69704.25 -40920.23) scale(35.78 -11.12)" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-4" x1="1948.59" y1="-3695.84" x2="1953.71" y2="-3695.84" gradientTransform="translate(-69704.25 -40913.58) scale(35.78 -11.12)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_15433" data-name="Group 15433">
+    <path id="Path_26359" data-name="Path 26359" class="cls-4" d="M8.43,44.88L100.89,2.2l90.68,42.68-91.57,49.79L8.43,44.88Z"/>
+    <path id="Path_26360" data-name="Path 26360" class="cls-1" d="M8.43,84l21.34-10.67,70.23,35.56,68.46-35.56,23.11,10.67-91.57,46.24L8.43,84Z"/>
+    <path id="Path_26361" data-name="Path 26361" class="cls-3" d="M8.43,117.75l21.34-10.67,70.23,35.56,68.46-35.56,23.11,10.67-91.57,46.23L8.43,117.75Z"/>
+    <path id="Path_26362" data-name="Path 26362" class="cls-2" d="M8.43,151.57l21.34-10.67,70.23,35.56,68.46-35.56,23.11,10.67-91.57,46.23L8.43,151.57Z"/>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="158.18 128.82 119.88 88.11 112.51 27.53 77.12 12.65 35.24 39.16 33.1 35.78 76.75 8.16 116.2 24.74 123.69 86.32 161.1 126.08 158.18 128.82"/>
+  <g id="Group_15946" data-name="Group 15946">
+    <rect id="Rectangle_648" data-name="Rectangle 648" class="cls-1" x="17.26" y="193.82" width="165.49" height="3.96"/>
+    <rect id="Rectangle_649" data-name="Rectangle 649" class="cls-1" x="17.57" y="61.36" width="33.2" height="129.24"/>
+    <rect id="Rectangle_650" data-name="Rectangle 650" class="cls-1" x="59.83" y="30.16" width="32.88" height="160.44"/>
+    <rect id="Rectangle_651" data-name="Rectangle 651" class="cls-1" x="101.5" y="105.5" width="32.88" height="85.1"/>
+    <rect id="Rectangle_652" data-name="Rectangle 652" class="cls-1" x="141.24" y="148.12" width="32.88" height="42.49"/>
+  </g>
+  <circle class="cls-1" cx="34.17" cy="40.8" r="8.19"/>
+  <circle class="cls-1" cx="76.27" cy="10.41" r="8.19"/>
+  <circle class="cls-1" cx="121.77" cy="84.14" r="8.19"/>
+  <circle class="cls-1" cx="159.64" cy="130.77" r="8.19"/>
+</svg>
