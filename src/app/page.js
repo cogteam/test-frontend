@@ -20,8 +20,8 @@ import Applied from "../assets/images/Applied-scientific.svg";
 import Execution from "../assets/images/logo/Execution-focused.svg";
 import Pharma from "../assets/images/logo/Pharma.svg";
 import Regulatory from "../assets/images/logo/Regulatory.svg";
-import Capture1 from "../assets/images/Capture1.PNG";
-import Capture2 from "../assets/images/Capture2.PNG";
+import Capture1 from "../assets/images/capture1.PNG";
+import Capture2 from "../assets/images/capture2.PNG";
 
 import circle from "../assets/images/circle.svg"
 
