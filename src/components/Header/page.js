@@ -93,7 +93,7 @@ const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
                   Overview
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} href="/about#vision">
-                  Vision , Mission & Values
+                  Vision, Mission & Values
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} href="/about#leadership">
                   Leadership

@@ -506,10 +506,20 @@ padding: 30px;
 
 
 @media (max-width:767px) {
-   
-   .slick-slider .slick-dots li {
-    margin: 0 0 !important;
-}
+    .sr-tab-dtls-dta{
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    .sr-tab-dtls-dta ul{
+        padding: 0 !important;
+    }
+    .dk-hide-logo{
+        display: none !important;
+    }
+   .mb-show-logo.d-none {
+    display:  block !important;
+   }
+  
  .banner-home .slick-dots  li {
     margin: 0 5px !important;
 }

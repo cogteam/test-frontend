@@ -254,6 +254,8 @@ export default function HumanCapitalDigitisationClient() {
         </Container>
     </div>
 
+
+
     <div className="grey pad80 choose-wrapper">
       <Container>
         <h2 className="h4 text-center" data-aos="fade-up">Key Differentiators</h2>
@@ -359,6 +361,22 @@ export default function HumanCapitalDigitisationClient() {
         </Row>
       </Container>
     </div>
+
+    <div className="grey2 pad80 ai-hcm">
+      <Container>
+         <h2 className="h4 text-center" data-aos="fade-up">Revolutionizing Human Capital<br/>  <span>with AI-Powered HCM</span></h2>
+
+        <div className="col-9 text-center m-auto">
+             <p>Human Capital Management is evolving into a powerful driver of growth — defined by seamless experiences, intelligent insights, and organizational agility. Together with Darwinbox, we are transforming how organizations attract, engage, develop, and retain talent through an AI-powered HCM platform built for the modern workforce.</p>
+         <p>At the heart of this transformation is a next-generation HR ecosystem that blends deep automation with predictive intelligence. From smart hiring and seamless onboarding to performance management, payroll, workforce analytics, and employee engagement — every touchpoint is unified, intuitive, and insight-driven.</p>
+
+          <a href="#expert-driven" onClick={scrollToForm} className="sr-btn mt-4 d-inline-block" style={{cursor: 'pointer'}}>
+                                            <span>Know More</span>
+                                        </a>   
+
+        </div>
+      </Container>
+</div>
 
     <div className="pad80 grey discover-from" id="expert-driven">
                <Container>

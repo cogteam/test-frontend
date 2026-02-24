@@ -7,7 +7,7 @@ import { IMAGES } from "../../assets/images/index.js";
 
 export default function Nexgen() {
   const [nav1, setNav1] = useState(null);
-  const [nav3, setNav3] = useState(null);
+  const [nav3, setNav3] = useState(null); 
   
   // Main content slider settings
   const settingsMain = {
@@ -74,7 +74,8 @@ export default function Nexgen() {
                  <Image src={IMAGES.NOTEIQBANNER} alt="" style={{ height: "600px" }} className="w-100" />
                 </div>
               <div className="nextgen-data">
-                <Image src={IMAGES.NOTEIQLOGO} alt="" />
+                <Image src={IMAGES.NOTEIQLOGO} alt="" className="dk-hide-logo" />
+                <Image src={IMAGES.NoteIQLogoFull} alt="" className="mb-show-logo d-none" />
                 <p>
                   A cutting-edge platform engineered to revolutionize validation, documentation and training management delivering unmatched compliance and productivity.
                 </p>
@@ -96,7 +97,8 @@ export default function Nexgen() {
                 <Image src={IMAGES.ANOMIQBANNER} alt="" style={{ height: "600px" }} className="w-100" />
             </div> 
               <div className="nextgen-data">
-                <Image src={IMAGES.ANOMIQLOGO} alt="" style={{ width: "160px" }} />
+                <Image src={IMAGES.ANOMIQLOGO} alt="" style={{ width: "160px" }} className="dk-hide-logo"  />
+                <Image src={IMAGES.AnomIQLogoFull} alt="" className="mb-show-logo d-none" />
                 <p>
                   AnomIQ automates anomaly detection and compliance management, helping teams identify issues early, maintain data integrity and achieve confident regulatory compliance.
                 </p>
@@ -118,7 +120,8 @@ export default function Nexgen() {
                 <Image src={IMAGES.GOLANZARBANNER} alt="" style={{ height: "600px" }} className="w-100" />
               </div>
               <div className="nextgen-data">
-                <Image src={IMAGES.GOLANZARLOGO} alt="" />
+                <Image src={IMAGES.GOLANZARLOGO} alt="" className="dk-hide-logo" />
+                <Image src={IMAGES.GolanzarLogoFull} alt="" className="mb-show-logo d-none" />
                 <p>
                   GoLanzar is an integrated launch management platform that streamlines pharmaceutical launches through intelligent automation, real-time collaboration, and data-driven insights for faster and more efficient market entry.
                 </p>
@@ -140,7 +143,8 @@ export default function Nexgen() {
               <Image src={IMAGES.INLUMINBANNER} alt="" style={{ height: "600px" }} className="w-100" />
               </div>
               <div className="nextgen-data">
-                <Image src={IMAGES.INLUMINLOGO} alt="" />
+                <Image src={IMAGES.INLUMINLOGO} alt="" className="dk-hide-logo" />
+                <Image src={IMAGES.InluminLogoFull} alt="" className="mb-show-logo d-none" />
                 <p>
                   InLumin is a next-generation procure-to-pay platform that automates procurement, enhances financial governance and delivers full transparency across every transaction, driving speed, accuracy and accountability.
                 </p>
@@ -166,7 +170,8 @@ export default function Nexgen() {
               <Image src={IMAGES.NOVAVIGILBANNER} alt="" style={{ height: "600px" }} className="w-100" />
             </div>
               <div className="nextgen-data">
-                <Image src={IMAGES.NOVAVIGILLOGO} alt="" />
+                <Image src={IMAGES.NOVAVIGILLOGO} alt="" className="dk-hide-logo" />
+                <Image src={IMAGES.NovaVigilLogoFull} alt="" className="mb-show-logo d-none" />
                 <p>
                   NovaVigil transforms pharmacovigilance with intelligent automation and real-time insights, enabling teams to detect risks faster, stay compliant, and protect patient safety with precision.
                 </p>
