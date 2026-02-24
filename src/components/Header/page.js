@@ -161,7 +161,7 @@ const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
                         <NavDropdown.Item as={Link} href="/services/computer-system-validation" className="submenu">
                           Computer System Validation
                         </NavDropdown.Item>
-                        <NavDropdown.Item as={Link} href="/services/quality-and-compliances" className="submenu">
+                        <NavDropdown.Item as={Link} href="/services/quality-and-compliance" className="submenu">
                          Quality & Compliance Services
                         </NavDropdown.Item>
                         <NavDropdown.Item as={Link} href="/services/operational-excellence" className="submenu">
