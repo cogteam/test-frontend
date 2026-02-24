@@ -1,11 +1,11 @@
-import QualityContent from "./QualityContent"; // Import the client component
+// import QualityContent from "./QualityContent"; 
 
-export const metadata = {
-  title: "Quality & Compliance Services | GxP Audits & QMS",
-  description: "Ensure continuous adherence to industry standards with our End-to-End Compliance Support, Regulatory Expertise, and Quality Management System solutions.",
+// export const metadata = {
+//   title: "Quality & Compliance Services | GxP Audits & QMS",
+//   description: "Ensure continuous adherence to industry standards with our End-to-End Compliance Support, Regulatory Expertise, and Quality Management System solutions.",
  
-};
+// };
 
 export default function Page() {
-  return <QualityContent />;
+  return <h1>hello</h1>;
 }
