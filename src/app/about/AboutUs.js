@@ -400,7 +400,7 @@ and our mission. Without them, nothing else matters.
 </p>
                 </Col>
               </Row>
-          </div>
+          </div> 
 
              <div className="year">
               <Row>
