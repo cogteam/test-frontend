@@ -13,6 +13,32 @@
 }
 
 @media (max-width:991px) {
+    .circle-item {
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    border: solid 5px #fff;
+}
+   .journey-slider-para  .slick-dots{
+        margin-top: 0 !important;
+    }
+    .journey-slider {
+    margin-top: 60px;
+}
+    .year-img2 img {
+    height: auto;
+    width: 60px;
+}
+    .year h4 br {
+        display: none;
+    }
+    .year p {
+    font-size: 16px;
+    padding-right: 0%;
+}
+    .year span {
+    font-size: 48px;
+}
     .navbar-list a.btns2:hover span{
          color: #000000a6;
     }
@@ -502,10 +528,44 @@ padding: 30px;
     top: 0;
     border-bottom: none;
 }
+.epic-wrapper p br {
+    display: none;
+}
 }
 
 
 @media (max-width:767px) {
+    .jour2 {
+            margin: 0 13px;
+    }
+    .year span {
+        font-size: 44px;
+    }
+    .year span {
+    font-family: 'CeraPro-Bold' !important;
+    background: linear-gradient(90deg, #0f929d, #38ad66, #8bc33f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+    .year {
+    padding: 30px 0 0;
+    line-height: 1;
+}
+    .journey-slider {
+    padding: 20px 0;
+            margin-top: 40px;
+}
+    .values-box.values-box2 {
+    height: auto;
+}
+.year h4 {
+    font-size: 20px;
+}
+    
+    .flex-circle{
+        flex-wrap: wrap;
+    }
     .form-check {
     align-items: normal;
 }

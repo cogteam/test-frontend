@@ -74,6 +74,22 @@ const BANNER_DATA = [
 
 export default function AboutUs() {
 
+  //Custom Arrows
+const NextArrow = ({ onClick }) => (
+  <div className="custom-arrow next" onClick={onClick}>
+    →
+  </div>
+);
+
+const PrevArrow = ({ onClick }) => (
+  <div className="custom-arrow prev" onClick={onClick}>
+    ←
+  </div>
+);
+
+  const [nav1, setNav1] = useState();
+  const [nav2, setNav2] = useState();
+
     const [activeTab, setActiveTab] = useState("primary");
 
   return (
@@ -277,8 +293,139 @@ and our mission. Without them, nothing else matters.
         </Container>
       </div>
 
+<div className="pad80">
+  <Container>
+      <h2 className="h4 text-center" data-aos="fade-up">OUR JOURNEY   <span> OF EVOLUTION</span></h2>
 
-  <div className="pad80">
+    
+      
+        <div className="jour2 position-relative">
+             <Slider responsive={[
+    {
+      breakpoint: 768, // tablet & mobile
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]} arrows={false} asNavFor={nav2} ref={(slider1) => setNav1(slider1)} slidesToShow={2} className="row journey-slider">
+          <div className="year p-0"><span>2019-21</span></div>
+          <div className="year p-0"><span>2021-22</span></div>
+          <div className="year p-0"><span>2022-23</span></div>
+          <div className="year p-0"><span>2023-24</span></div>
+          <div className="year p-0"><span>2024-25</span></div>
+          <div className="year p-0"><span>2026 & Beyond</span></div>
+      </Slider>
+
+       <Slider
+        asNavFor={nav1}
+        ref={(slider2) => setNav2(slider2)}
+        slidesToShow={1}
+        swipeToSlide={true}
+        // nextArrow={<NextArrow />}
+        // prevArrow={<PrevArrow />}
+        
+        dots={true}
+        focusOnSelect={true} className="row journey-slider-para">
+          <div className="year">
+              <Row>
+                <Col md={12} lg={4}>
+                  <div className="year-img2">
+                    <Image src={IMAGES.fssc} alt=" Logo"  />
+                      <h4>Functional Shared<br/> Services Centre </h4>
+                  </div>
+                </Col>
+                <Col md={12} lg={8}>
+                  <p>The organisation was established through the integration of 350 employees from five pharma entities under Arcolab. This phase focused on stabilising operations, aligning core functions, and building a strong operational foundation to support future growth.</p>
+                </Col>
+              </Row>
+          </div>
+
+          <div className="year">
+              <Row>
+                 <Col md={12} lg={4}>
+                  <div className="year-img2">
+                    <Image src={IMAGES.coe} alt=" Logo"  />
+                      <h4>Center of Excellence </h4>
+                  </div>
+                </Col>
+                <Col md={12} lg={8}>
+                  <p>With a stable base in place, the organisation transitioned into a Centre of Excellence, delivering cross-functional initiatives and driving process optimisation through the adoption of technology-led solutions.</p>
+                </Col>
+              </Row>
+          </div>
+
+
+          <div className="year">
+              <Row>
+                <Col md={12} lg={4}>
+                  <div className="year-img2">
+                    <Image src={IMAGES.ibs} alt=" Logo"  />
+                      <h4>Integrated Business<br /> Solutions </h4>
+                  </div>
+                </Col>
+                <Col md={12} lg={8}>
+                  <p>Strategic expansion was achieved through the acquisition of Neviton Softech Pvt. Ltd., alongside the outsourcing of IT operations to Coforge. These initiatives enhanced digital capabilities and enabled the delivery of more integrated and scalable business solutions.
+</p>
+                </Col>
+              </Row>
+          </div>
+
+
+          <div className="year">
+              <Row>
+                <Col md={12} lg={4}>
+                  <div className="year-img2">
+                    <Image src={IMAGES.gcc} alt=" Logo"  />
+                     <h4>Global Capability <br/>Centre </h4>
+                  </div>
+                </Col>
+                <Col md={12} lg={8}>
+                  <p>The organisation strengthened its position by launching Procure-to-Pay (P2P) and Project Management solutions, while advancing its Technology Centre of Excellence with a focus on RPA and AI. This progress was recognised through industry accolades, including being named among the Top 3 GCCs at the EY GCC Awards 2023 and receiving Gold at the SEEM Awards 2022.
+</p>
+                </Col>
+              </Row>
+          </div>
+
+
+          <div className="year">
+              <Row>
+                <Col md={12} lg={4}>
+                  <div className="year-img2">
+                    <Image src={IMAGES.vcc} alt=" Logo"  />
+                     <h4>Value Creation <br/>Centre</h4>
+                  </div>
+                </Col>
+               <Col md={12} lg={8}>
+                 <p>Expansion into a new office space in Hyderabad marked a significant milestone, alongside the achievement of ISO 27001 and ISO 27701 certifications. Strategic partnerships with Darwinbox, TraceLink, and Leucine, combined with the launch of AI-led platforms and solutions, reinforced the organisation’s focus on innovation and value creation.
+</p>
+                </Col>
+              </Row>
+          </div>
+
+             <div className="year">
+              <Row>
+                <Col md={12} lg={4}>
+                  <div className="year-img2">
+                    <Image src={IMAGES.ibs} alt=" Logo"  />
+                     <h4>Intelligent Business <br/> Solutions</h4>
+                  </div>
+                </Col>
+                <Col md={12} lg={8}>
+                  <p>The formation of the Pivot Path represents the next phase of evolution. With a clear focus on intelligent business solutions, the organisation is positioned to drive innovation, enhance capabilities, and deliver sustained value in a rapidly evolving business landscape.
+</p>
+                </Col>
+              </Row>
+          </div>
+        
+      </Slider>
+      
+     </div>
+
+  </Container>
+</div>  
+
+
+  <div className="pad80 grey2">
   <Container>
     <h2 className="h4 text-center" data-aos="fade-up">
       OUR CORE <span>ETHOS</span>

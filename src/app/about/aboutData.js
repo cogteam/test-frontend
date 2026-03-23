@@ -74,7 +74,7 @@ export const TEAM_DATA = [
   },
   {
     name: "Ajay Balakrishna",
-    role: "IT Operations & Service Delivery",
+    role: "IT Operations ",
     img: IMAGES.AJAY,
     link: "https://www.linkedin.com/in/ajay-balakrishna-1424276/",
     bio: [
@@ -85,7 +85,7 @@ export const TEAM_DATA = [
   },
   {
     name: "Yadhu Gopal Raj Urs",
-    role: "IT Digital & New Technologies",
+    role: "IT New Technologies ",
     img: IMAGES.YADHU,
     link: "https://www.linkedin.com/in/yadhu-urs-776a9115/",
     bio: [
@@ -110,7 +110,7 @@ export const TEAM_DATA = [
   },
   {
     name: "Archana Kamath",
-    role: "Technical Product Management & QA",
+    role: "Technical Product Management",
     img: IMAGES.ARCHANA,
     link: "https://www.linkedin.com/in/archana-kamath-a8316128/",
     bio: [
@@ -125,9 +125,9 @@ export const TEAM_DATA = [
     img: IMAGES.GIRISH_PAI,
     link: "https://www.linkedin.com/in/girishpai79/",
     bio: [
-      "22+ years of experience across various fields like Consumer goods, Medical technology, Pharma technology, etc.",
-      "Worked with companies like PharmaSecure, Philips, Johnson& Johnson, CavinKare, GSK Consumer Heath, Dabur and UST. Experience in Global business development, Consultative Solution Selling, General Management, International Business Partnerships & Alliance and Business leadership.",
-      "Holds an MBA in Marketing & Finance from NMIMS, Maharashtra."
+      "22+ years of experience across various fields like IT, Pharma technology, Medical technology, Consumer Healthcare.",
+      "Worked with companies like PharmaSecure, Philips, Johnson& Johnson,CavinKare, GSK Consumer Heath, Dabur and UST. Experience in Global business development, Consultative Solution Selling, General Management, International Business Partnerships & Alliance  and Business leadership.",
+      "Holds an MBA in Marketing & Finance from NMIMS, Mumbai & BE (Chemical Engineering) from MIT, Manipal."
     ]
   },
   {
@@ -180,28 +180,63 @@ export const TEAM_DATA = [
     img: IMAGES.SUNANDHA,
     link: "https://www.linkedin.com/in/sunandhagovindan/",
     bio: [
-      "15+ years of corporate experience, working with organizations like Strides, Bosch, Quintiles (now IQVIA), and Hinduja Global Solutions across the pharmaceuticals, automobile, and ITES industries.",
-      "She specializes in building capabilities, fostering talent and culture, employee and leadership development, implementing digital learning strategies, and shaping talent management processes. Her expertise extends to recruitment, HR professional services, and operations, and she is a certified instructional designer and facilitator.",
-      "Holds an MBA in Business Management from Manipal University. Certification in Executive Development in Talent Management from XLRI."
+      "16+ years of experience across the pharmaceuticals, automotive, and ITES industries. She has worked with global organizations including Strides, Bosch, Quintiles (now IQVIA), and Hinduja Global Solutions.",
+      " At Arcolab, she leads the human resources function, steering people strategy, capability building, talent and leadership development, and culture. She is known for creating future-ready people strategies that align talent, performance, and business growth. She brings expertise in talent management, HR operations, and digital learning. ",
+      "She holds an MBA in Business Management from Manipal University and an Executive Development certification in Talent Management from XLRI."
     ]
   },
+  {
+    name: "Bharatha Bhushana",
+    role: "Product Development",
+    img: IMAGES.bharat,
+    link: "https://www.linkedin.com/in/bharatha-bhushana-898858/",
+    bio: [
+      "26+ years of experience in technology leadership across regulated global industries, with deep expertise in product engineering, cloud native, data, and AI led platforms.",
+      "Managed $30M+ strategic accounts and led 400+ global teams, delivering large scale programs across North America, Europe, and Asia.",
+      "Proven track record in driving digital transformation and automation for global clients including FedEx, Pfizer, Walt Disney, Charles Schwab, and Strides Pharma."
+    ]
+  },
+   {
+    name: "Rajesh Kumar Sahu",
+    role: "Product Development",
+    img: IMAGES.rajesh,
+    link: "https://www.linkedin.com/in/rajesh-kumar-sahu-262898327/",
+    bio: [
+      "Technology experience, including 18+ years in enterprise and product development across regulated and compliance driven environments.",
+      "Strong expertise in cloud native, microservices, AI, and data driven architectures, with end to end delivery ownership.",
+      "Known for structured, hands on leadership, translating complex business and regulatory needs into scalable solutions."    ]
+  },
+
+  {
+    name: "Naveen Kumar H. D",
+    role: "Associate Director, Pharmacovigilance",
+    img: IMAGES.naveen,
+    link: "https://www.linkedin.com/in/naveen-kumar-5903474b/",
+    bio: [
+      "13+ years of experience in the pharmaceutical industry, including pharmacovigilance (drug safety).",
+      "Establish and maintain the pharmacovigilance system and to ensure compliance with EU, UK, US, Canada & ROW regulations. Management of ICSRs, PBRERs, PADERs, RMPs, REMS, PSMF, signal management, medical enquiries, safety database and call center operations.",
+      "He holds an M.Pharm in Clinical Pharmacy."
+    ]
+  },
+
+
   // Note: The "Delivery Practices Leader" header should be handled in the component code 
   // by inserting a header before Rahul Nair if rendering logic requires it, 
   // or simply rendering it as part of the hidden section content.
-  {
-    name: "Rahul Nair",
-    role: "Global Pharmacovigilance",
-    img: IMAGES.RAHUL_NAIR,
-    link: "https://www.linkedin.com/in/rahul-nair-20796032/",
-    bio: [
-      "25+ years of pharmaceutical industry, with 14 years of experience in pharmacovigilance business process implementation and management.",
-      "Life Member of Indian Pharmaceutical Association, Peer reviewer & referee for international journals such as Drug development & industrial pharmacy.",
-      "Holds a Masters in Pharmacy in Industrial Pharmacy from the Institute of Pharmaceutical Technology, Chidambaram."
-    ]
-  },
+  // {
+  //   name: "Rahul Nair",
+  //   role: "Global Pharmacovigilance",
+  //   img: IMAGES.RAHUL_NAIR,
+  //   link: "https://www.linkedin.com/in/rahul-nair-20796032/",
+  //   bio: [
+  //     "25+ years of pharmaceutical industry, with 14 years of experience in pharmacovigilance business process implementation and management.",
+  //     "Life Member of Indian Pharmaceutical Association, Peer reviewer & referee for international journals such as Drug development & industrial pharmacy.",
+  //     "Holds a Masters in Pharmacy in Industrial Pharmacy from the Institute of Pharmaceutical Technology, Chidambaram."
+  //   ]
+  // },
   {
     name: "Kiran Kumar A",
-    role: "Computer System Validation",
+    role: "Quality & Digital Compliance ",
     img: IMAGES.KIRAN,
     link: "https://www.linkedin.com/in/kiran-kumar-a-569563117/",
     bio: [
@@ -216,8 +251,8 @@ export const TEAM_DATA = [
     img: IMAGES.DR_VIMLA,
     link: "https://www.linkedin.com/in/vimla-dsouza-0a042314/",
     bio: [
-      "19+ years of experience in Clinical Research (BA/BE, Phase II/III) and Pharmacovigilance, with strong expertise in clinical operations and medical oversight.",
-      "Worked with organizations such as Lotus Labs, Apotex Research, Asiatic Clinical Research, Quintiles Research, Novo Nordisk, and Pivot Path, leading initiatives in Clinical Strategy, Medical Complaint Assessment, and Audit Readiness.",
+      "21+ years of experience in Clinical Research (BA/BE, Phase II/III) and Pharmacovigilance, with strong expertise in clinical operations and medical oversight.",
+      "Worked with organizations such as Lotus Labs, Apotex Research, Asiatic Clinical Research, Quintiles Research, Novo Nordisk, and Arcolab Pvt. Ltd., leading initiatives in Clinical Strategy, Medical Complaint Assessment, and Audit Readiness.",
       "MBBS from Shri Siddhartha Medical College, Tumkur, Karnataka."
     ]
   },
@@ -228,7 +263,7 @@ export const TEAM_DATA = [
     link: "https://www.linkedin.com/in/prakash-reddy-85a55a170/?originalSubdomain=in",
     bio: [
       "25+ years of experience in the Information Technology and Pharmaceutical sectors, leading enterprise infrastructure and digital transformation initiatives.",
-      "Worked with Pivot Path, Strides Pharma Science, and Remed Labs, with expertise in Datacenter & Cloud Management, Network Design (LAN/WAN), Turnkey Integrations, and IT Cost Optimization.",
+      "Worked with Strides Pharma Science, and Remed Labs, with expertise in Datacenter & Cloud Management, Network Design (LAN/WAN), Turnkey Integrations, and IT Cost Optimization.",
       "Diploma in Electronics and Bachelor of Computer Applications, Bangalore, Karnataka."
     ]
   },
@@ -238,34 +273,34 @@ export const TEAM_DATA = [
     img: IMAGES.KARTHIK,
     link: "https://www.linkedin.com/in/karthick-r-8971aa92/",
     bio: [
-      "17+ years of experience across Specialty Chemicals, Pharmaceuticals, Biopharma, and Manufacturing, driving excellence in operations, safety, and process optimization.",
-      "Worked with organizations such as Tagros Chemicals, Saint-Gobain, IMC Limited, AstraZeneca, Ceat, and Kemwell Biopharma services, with expertise in Shop Floor Management (5S, Gemba, Kaizen), Energy Optimization, and Governance & Assurance Initiatives.",
-      "B.Tech (Chemical Engineering) – Sathyabama University; MBA (Finance Management) – Vinayaka Mission University; PG Diploma (Industrial Safety) – Regional Labour Institute; Diploma (Pollution & Control) – Annamalai University."
+      "17+ years of experience across pharmaceutical, biopharma, and manufacturing sectors, with a proven track record in ISO certifications, LEED certification, British Safety Council 5-star rating, and the Deming Grand Prize journey.",
+      "His career includes key roles with Tagros Chemicals, Saint-Gobain, IMC Limited, AstraZeneca, Recipharm, Kemwell Biopharma, and CEAT, specializing in Lean Manufacturing, Operational & EHS Excellence, Process Optimization, Governance & Assurance Systems, Project Management, and Digital Transformation (Industry 4.0).",
+      "He holds a B.Tech in Chemical Engineering from Sathyabama University, an MBA in Finance Management from Vinayaka Mission University, a PG Diploma in Industrial Safety from the Regional Labour Institute, and a Diploma in Industrial & Pollution Control from Annamalai University."
     ]
   },
   {
     name: "Sneha Maiti",
-    role: "HR People & Digital Services",
+    role: "Human Capital",
     img: IMAGES.SNEHA_MAITI,
     link: "https://www.linkedin.com/in/sneha-maiti-4804a9114/",
     bio: [
-      "10+ years of experience in Manufacturing and Pharma, with over 5 years of specialization in HR Technology and digital transformation initiatives.",
-      "Currently with Howden Solyvent Pvt. Ltd., leading HRMS implementation for domestic and international clients, with expertise in Strategic HR Tech Enablement, Process Automation, and Digital Excellence.",
-      "Masters in Sociology from Christ University, Bangalore, and Darwinbox Functional Certification."
+      "10+ years of experience in the Manufacturing and Pharmaceutical industries, including 6 years of specialization in HR Technology and Digital Transformation initiatives.",
+      "Currently spearheading HRMS implementations for both domestic and international clients, with a proven track record in strategic HR process enablement, automation, and driving digital excellence across organizations.",
+      "Holds a Master’s degree in Sociology from Christ University, Bangalore, and is a Darwinbox Functional Certified Professional."
     ]
   },
-  {
-    name: "Prathima P D",
-    role: "Quality Assurance",
-    img: IMAGES.PRATHIMA,
-    link: "https://www.linkedin.com/in/prathima-p-d-40b91929/",
-    bio: [
-      "33+ years of industrial & academic experience with leadership roles at Lotus Labs, Semler Research, Daksha Bioscience, and Tenshi Life Sciences; SME in Clinical Operations, Compliance & Quality Assurance.",
-      "Certified Lead Auditor (ISO 27001, 27701, 9001) and Lean Six Sigma Black Belt.",
-      "Expert in QMS implementation (SOPs, CAPA, Change Control, Deviations, RCA) for Clinical, PV, QA, and GxP organizations, aligned with global regulatory standards.",
-      "Extensive audit & inspection expertise, conducting risk-based PV audits and representing organizations before regulators (DCGI, FDA, EMA, Health Canada, ANVISA, MHRA, WHO)."
-    ]
-  },
+  // {
+  //   name: "Prathima P D",
+  //   role: "Quality Assurance",
+  //   img: IMAGES.PRATHIMA,
+  //   link: "https://www.linkedin.com/in/prathima-p-d-40b91929/",
+  //   bio: [
+  //     "33+ years of industrial & academic experience with leadership roles at Lotus Labs, Semler Research, Daksha Bioscience, and Tenshi Life Sciences; SME in Clinical Operations, Compliance & Quality Assurance.",
+  //     "Certified Lead Auditor (ISO 27001, 27701, 9001) and Lean Six Sigma Black Belt.",
+  //     "Expert in QMS implementation (SOPs, CAPA, Change Control, Deviations, RCA) for Clinical, PV, QA, and GxP organizations, aligned with global regulatory standards.",
+  //     "Extensive audit & inspection expertise, conducting risk-based PV audits and representing organizations before regulators (DCGI, FDA, EMA, Health Canada, ANVISA, MHRA, WHO)."
+  //   ]
+  // },
   {
     name: "Dhana Vignesh",
     role: "Talent Acquisition",

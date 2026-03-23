@@ -88,6 +88,9 @@ import ShashidharKL from "./Shashidhar KL.webp";
 import Srinivas from "./Srinivas.webp";
 import StutiSharma from "./Stuti-Sharma.webp";
 import Sunandha from "./Sunandha.webp";
+import naveen from "./Naveen-Kumar.webp";
+import bharat from "./Bharat-Bhushan.webp";
+import rajesh from "./Rajesh-Kumar-Sahu.webp";
 import Yadhu from "./Yadhu.webp";
 import Archana from "./Archana.webp";
 import DrGopalMuralidharan from "./Dr-Gopal-Muralidharan.webp";
@@ -112,6 +115,14 @@ import CustomerCentricity from "./logo/Compliance.svg";
 import Efficiency from "./logo/Respect.svg";
 import Excellence from "./Excellence.svg";
 import Integrity from "./Integrity.svg";
+
+import vcc from "./Value-Creation-Centre.svg";
+import coe from "./Center-of-Excellence.svg";
+import fssc from "./Functional-Shared-Services-Centre.svg";
+import gcc from "./Global-Capability-Centre.svg";
+import ibs from "./Integrated-Business-Solutions.svg";
+
+
 
 import Nurturingaculture_of_continuous_learning_and_growth from './nurturing-a-culture-of-continuous-learning-new.webp';
 import Collaboration_that_drives_innovation from './collaboration-that-drives-innovation.webp';
@@ -1200,6 +1211,9 @@ Unified1: Unified1,
   SRINIVAS: Srinivas,
   STUTI_SHARMA: StutiSharma,
   SUNANDHA: Sunandha,
+  naveen: naveen,
+  bharat: bharat,
+ rajesh: rajesh,
   YADHU: Yadhu,
   ARCHANA: Archana,
   DR_GOPAL_MURALIDHARAN: DrGopalMuralidharan,
@@ -1217,6 +1231,11 @@ Unified1: Unified1,
   VINOD_KUMAR: Vinodkumar,
 
   // Logos & Misc
+  vcc: vcc,
+  coe: coe,
+  fssc: fssc,
+  gcc: gcc,
+  ibs: ibs,
   VISION_LOGO: vision_logo,
   MISSION_LOGO: mission_logo,
   VISION_LOGO_WHITE: vision_logo_white,

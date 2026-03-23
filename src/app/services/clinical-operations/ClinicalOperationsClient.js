@@ -5,6 +5,7 @@ import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 import NextPage from "@/components/NextPage/page";
 import Commonfrom from "@/components/Productfrom/Commonfrom/page";
 import { IMAGES } from "@/assets/images/index.js"; 
+import dots from "../../../assets/images/services/dots.svg";
 
 export default function ClinicalOperationsClient() {
 
@@ -17,6 +18,12 @@ export default function ClinicalOperationsClient() {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
+    const DotItem = ({ text }) => (
+      <li>
+        <Image src={dots} alt="dots" /> {text}
+      </li>
+    );
 
   return (
    <>
@@ -160,6 +167,53 @@ export default function ClinicalOperationsClient() {
             </Col>
         </Row>
     </Tab>
+
+      <Tab className="col7"  eventKey="tx" title="Toxicology Writing">
+                  <Row>
+                    <Col md={12} lg={6}>
+                      <div className="overflow-hidden">
+                        <Image src={IMAGES.Toxicology} className="w-100" alt="srtabs" />
+                      </div>
+                    </Col>
+                    <Col md={12} lg={6}>
+                      <div className="sr-tab-dlts sr-scroll">
+                        <h3>Toxicology Writing</h3>
+                        <p> Expert Toxicology Writing for Compliant, Scientifically Sound Product Documentation.</p>
+    
+                        <div className="sr-tab-dtls-dta">
+                          <h6>BioPharma</h6>
+                          <ul>
+                            <DotItem text="Permitted Daily Exposure (PDE)/Occupational Exposure Limits (OEL)" />
+                            <DotItem text="Health-Based Exposure (HBEL) Report Preparation of Non-Clinical and Clinical Sections (2.4 and 2.6) as per ICH guidelines" />
+                            <DotItem text="Impurity qualification as per ICH requirements (ICH M7), including nitrosamines" />
+                            <DotItem text="Risk Management Plan (RMP) and CCDS –preparation of the non-clinical section" />
+                          </ul>
+                        </div>
+                        <div className="sr-tab-dtls-dta">
+                          <h6>Medical Device</h6>
+                          <ul>
+                            <DotItem text="Biocompatibility Risk Assessment (BRA)" />
+                            <DotItem text="Toxicological Risk Assessment (TRA)" />
+                            <DotItem text="Gap Analysis" />
+                            <DotItem text="BiologicalEvaluationPlan (BEP)" />
+                          </ul>
+                        </div>
+    
+                        <div className="sr-tab-dtls-dta">
+                          <h6>Cosmetics</h6>
+                          <ul>
+                            <DotItem text="Preparation of Cosmetic Product Safety Report (CPSR)" />
+                            <DotItem text="Preparation of raw material (RM)/ Ingredient toxicological profiles" />
+                            <DotItem text="Exposure and Margin of Safety (MoS) calculations" />
+                            <DotItem text="Proposition 65 calculations" />
+                            <DotItem text="Fragrance and Flavours assessment" />
+                          </ul>
+                          <p className="mt-3 mb-0"> Life science background and DABT and ERT certified Toxicologist with 8+ years of experience.</p>
+                        </div>
+                      </div>
+                    </Col>
+                  </Row>
+                </Tab>
 
     <Tab className="col7" eventKey="rm" title="Medical Writing">
         <Row>

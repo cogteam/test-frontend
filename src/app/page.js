@@ -25,6 +25,8 @@ import circle from "../assets/images/circle.svg"
 import capture1 from "../assets/images/capture1.webp"
 import capture2 from "../assets/images/capture2.webp"
 
+import icon_traingle from "../assets/images/icon_traingle.svg";
+
 import { IMAGES } from "../assets/images";
 const ServicesSection = dynamic(() => import("@/components/ServicesSection/page"), { 
   ssr: true,
@@ -237,35 +239,40 @@ export default function Home() {
      <h2 className="h4 text-center" data-aos="fade-up">Shaping the future<br/> of<span> life science</span></h2>
 
      <p className="text-center" data-aos="fade-up">We are at the intersection of life science expertise & technology.</p>
+
+
+
+
+            <div className="flex-circle position-relative d-flex mt-5 align-items-center justify-content-center">
+
+              <div className="line-draw" data-aos="fade-in" data-aos-delay="150"></div>
+
+              <div className="circle-item " data-aos="zoom-in" data-aos-delay="100">
+                 <Image src={icon_traingle} alt="loader" />
+              </div>
+
+              <div className="circle-item" data-aos="zoom-in" data-aos-delay="300" style={{'background': '#0e90a2'}}>
+                 <p>Consulting</p>
+              </div>
+              <div className="circle-item" data-aos="zoom-in" data-aos-delay="400" style={{'background': '#19a574'}}>
+                 <p>Services</p>
+              </div>
+              <div className="circle-item" data-aos="zoom-in" data-aos-delay="600" style={{'background': '#90c43c'}}>
+                 <p>Solutions</p>
+              </div>
+            </div>
+
+     
           
-          {/* <Row className="col-8 m-auto mb-5 traingle-box" >
-              <Col lg={4} md={4}>
-                  <div className="lie-s">
-                      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs></defs><polygon fill="#0e90a2" className="cls-1" points="3.1 83.76 114.92 83.76 114.92 197.46 196.9 116.24 196.9 2.54 83.57 2.54 3.1 83.76"/></svg>
-                      <h5>Consulting.</h5>
-                  </div>
-              </Col>
-              <Col lg={4} md={4}>
-                  <div className="lie-s">
-                     <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs></defs><polygon fill="#19a574" className="cls-1" points="3.1 83.76 114.92 83.76 114.92 197.46 196.9 116.24 196.9 2.54 83.57 2.54 3.1 83.76"/></svg>
-                      <h5>Solutions.</h5>
-                  </div>
-              </Col>
-              <Col lg={4} md={4}>
-                  <div className="lie-s">
-                      <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs></defs><polygon fill="#90c43c" className="cls-1" points="3.1 83.76 114.92 83.76 114.92 197.46 196.9 116.24 196.9 2.54 83.57 2.54 3.1 83.76"/></svg>
-                      <h5>Services.</h5>
-                  </div>
-              </Col>
-          </Row> */}
+         
 
 
           <Row className="mt-5">
-            <Col lg={12} md={12} className="p-0">
+            {/* <Col lg={12} md={12} className="p-0">
                <div className="circle-home">
                  <Image src={circle} alt="circle" className="w-100 h-auto" data-aos="fade-up" />
                </div>
-            </Col>
+            </Col> */}
              <Col lg={12} md={12} className="p-0">
               <Slider {...aislider} className="col-11 m-auto ai-slider row">
                 <div className="p-0 col-md-6">
@@ -369,8 +376,8 @@ export default function Home() {
 
 
           <div className="row mt-5">
-             <Image src={capture1} className="w-100 h-auto mb-4" />
-              <Image src={capture2} className="w-100 h-auto" />
+             <Image src={capture1} className="w-100 h-auto mb-4"  alt="capture2"/>
+              <Image src={capture2} className="w-100 h-auto" alt="capture2" />
             {/* {insightsVisible && <LatestCaseStudy />}
             {insightsVisible && <LatestWhitePapers />}
             

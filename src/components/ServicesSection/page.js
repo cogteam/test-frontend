@@ -19,7 +19,7 @@ const SERVICE_ITEMS = [
     link: "/services/#drug-research-and-development",
     img: IMAGES.MANUFACTURINGIMG,
     icon: IMAGES.MANUFACTURINGICON,
-    title: "Drug Research & Development",
+    title: "Integrated IP & Clinical Operations",
     desc: "We optimise supply chains to keep your products moving with consistency and speed."
   },
   {

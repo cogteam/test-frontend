@@ -18,7 +18,7 @@ export default function LeadershipSection() {
   }, []);
 
   // Split team into initial view (e.g., first 6) and hidden view
-  const INITIAL_COUNT = 13;
+  const INITIAL_COUNT = 16;
   const initialTeam = TEAM_DATA.slice(0, INITIAL_COUNT);
   const hiddenTeam = TEAM_DATA.slice(INITIAL_COUNT);
 

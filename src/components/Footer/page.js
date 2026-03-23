@@ -125,21 +125,7 @@ export default function Footer(){
                                         </ul>
                                 </div>
                             </Col>
-                            <Col lg={3} md={3} sm={6} xs={6}>
-                                <div className="quick-links">
-                                    <h6 data-aos="fade-up">PRODUCTS</h6>
-                                        <ul>
-                                             <li data-aos="fade-up"><Link href="/products/noteiq">NoteIQ</Link></li>
-                                             <li data-aos="fade-up"><Link href="/products/anomiq">AnomIQ</Link></li>
-                                             <li data-aos="fade-up"><Link href="/products/golanzar">GoLanzar</Link></li>
-                                             <li data-aos="fade-up"><Link href="/products/inlumin">InLumin</Link></li>
-                                             <li data-aos="fade-up"><Link href="/products/novavigil">NovaVigil</Link></li>
-                                             
-                                             
-                                             
-                                        </ul>
-                                </div>
-                            </Col>
+                            
                             <Col lg={4} md={3} sm={6} xs={6}>
                                 <div className="quick-links mt-3 mt-md-0">
                                     <h6 data-aos="fade-up">SERVICES</h6>
@@ -149,6 +135,18 @@ export default function Footer(){
                                              <li data-aos="fade-up"><Link href="/services/#quality-and-compliance" scroll={true}>Quality & Digital Compliance</Link></li>
                                              <li data-aos="fade-up"><Link href="/services/#digital-innovation-and-transformation" scroll={true}>Digital Innovation & Transformation</Link></li>
                                              <li data-aos="fade-up"><Link href="/services/#human-capital" scroll={true} >Human Capital</Link></li>
+                                        </ul>
+                                </div>
+                            </Col>
+                            <Col lg={3} md={3} sm={6} xs={6}>
+                                <div className="quick-links">
+                                    <h6 data-aos="fade-up">Solution</h6>
+                                        <ul>
+                                             <li data-aos="fade-up"><Link href="/products/noteiq">NoteIQ</Link></li>
+                                             <li data-aos="fade-up"><Link href="/products/anomiq">AnomIQ</Link></li>
+                                             <li data-aos="fade-up"><Link href="/products/golanzar">GoLanzar</Link></li>
+                                             <li data-aos="fade-up"><Link href="/products/inlumin">InLumin</Link></li>
+                                             <li data-aos="fade-up"><Link href="/products/novavigil">NovaVigil</Link></li>
                                         </ul>
                                 </div>
                             </Col>

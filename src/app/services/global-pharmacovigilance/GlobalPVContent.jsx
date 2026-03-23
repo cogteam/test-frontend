@@ -593,7 +593,7 @@ export default function Detectharmaiq() {
                 </Col>
               </Row>
             </Tab>
-            <Tab eventKey="psmf" title="Toxicology Writing">
+            {/* <Tab eventKey="psmf" title="Toxicology Writing">
               <Row>
                 <Col md={12} lg={6}>
                   <div className="overflow-hidden">
@@ -638,7 +638,7 @@ export default function Detectharmaiq() {
                   </div>
                 </Col>
               </Row>
-            </Tab>
+            </Tab> */}
             <Tab eventKey="xs" title="Medical Writing">
               <Row>
                 <Col md={12} lg={6}>
