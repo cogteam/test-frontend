@@ -140,7 +140,7 @@ export default function Footer(){
                             </Col>
                             <Col lg={3} md={3} sm={6} xs={6}>
                                 <div className="quick-links">
-                                    <h6 data-aos="fade-up">Solution</h6>
+                                    <h6 data-aos="fade-up">Solutions</h6>
                                         <ul>
                                              <li data-aos="fade-up"><Link href="/products/noteiq">NoteIQ</Link></li>
                                              <li data-aos="fade-up"><Link href="/products/anomiq">AnomIQ</Link></li>

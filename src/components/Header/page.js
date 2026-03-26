@@ -214,7 +214,7 @@ const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
                     href="/products"
                     className="nav-link server-dropdown text-uppercase"
                     onClick={(e) => e.stopPropagation()}
-                  > solution</Link>  }
+                  > solutions</Link>  }
                 id="services-dropdown"
                 show={showProduct}
               
