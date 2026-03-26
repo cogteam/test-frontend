@@ -77,58 +77,67 @@ export default function AboutUs() {
 
   //Custom Arrows
 
-
+// ✅ Prev Arrow
 const PrevArrow = ({ onClick, currentSlide }) => (
   <div
-    className={`custom-arrow prev ${
-      currentSlide === 0 ? "disabled" : ""
-    }`}
+    className={`custom-arrow prev ${currentSlide === 0 ? "disabled" : ""}`}
     onClick={currentSlide === 0 ? null : onClick}
   >
-    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left">
+   <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left">
       <FaArrowLeft />
     </span>
   </div>
 );
 
-const NextArrow = ({ onClick, currentSlide, slideCount }) => (
-  <div
-    className={`custom-arrow next ${
-      currentSlide === slideCount - 3 ? "disabled" : ""
-    }`}
-    onClick={currentSlide === slideCount - 3 ? null : onClick}
-  >
-    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right">
+// ✅ Next Arrow (Desktop fix only)
+const NextArrow = ({ onClick, currentSlide, slideCount }) => {
+  const isDesktop = window.innerWidth > 1024; // 👈 desktop check
+
+  const isDisabled = isDesktop
+    ? currentSlide >= slideCount - 3 // 👈 desktop (slidesToShow: 3)
+    : currentSlide === slideCount - 1; // 👈 mobile simple
+
+  return (
+    <div
+      className={`custom-arrow next ${isDisabled ? "disabled" : ""}`}
+      onClick={!isDisabled ? onClick : null}
+    >
+       <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right">
       <FaArrowRight />
     </span>
-  </div>
-);
+    </div>
+  );
+};
 
   const [nav1, setNav1] = useState();
   const [nav2, setNav2] = useState();
 
     const [activeTab, setActiveTab] = useState("primary");
-
+const [slidesToShow, setSlidesToShow] = useState(3);
 
     const aboutsettings = {
       arrows: true,
-  slidesToShow: 3,
-  swipeToSlide: true,
-  dots: false,
-  focusOnSelect: true,
-  loop: false,
-  infinite: false,
+    infinite: false,
+    slidesToShow: slidesToShow,
+    swipeToSlide: true,
+    dots: false,
+
+    nextArrow: <NextArrow slidesToShow={slidesToShow} />,
+    prevArrow: <PrevArrow  />,
   responsive: [
     {
       breakpoint: 1024, // laptop/tablet
       settings: {
-        slidesToShow: 2,
+       slidesToShow: 2,
+          beforeChange: () => setSlidesToShow(2),
+
       }
     },
     {
       breakpoint: 991, // tablet
       settings: {
-        slidesToShow:2,
+        slidesToShow:1,
+          beforeChange: () => setSlidesToShow(1),
       }
     },
     {
@@ -345,12 +354,7 @@ and our mission. Without them, nothing else matters.
       <h2 className="h4 text-center" data-aos="fade-up">OUR JOURNEY   <span> OF EVOLUTION</span></h2>
 
         <div className="jour2 position-relative">
-       <Slider     
-       {...aboutsettings}
-         nextArrow={<NextArrow  />}
-         prevArrow={<PrevArrow />}
-        
-         className="journey-slider-para mt-5">
+       <Slider    {...aboutsettings}  className="journey-slider-para mt-5">
           <div className="year">           
                 <div className="year-content">
                   <span>2019-21</span>

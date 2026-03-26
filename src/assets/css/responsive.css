@@ -577,6 +577,9 @@ padding: 30px;
 .jour2 {
     padding-bottom: 60px;
 }
+.year h4 br {
+    display: none;
+}
 }
 
 
@@ -585,10 +588,10 @@ padding: 30px;
         margin-top: 0px !important;
     }
     .product-showcase-carousel-controls--right {
-        right: 33.5%;
+        right: calc(100% - 66%);
     }
     .product-showcase-carousel-controls--left {
-        left:33.5%;
+        left:calc(100% - 66%);
     }
     .year h4 br {
         display: none;
