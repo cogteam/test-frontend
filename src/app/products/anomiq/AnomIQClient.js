@@ -33,7 +33,7 @@ export default function AnomIQClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up"> Early Warnings.<br/> Confident Compliance.</h2>
+            <h2 className="h4 text-center" data-aos="fade-up"> Early Warnings.<br/> <span>Confident Compliance.</span></h2>
             <p data-aos="fade-up" className="text-center">A next-generation anomaly detection and compliance management platform designed<br/> to enhance data integrity, reduce risk, and strengthen operational control.</p>
 
             <Row className="mt-4 mt-md-5 justify-content-center">
@@ -85,7 +85,7 @@ export default function AnomIQClient() {
     <div className="grey challenges-wrapper">
         <Container>
             <h2 className="h4 text-center" data-aos="fade-up"> Challenges in 
-  Pharmaceutical<br /> Compliance Oversight</h2>
+  Pharmaceutical<br /> <span>Compliance Oversight</span></h2>
             <p data-aos="fade-up" className="text-center col-7 m-auto">Life sciences organisations face mounting challenges in maintaining quality and data integrity across multiple sites and systems. Manual anomaly tracking, delayed investigations, and fragmented workflows increase regulatory risk and operational inefficiencies.</p>
 
             <Row className="mt-4 mt-md-5">
@@ -129,7 +129,7 @@ export default function AnomIQClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">Strengthening Compliance </h2>
+            <h2 className="h4 text-center" data-aos="fade-up">Strengthening <span>Compliance</span> </h2>
             <p data-aos="fade-up" className="text-center col-md-8 m-auto">  AnomIQ automates anomaly detection, categorisation, and investigation across enterprise and standalone systems. It bridges the gap between IT operations and quality oversight, ensuring early detection, faster decision-making, and consistent compliance across all manufacturing and laboratory environments.</p>
         </Container>
     </div>
@@ -247,7 +247,7 @@ export default function AnomIQClient() {
     <div className="grey pad80">
         <Container>
             {/* <h2 className="h4 text-center" data-aos="fade-up">Value Delivered</h2> */}
-            <h2 className="h4 text-center" data-aos="fade-up">The Value We Deliver</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">The Value <span>We Deliver</span></h2>
                 <Row className="mt-4 mt-md-5">
                     <Col md={6} lg={4} className="mb-4">
                         <div className="choose-box">
@@ -311,14 +311,14 @@ export default function AnomIQClient() {
 
      <div className="grey  insights-wrapper ">
         <Container>
-            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br />THAT KEEP YOU AHEAD</h2>
+            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br /><span>THAT KEEP YOU AHEAD</span></h2>
             <Bloghomepage />
         </Container>
     </div>
 
      <div className="pad80 grey discover-from">
                         <Container>
-                            <h2 className="h4 text-center"  data-aos="fade-up">Enable Proactive Compliance <br/>and Anomaly Detection
+                            <h2 className="h4 text-center"  data-aos="fade-up">Enable Proactive Compliance <br/> <span>and Anomaly Detection</span>
 </h2>    
                             <Row className="mt-4 mt-md-5">
                                 <Col md={12} lg={6}>

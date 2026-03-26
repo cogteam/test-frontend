@@ -16,8 +16,11 @@ import { IMAGES } from "../../assets/images";
 
 
 import Slider from "react-slick";
+import Careersmodal from "./Careersmodal/page";
 export default function Careers(){
    const router = useRouter(); 
+
+     const [show, setShow] = useState(false);
     
   
     const { register, handleSubmit, formState: { errors }, reset, watch } = useForm();
@@ -353,7 +356,10 @@ if (data.resume && data.resume.length > 0) {
          
       </div>
 
-
+{/* <Careersmodal 
+  show={show}
+  handleClose={() => setShow(false)}
+/>
         <div className="grey2 pad80 ai-hcm">
             <Container>
                <h2 className="h4 text-center" data-aos="fade-up">Revolutionizing Human Capital<br/>  <span>with AI-Powered HCM</span></h2>
@@ -362,13 +368,13 @@ if (data.resume && data.resume.length > 0) {
                    <p>Human Capital Management is evolving into a powerful driver of growth — defined by seamless experiences, intelligent insights, and organizational agility. Together with Darwinbox, we are transforming how organizations attract, engage, develop, and retain talent through an AI-powered HCM platform built for the modern workforce.</p>
                <p>At the heart of this transformation is a next-generation HR ecosystem that blends deep automation with predictive intelligence. From smart hiring and seamless onboarding to performance management, payroll, workforce analytics, and employee engagement — every touchpoint is unified, intuitive, and insight-driven.</p>
       
-                <a href="#expert-driven"  className="sr-btn mt-4 d-inline-block" style={{cursor: 'pointer'}}>
-                                                  <span>Know More</span>
-                                              </a>   
+                <div className="sr-btn mt-4 d-inline-block" style={{cursor: 'pointer'}} onClick={() => setShow(true)}>
+                    <span>Know More</span>
+                </div>   
       
               </div>
             </Container>
-      </div>
+      </div> */}
 
               <div className='job-wrapper grey pad80'>
                 <Container>

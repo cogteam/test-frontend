@@ -66,7 +66,7 @@ export default function NovaVigilClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">  Pharmacovigilance, <br/>Simplified</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">  Pharmacovigilance, <br/><span>Simplified</span></h2>
             <p data-aos="fade-up" className="text-center">A unified platform to automate literature screening, case detection, <br/>and reporting built for modern life sciences organisations.</p>
 
             <Row className="mt-4 mt-md-5 justify-content-center">
@@ -106,7 +106,7 @@ export default function NovaVigilClient() {
 
     <div className="grey challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up"> Challenges in Pharmacovigilance</h2>
+            <h2 className="h4 text-center" data-aos="fade-up"> Challenges in <span>Pharmacovigilance</span></h2>
             <p data-aos="fade-up" className="text-center col-7 m-auto">Pharmacovigilance teams face growing operational, regulatory, and technological pressures. Manual processes, delayed case detection, and fragmented data management slow workflows, increase errors, and elevate compliance risks.</p>
 
             <Row className="mt-4 mt-md-5">
@@ -150,7 +150,7 @@ export default function NovaVigilClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">AI-Driven <br />Pharmacovigilance</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">AI-Driven <br /><span>Pharmacovigilance</span></h2>
             <p data-aos="fade-up" className="text-center col-7 m-auto"> NovaVigil converts complex, manual literature workflows into automated, streamlined processes. With advanced AI, secure integrations, and centralised management, teams gain accuracy, transparency, and scalability.</p>
         </Container>
     </div>
@@ -387,7 +387,7 @@ export default function NovaVigilClient() {
 
     <div className="grey pad80 choose-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">The Value We Deliver</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">The Value <span> We Deliver</span></h2>
             <p className="text-center" data-aos="fade-up">NovaVigil empowers pharmacovigilance teams to work smarter, ensuring patient<br/> safety, regulatory excellence, and operational efficiency—bringing AI to life in life sciences.</p>
 
                 <Row className="mt-4 mt-md-5">
@@ -453,7 +453,7 @@ export default function NovaVigilClient() {
 
      <div className="grey  insights-wrapper pt-0">
         <Container>
-            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br />THAT KEEP YOU AHEAD</h2>
+            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br /><span>THAT KEEP YOU AHEAD</span></h2>
             <Bloghomepage />
         </Container>
     </div>
@@ -461,7 +461,7 @@ export default function NovaVigilClient() {
     <div className="pad80 grey discover-from">
                     <Container>
                         {/* <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH NOVAVIGIL</h2>     */}
-                        <h2 className="h4 text-center"  data-aos="fade-up">Transform Pharmacovigilance with<br/> Intelligent Automation
+                        <h2 className="h4 text-center"  data-aos="fade-up">Transform Pharmacovigilance with<br/><span> Intelligent Automation</span>
 </h2>    
                         <Row className="mt-4 mt-md-5">
                             <Col md={12} lg={6}>

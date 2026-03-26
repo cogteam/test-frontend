@@ -7,7 +7,7 @@ import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 // import Footer from "@/components/Footer/page";
 import Commonfrom from "@/components/Productfrom/Commonfrom/page";
 import NextPage from "@/components/NextPage/page";
-
+import Tracelink from "../../../assets/images/Tracelink.png";
 import { IMAGES } from "@/assets/images/index.js"; 
 
 export default function TrackAndTraceClient() {
@@ -271,7 +271,7 @@ export default function TrackAndTraceClient() {
     </div>
 
 
-      <div className="grey pad80 pb-0 choose-wrapper">
+      <div className="grey pad80 choose-wrapper">
       <Container>
         {/* <h2 className="h4 text-center" data-aos="fade-up">Track & Trace Workflow</h2> */}
         <h2 className="h4 text-center" data-aos="fade-up">Enterprise Expertise</h2>
@@ -450,6 +450,21 @@ export default function TrackAndTraceClient() {
               link="/services/clinical-operations"
               image={IMAGES.CLINICALOPERATIONS} 
             /> */}
+
+
+    <div className="grey2 pad80 ai-hcm">
+            <Container>
+               <h2 className="h4 text-center" data-aos="fade-up">Powering End-to-End Serialization  <br/>& <span>Supply Chain Automation</span></h2>
+      
+              <div className="col-9 text-center m-auto">
+                   <p>Modern supply chains are becoming more connected, intelligent, and resilient — driven by real-time visibility and seamless partner collaboration. Together with TraceLink, we help organizations leverage the Healthcare and Life Sciences industry’s largest digital network of 291,000+ members, enabling unmatched connectivity across the supply ecosystem.</p>
+                   <p>At the core of this transformation is a digital supply chain platform that connects manufacturers, partners, and logistics providers on a unified network. From serialization and regulatory compliance to real-time data exchange and supply chain orchestration, every process is streamlined to deliver greater control, faster decision-making, and improved product availability.</p>
+                  <Image src={Tracelink} alt="Tracelink" className="tracelink"  data-aos="fade-up" />      
+              </div>
+            </Container>
+      </div>
+
+
 
     <div className="pad80 grey discover-from" id="expert-driven">
                <Container>

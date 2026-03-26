@@ -78,7 +78,7 @@ export default function GoLanzarClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up"> Launch with  Precision</h2>
+            <h2 className="h4 text-center" data-aos="fade-up"> Launch with  <span>Precision</span></h2>
             <p data-aos="fade-up" className="text-center">A unified platform to plan, coordinate, and execute pharmaceutical product launches,<br/> ensuring timely market entry with strategic control.</p>
 
             <Row className="mt-4 mt-md-5 justify-content-center">
@@ -118,7 +118,7 @@ export default function GoLanzarClient() {
 
     <div className="grey challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">  Challenges in <br /> Pharmaceutical Launches</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">  Challenges in <br /> <span>Pharmaceutical Launches</span></h2>
             <p data-aos="fade-up" className="text-center col-7 m-auto">Launching a pharmaceutical product is a complex, high-stakes process. Teams face operational, regulatory, and strategic pressures that can lead to delays, inefficiencies, and costly errors.</p>
 
             <Row className="mt-4 mt-md-5">
@@ -162,7 +162,7 @@ export default function GoLanzarClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">Transforming <br/> Launch Management </h2>
+            <h2 className="h4 text-center" data-aos="fade-up">Transforming <br/> <span>Launch Management</span> </h2>
 
             <h3 className="text-center mb-4" data-aos="fade-up">
                 Accelerate Launches with Confidence
@@ -398,7 +398,7 @@ export default function GoLanzarClient() {
     <div className="grey pad80">
         <Container>
             {/* <h2 className="h4 text-center" data-aos="fade-up">WHY CHOOSE GoLanzar?</h2> */}
-             <h2 className="h4 text-center" data-aos="fade-up">The Value We Deliver</h2>
+             <h2 className="h4 text-center" data-aos="fade-up">The Value <span>We Deliver</span></h2>
             <p className="text-center" data-aos="fade-up">GoLanzar ensures that every launch is executed with precision, efficiency, and strategic<br/> excellence, empowering teams to “beat the clock” and deliver products to market on time, every time.</p>
 
                 <Row className="mt-4 mt-md-5 ">
@@ -473,7 +473,7 @@ export default function GoLanzarClient() {
 
      <div className="grey  insights-wrapper pt-0">
         <Container>
-            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br />THAT KEEP YOU AHEAD</h2>
+            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br /><span>THAT KEEP YOU AHEAD</span></h2>
             <Bloghomepage />
         </Container>
     </div>
@@ -481,7 +481,7 @@ export default function GoLanzarClient() {
     <div className="pad80 grey discover-from">
                         <Container>
                             {/* <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH GoLanzar</h2>     */}
-                             <h2 className="h4 text-center"  data-aos="fade-up">Accelerate Your Pharmaceutical<br/> Launch Strategy
+                             <h2 className="h4 text-center"  data-aos="fade-up">Accelerate Your Pharmaceutical<br/> <span>Launch Strategy</span>
 </h2>    
                             <Row className="mt-4 mt-md-5">
                                 <Col md={12} lg={6}>

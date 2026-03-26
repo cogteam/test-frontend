@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { FaArrowLeft, FaArrowRight, FaLinkedinIn } from "react-icons/fa6";
 import { IMAGES } from "../../assets/images";
 import { VALUES_DATA, BOARD_DATA } from "./aboutData";
 import epic from "../../assets/images/epic.webp";
@@ -13,7 +13,8 @@ import e_epic from "../../assets/images/logo/e_epic.webp";
 import p_epic from "../../assets/images/logo/p_epic.webp";
 import i_epic from "../../assets/images/logo/i_epic.webp";
 import c_epic from "../../assets/images/logo/c_epic.webp";
-
+import arcolab_logo from "../../assets/images/arcolab_logo.png";
+import logo from "../../assets/images/logo.svg";
 // 3. Lazy Load Leadership Section (Reduces initial JS bundle)
 const LeadershipSection = dynamic(() => import("@/components/LeadershipSection/page"), {
   loading: () => <div className="grey pad80" style={{ minHeight: '500px' }}>Loading...</div>
@@ -77,13 +78,13 @@ export default function AboutUs() {
   //Custom Arrows
 const NextArrow = ({ onClick }) => (
   <div className="custom-arrow next" onClick={onClick}>
-    →
+    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right"><FaArrowLeft/></span>
   </div>
 );
 
 const PrevArrow = ({ onClick }) => (
   <div className="custom-arrow prev" onClick={onClick}>
-    ←
+   <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left"><FaArrowRight /></span>
   </div>
 );
 
@@ -92,6 +93,34 @@ const PrevArrow = ({ onClick }) => (
 
     const [activeTab, setActiveTab] = useState("primary");
 
+
+    const aboutsettings = {
+      arrows: true,
+  slidesToShow: 3,
+  swipeToSlide: true,
+  dots: false,
+  focusOnSelect: true,
+  responsive: [
+    {
+      breakpoint: 1024, // laptop/tablet
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 991, // tablet
+      settings: {
+        slidesToShow:2,
+      }
+    },
+    {
+      breakpoint: 767, // mobile
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+};
   return (
     <>
       {/* Initialize Animations */}
@@ -297,124 +326,62 @@ and our mission. Without them, nothing else matters.
   <Container>
       <h2 className="h4 text-center" data-aos="fade-up">OUR JOURNEY   <span> OF EVOLUTION</span></h2>
 
-    
-      
         <div className="jour2 position-relative">
-             <Slider responsive={[
-    {
-      breakpoint: 768, // tablet & mobile
-      settings: {
-        slidesToShow: 1
-      }
-    }
-  ]} arrows={false} asNavFor={nav2} ref={(slider1) => setNav1(slider1)} slidesToShow={2} className="row journey-slider">
-          <div className="year p-0"><span>2019-21</span></div>
-          <div className="year p-0"><span>2021-22</span></div>
-          <div className="year p-0"><span>2022-23</span></div>
-          <div className="year p-0"><span>2023-24</span></div>
-          <div className="year p-0"><span>2024-25</span></div>
-          <div className="year p-0"><span>2026 & Beyond</span></div>
-      </Slider>
-
-       <Slider
-        asNavFor={nav1}
-        ref={(slider2) => setNav2(slider2)}
-        slidesToShow={1}
-        swipeToSlide={true}
-        // nextArrow={<NextArrow />}
-        // prevArrow={<PrevArrow />}
+       <Slider     
+       {...aboutsettings}
+       
+         nextArrow={<NextArrow />}
+         prevArrow={<PrevArrow />}
         
-        dots={true}
-        focusOnSelect={true} className="row journey-slider-para">
-          <div className="year">
-              <Row>
-                <Col md={12} lg={4}>
-                  <div className="year-img2">
-                    <Image src={IMAGES.fssc} alt=" Logo"  />
-                      <h4>Functional Shared<br/> Services Centre </h4>
-                  </div>
-                </Col>
-                <Col md={12} lg={8}>
+         className="journey-slider-para mt-5">
+          <div className="year">           
+                <div className="year-content">
+                  <span>2019-21</span>
+                <h4>Functional Shared<br/> Services Centre </h4>
                   <p>The organisation was established through the integration of 350 employees from five pharma entities under Arcolab. This phase focused on stabilising operations, aligning core functions, and building a strong operational foundation to support future growth.</p>
-                </Col>
-              </Row>
+                  <Image src={arcolab_logo} alt="Journey 2019-21" className="arclob-logo" />
+                </div>             
           </div>
 
-          <div className="year">
-              <Row>
-                 <Col md={12} lg={4}>
-                  <div className="year-img2">
-                    <Image src={IMAGES.coe} alt=" Logo"  />
-                      <h4>Center of Excellence </h4>
-                  </div>
-                </Col>
-                <Col md={12} lg={8}>
+          <div className="year">           
+                <div className="year-content">
+                  <span>2021-22</span>
+                <h4>Center of <br/>Excellence </h4>
                   <p>With a stable base in place, the organisation transitioned into a Centre of Excellence, delivering cross-functional initiatives and driving process optimisation through the adoption of technology-led solutions.</p>
-                </Col>
-              </Row>
+                </div>             
           </div>
 
-
-          <div className="year">
-              <Row>
-                <Col md={12} lg={4}>
-                  <div className="year-img2">
-                    <Image src={IMAGES.ibs} alt=" Logo"  />
-                      <h4>Integrated Business<br /> Solutions </h4>
-                  </div>
-                </Col>
-                <Col md={12} lg={8}>
-                  <p>Strategic expansion was achieved through the acquisition of Neviton Softech Pvt. Ltd., alongside the outsourcing of IT operations to Coforge. These initiatives enhanced digital capabilities and enabled the delivery of more integrated and scalable business solutions.
-</p>
-                </Col>
-              </Row>
+          <div className="year">                
+                <div className="year-content">
+                 <span>2022-23</span>
+                <h4>Integrated Business<br /> Solutions </h4>
+                  <p>Strategic expansion was achieved through the acquisition of Neviton Softech Pvt. Ltd., alongside the outsourcing of IT operations to Coforge. These initiatives enhanced digital capabilities and enabled the delivery of more integrated and scalable business solutions.</p>
+                </div>             
           </div>
 
-
           <div className="year">
-              <Row>
-                <Col md={12} lg={4}>
-                  <div className="year-img2">
-                    <Image src={IMAGES.gcc} alt=" Logo"  />
-                     <h4>Global Capability <br/>Centre </h4>
-                  </div>
-                </Col>
-                <Col md={12} lg={8}>
-                  <p>The organisation strengthened its position by launching Procure-to-Pay (P2P) and Project Management solutions, while advancing its Technology Centre of Excellence with a focus on RPA and AI. This progress was recognised through industry accolades, including being named among the Top 3 GCCs at the EY GCC Awards 2023 and receiving Gold at the SEEM Awards 2022.
-</p>
-                </Col>
-              </Row>
+                <div className="year-content">
+                 <span>2023-24</span>
+                 <h4>Global Capability <br/>Centre </h4>
+                  <p>The organisation strengthened its position by launching Procure-to-Pay (P2P) and Project Management solutions, while advancing its Technology Centre of Excellence with a focus on RPA and AI. This progress was recognised through industry accolades, including being named among the Top 3 GCCs at the EY GCC Awards 2023 and receiving Gold at the SEEM Awards 2022.</p>
+                </div>              
           </div>
 
-
-          <div className="year">
-              <Row>
-                <Col md={12} lg={4}>
-                  <div className="year-img2">
-                    <Image src={IMAGES.vcc} alt=" Logo"  />
-                     <h4>Value Creation <br/>Centre</h4>
-                  </div>
-                </Col>
-               <Col md={12} lg={8}>
-                 <p>Expansion into a new office space in Hyderabad marked a significant milestone, alongside the achievement of ISO 27001 and ISO 27701 certifications. Strategic partnerships with Darwinbox, TraceLink, and Leucine, combined with the launch of AI-led platforms and solutions, reinforced the organisation’s focus on innovation and value creation.
-</p>
-                </Col>
-              </Row>
+          <div className="year">            
+               <div className="year-content">
+                <span>2024-25</span>
+                <h4>Value Creation <br/>Centre</h4>
+                 <p>Expansion into a new office space in Hyderabad marked a significant milestone, alongside the achievement of ISO 27001 and ISO 27701 certifications. Strategic partnerships with Darwinbox, TraceLink, and Leucine, combined with the launch of AI-led platforms and solutions, reinforced the organisation’s focus on innovation and value creation.</p>
+                </div>              
           </div> 
 
-             <div className="year">
-              <Row>
-                <Col md={12} lg={4}>
-                  <div className="year-img2">
-                    <Image src={IMAGES.ibs} alt=" Logo"  />
-                     <h4>Intelligent Business <br/> Solutions</h4>
-                  </div>
-                </Col>
-                <Col md={12} lg={8}>
-                  <p>The formation of the Pivot Path represents the next phase of evolution. With a clear focus on intelligent business solutions, the organisation is positioned to drive innovation, enhance capabilities, and deliver sustained value in a rapidly evolving business landscape.
-</p>
-                </Col>
-              </Row>
+             <div className="year">                
+                <div className="year-content">
+                  <span>2026 & Beyond</span>
+                <h4>Intelligent Business <br/> Solutions</h4>
+                  <p>The formation of the Pivot Path represents the next phase of evolution. With a clear focus on intelligent business solutions, the organisation is positioned to drive innovation, enhance capabilities, and deliver sustained value in a rapidly evolving business landscape.</p>
+                  <Image src={logo} alt="logo" className="pivot-logo" />
+                </div>
           </div>
         
       </Slider>

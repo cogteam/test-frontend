@@ -164,10 +164,16 @@ export default function Contact() {
                     {...register("services", { required: "Please select a service" })}
                   >
                     <option value="">Select Service*</option>
-                    <option value="pharmacovigilance-and-clinical">Pharmacovigilance & Clinical</option>
+                    {/* <option value="pharmacovigilance-and-clinical">Pharmacovigilance & Clinical</option>
                     <option value="manufacturing-and-supply-chain">Manufacturing & Supply Chain</option>
                     <option value="quality-and-compliance">Quality & Compliance</option>
                     <option value="commercialization">Commercialization</option>
+                    <option value="human-capital">Human Capital</option> */}
+
+                    <option value="Drug-Safety-and-Intelligence">Drug Safety & Intelligence</option>
+                    <option value="Integrated-IP-and-Clinical-Operations">Integrated IP & Clinical Operations</option>
+                    <option value="Quality-and-Digital-Compliance">Quality & Digital Compliance</option>
+                    <option value="Digital-Innovation-and-Transformation">Digital Innovation & Transformation</option>
                     <option value="human-capital">Human Capital</option>
                   </Form.Select>
                     {errors.services && <p className="error">{errors.services.message}</p>}

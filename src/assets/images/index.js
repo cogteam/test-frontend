@@ -23,7 +23,7 @@ import logo21 from './logo/logo21.png';
 
 import NoteIQLogo from './banner/noteiq-white-new.svg';
 import NovaVigilLogo from './banner/NOVA-VIGIL-WHITE.svg';
-import GolanzarLogo from './banner/GOLANZAR-WHITE-new.svg';
+import GolanzarLogo from './banner/GOLANZAR-WHITE-new.webp';
 import InluminLogo from './banner/INLUMIN-WHITE.svg';
 import AnomIQLogo from './banner/Anom-IQ-WHITE.svg';
 

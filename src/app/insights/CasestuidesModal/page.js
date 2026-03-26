@@ -47,7 +47,7 @@ useEffect(() => {
      
            await api(axiosConfig);
            setSuccessMessage("Your message has been sent successfully!");
-           //router.push("/thank-you");
+          router.push("/thank-you");
          } catch (error) {
            if (error.response && error.response.data) {
              setValidErrors(error.response.data);

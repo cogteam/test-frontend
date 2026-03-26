@@ -84,7 +84,7 @@ export default function Footer(){
                             </Col>
 
                             <Col md={12} lg={6} className="m-0">
-                                <h2 className="h4 text-center"  data-aos="fade-up">Join Us <br /><span>Newsletter</span></h2>
+                                <h2 className="h4 text-center"  data-aos="fade-up">Join Our <br /><span>Newsletter</span></h2>
 
                                 <Form onSubmit={handleSubmit(onSubmit)} method="post" className="d-flex newsletter-box position-relative" data-aos="fade-up">
                 <Form.Control

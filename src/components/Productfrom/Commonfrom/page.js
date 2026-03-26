@@ -93,11 +93,13 @@ export default function Commonfrom(){
                           required: "Name is required",
                         })}
                       />
-                    </Form.Group>
-                    {errors.name && (
+
+                       {errors.name && (
                       <p className="error">{errors.name.message}</p>
                     )}
                     <p className="error">{validErrors.name}</p>
+                    </Form.Group>
+                   
                   </Col>
 
                   {/* Email */}
@@ -119,11 +121,13 @@ export default function Commonfrom(){
                           },
                         })}
                       />
-                    </Form.Group>
+                    
                     {errors.email && (
                       <p className="error">{errors.email.message}</p>
                     )}
                     <p className="error">{validErrors.email}</p>
+
+                    </Form.Group>
                   </Col>
 
                   {/* Phone */}
@@ -146,11 +150,12 @@ export default function Commonfrom(){
                           },
                         })}
                       />
-                    </Form.Group>
+                   
                     {errors.phone && (
                       <p className="error">{errors.phone.message}</p>
                     )}
                     <p className="error">{validErrors.phone}</p>
+                     </Form.Group>
                   </Col>
 
                   {/* Date */}
@@ -167,11 +172,13 @@ export default function Commonfrom(){
                           required: "Please select a date",
                         })}
                       />
-                    </Form.Group>
+                 
                     {errors.date && (
                       <p className="error">{errors.date.message}</p>
                     )}
                     <p className="error">{validErrors.date}</p>
+
+                       </Form.Group>
                   </Col>
 
                   {/* Message */}
@@ -188,8 +195,9 @@ export default function Commonfrom(){
                         autoComplete="off"
                         {...register("message")}
                       />
-                    </Form.Group>
+                  
                     <p className="error">{validErrors.message}</p>
+                      </Form.Group>
                   </Col>
 
                   {/* Checkbox */}

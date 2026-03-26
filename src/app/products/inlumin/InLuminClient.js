@@ -37,7 +37,7 @@ export default function InLuminClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up"> Procurement Made Smarter</h2>
+            <h2 className="h4 text-center" data-aos="fade-up"> Procurement Made <span>Smarter</span></h2>
             <p data-aos="fade-up" className="text-center"> A unified platform to automate workflows, improve accuracy, and maintain full visibility across the entire procure-to-pay cycle.</p>
 
             <Row className="mt-4 mt-md-5 justify-content-center">
@@ -77,7 +77,7 @@ export default function InLuminClient() {
 
     <div className="grey  challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up"> Challenges in <br />Pharma Procurement</h2>
+            <h2 className="h4 text-center" data-aos="fade-up"> Challenges in <br /> <span>Pharma Procurement</span></h2>
             <p data-aos="fade-up" className="text-center col-7 m-auto">Procurement teams face operational inefficiencies, fragmented systems, and limited visibility that slow down approvals, payments, and vendor collaboration. Traditional ERP solutions often fail to address these challenges fully.</p>
 
             <Row className="mt-4 mt-md-5">
@@ -121,7 +121,7 @@ export default function InLuminClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center mb-0" data-aos="fade-up">Transforming Procurement </h2>
+            <h2 className="h4 text-center mb-0" data-aos="fade-up">Transforming <span>Procurement</span> </h2>
         </Container>
     </div>
 
@@ -269,7 +269,7 @@ export default function InLuminClient() {
 
      <div className="grey  insights-wrapper pad80 pb-0">
         <Container>
-            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br />THAT KEEP YOU AHEAD</h2>
+            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br /> <span>THAT KEEP YOU AHEAD</span></h2>
             <Bloghomepage />
         </Container>
     </div>
@@ -277,7 +277,7 @@ export default function InLuminClient() {
    <div className="pad80 grey discover-from">
                        <Container>
                            {/* <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH InLumin</h2>     */}
-                            <h2 className="h4 text-center"  data-aos="fade-up">Bring Clarity and Control to<br/>  Procure-to-Pay Operations
+                            <h2 className="h4 text-center"  data-aos="fade-up">Bring Clarity and Control to<br/> <span>Procure-to-Pay Operations</span>
 </h2>   
                            <Row className="mt-4 mt-md-5">
                                <Col md={12} lg={6}>

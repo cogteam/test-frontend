@@ -60,7 +60,7 @@ export default function NoteIQClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up"> COMPLIANCE MADE SIMPLER</h2>
+            <h2 className="h4 text-center" data-aos="fade-up"> COMPLIANCE MADE <span>SIMPLER</span></h2>
             <p data-aos="fade-up" className="text-center">Get a unified platform for validation, documentation, and training, built for <br />modern life sciences organisations.</p>
 
             <Row className="mt-4 mt-md-5">
@@ -110,7 +110,7 @@ export default function NoteIQClient() {
 
     <div className="grey challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up"> CHALLENGES IN LIFE <br />SCIENCES COMPLIANCE</h2>
+            <h2 className="h4 text-center" data-aos="fade-up"> CHALLENGES IN LIFE <br /><span>SCIENCES COMPLIANCE</span></h2>
             <p data-aos="fade-up" className="text-center col-7 m-auto">Life sciences teams face growing operational, regulatory, and technological pressures. Managing complex data, staying updated with evolving regulations, and relying on manual or fragmented systems make compliance slow, error-prone, and difficult to scale. These challenges impact efficiency, quality, and overall operational excellence.</p>
 
             <Row className="mt-4 mt-md-5">
@@ -154,7 +154,7 @@ export default function NoteIQClient() {
 
      <div className="grey pad80 challenges-wrapper">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">ENHANCING <br />REGULATORY PROCESSES </h2>
+            <h2 className="h4 text-center" data-aos="fade-up">ENHANCING <br /><span>REGULATORY PROCESSES</span> </h2>
             <p data-aos="fade-up" className="text-center col-7 m-auto"> NoteIQ simplifies even the most complex compliance processes by converting them into streamlined, automated workflows. With robust tracking, secure document control, and centralised management, organisations can ensure accuracy, reduce errors, and maintain full regulatory compliance with ease.</p>
         </Container>
     </div>
@@ -415,7 +415,7 @@ export default function NoteIQClient() {
 
     <div className="grey pad80">
         <Container>
-            <h2 className="h4 text-center" data-aos="fade-up">The Value We Deliver</h2>
+            <h2 className="h4 text-center" data-aos="fade-up">The Value <span> We Deliver</span></h2>
             <p className="text-center" data-aos="fade-up">Accelerate compliance processes while minimising errors.<br /> Leverage a secure and scalable platform designed for organisations of any size.</p>
 
                 <Row className="mt-4 mt-md-5">
@@ -469,14 +469,14 @@ export default function NoteIQClient() {
 
      <div className="grey  insights-wrapper pt-0">
         <Container>
-            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br />THAT KEEP YOU AHEAD</h2>
+            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br /><span>THAT KEEP YOU AHEAD</span></h2>
             <Bloghomepage />
         </Container>
     </div>
 
         <div className="pad80 grey discover-from">
                 <Container>
-                    <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> WITH NOTEIQ</h2>    
+                    <h2 className="h4 text-center"  data-aos="fade-up">DISCOVER THE FUTURE OF<br/> INTELLIGENT COMPLIANCE<br/> <span>WITH NOTEIQ</span></h2>    
                     <Row className="mt-4 mt-md-5">
                         <Col md={12} lg={6}>
                             <Image src={IMAGES.Noteiqf} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />

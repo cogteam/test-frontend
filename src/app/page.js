@@ -83,7 +83,7 @@ const aislider = {
     {
       breakpoint: 768, // mobile & tablet
       settings: {
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 6000,
         draggable: true,
         swipe: true,
@@ -252,10 +252,10 @@ export default function Home() {
               </div>
 
               <div className="circle-item" data-aos="zoom-in" data-aos-delay="300" style={{'background': '#0e90a2'}}>
-                 <p>Consulting</p>
+                 <p>Services</p>
               </div>
               <div className="circle-item" data-aos="zoom-in" data-aos-delay="400" style={{'background': '#19a574'}}>
-                 <p>Services</p>
+                 <p>Consulting</p>
               </div>
               <div className="circle-item" data-aos="zoom-in" data-aos-delay="600" style={{'background': '#90c43c'}}>
                  <p>Solutions</p>
@@ -267,33 +267,33 @@ export default function Home() {
          
 
 
-          <Row className="mt-5">
+          <Row className="mt-5 mid-box">
             {/* <Col lg={12} md={12} className="p-0">
                <div className="circle-home">
                  <Image src={circle} alt="circle" className="w-100 h-auto" data-aos="fade-up" />
                </div>
             </Col> */}
-             <Col lg={12} md={12} className="p-0">
+             <Col lg={12} md={12} >
               <Slider {...aislider} className="col-11 m-auto ai-slider row">
                 <div className="p-0 col-md-6">
                 <div className="ai-view ">
-                      <h4>Technology-Led  Innovation</h4>
+                      <h4 data-aos-delay="100" data-aos="fade-up">Technology-Led  Innovation</h4>
                       <ul>
-                        <li><span><Image src={Techfirst} alt="" /></span> <p className="mb-0">Tech-first, AI-driven <br className="d-none" />solutions</p></li>
-                        <li><span><Image src={Automation} alt="" /></span>  <p className="mb-0">Automation and intelligent<br className="d-none" />  solutions at scale</p></li>
-                        <li><span><Image src={realtime} alt="" /></span>  <p className="mb-0">Real-time insights &<br className="d-none" /> integrated  workflows</p></li>
-                        <li><span><Image src={Built} alt="" /></span>  <p className="mb-0">Built-in compliance &<br className="d-none" /> accuracy</p></li>
+                        <li data-aos-delay="200" data-aos="fade-up"><span><Image src={Techfirst} alt="" /></span> <p className="mb-0">Tech-first, AI-driven <br className="d-none" />solutions</p></li>
+                        <li data-aos-delay="300" data-aos="fade-up"><span><Image src={Automation} alt="" /></span>  <p className="mb-0">Automation and intelligent<br className="d-none" />  solutions at scale</p></li>
+                        <li data-aos-delay="400" data-aos="fade-up"><span><Image src={realtime} alt="" /></span>  <p className="mb-0">Real-time insights &<br className="d-none" /> integrated  workflows</p></li>
+                        <li data-aos-delay="500" data-aos="fade-up"><span><Image src={Built} alt="" /></span>  <p className="mb-0">Built-in compliance &<br className="d-none" /> accuracy</p></li>
                       </ul>
                 </div>
               </div>
-             <div className="p-0  col-md-6">
+             <div className="col-md-6">
                 <div className="ai-view border-0">
-                      <h4>Rooted in Pharma Expertise</h4>
+                      <h4 data-aos-delay="100" data-aos="fade-up">Rooted in Pharma Expertise</h4>
                       <ul>
-                        <li><span><Image src={Pharma} alt="" /></span>  <p className="mb-0">Pharma-native <br className="d-none" />expertise</p></li>
-                        <li><span><Image src={Regulatory} alt="" /></span>  <p className="mb-0">Regulatory and compliance<br className="d-none" />  insight</p></li>
-                        <li><span><Image src={Applied} alt="" /></span>  <p className="mb-0">Applied scientific and <br className="d-none" />operational expertise</p></li>
-                         <li><span><Image src={Execution} alt="" /></span>  <p className="mb-0">Execution-focused <br className="d-none" />experience</p></li>
+                        <li data-aos-delay="200" data-aos="fade-up"><span><Image src={Pharma} alt="" /></span>  <p className="mb-0">Pharma-native <br className="d-none" />expertise</p></li>
+                        <li data-aos-delay="200" data-aos="fade-up"><span><Image src={Regulatory} alt="" /></span>  <p className="mb-0">Regulatory and compliance<br className="d-none" />  insight</p></li>
+                        <li data-aos-delay="300" data-aos="fade-up"><span><Image src={Applied} alt="" /></span>  <p className="mb-0">Applied scientific and <br className="d-none" />operational expertise</p></li>
+                        <li data-aos-delay="400" data-aos="fade-up"><span><Image src={Execution} alt="" /></span>  <p className="mb-0">Execution-focused <br className="d-none" />experience</p></li>
                       </ul>
                 </div>
              </div>

@@ -6,8 +6,13 @@ import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 // import Footer from "@/components/Footer/page";
 import Commonfrom from "@/components/Productfrom/Commonfrom/page";
 import { IMAGES } from "@/assets/images/index.js"; 
+import Careersmodal from "@/app/careers/Careersmodal/page";
+
+import darwinbox from '../../../assets/images/darwinbox.png';
 
 export default function HumanCapitalDigitisationClient() {
+
+     const [show, setShow] = useState(false);
 
   const [key, setKey] = useState('vms');
 
@@ -362,6 +367,29 @@ export default function HumanCapitalDigitisationClient() {
       </Container>
     </div>
 
+
+<Careersmodal 
+  show={show}
+  handleClose={() => setShow(false)}
+/>
+        <div className="grey2 pad80 ai-hcm">
+            <Container>
+               <h2 className="h4 text-center" data-aos="fade-up">Revolutionizing Human Capital<br/>  <span>with AI-Powered HCM</span></h2>
+       <div className="text-center mb-4">
+                <Image src={darwinbox} alt="darwinbox" className="darwinbox" data-aos="fade-up" />
+            </div>
+              <div className="col-9 text-center m-auto">
+                   <p>Human Capital Management is evolving into a powerful driver of growth — defined by seamless experiences, intelligent insights, and organizational agility. Together with Darwinbox, we are transforming how organizations attract, engage, develop, and retain talent through an AI-powered HCM platform built for the modern workforce.</p>
+               <p>At the heart of this transformation is a next-generation HR ecosystem that blends deep automation with predictive intelligence. From smart hiring and seamless onboarding to performance management, payroll, workforce analytics, and employee engagement — every touchpoint is unified, intuitive, and insight-driven.</p>
+
+           
+                <div className="sr-btn mt-4 d-inline-block" style={{cursor: 'pointer'}} onClick={() => setShow(true)}>
+                    <span>Know More</span>
+                </div>   
+      
+              </div>
+            </Container>
+      </div>
   
 
     <div className="pad80 grey discover-from" id="expert-driven">
