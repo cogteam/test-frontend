@@ -78,13 +78,13 @@ export default function AboutUs() {
   //Custom Arrows
 const NextArrow = ({ onClick }) => (
   <div className="custom-arrow next" onClick={onClick}>
-    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right"><FaArrowLeft/></span>
+    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right"><FaArrowRight/></span>
   </div>
 );
 
 const PrevArrow = ({ onClick }) => (
   <div className="custom-arrow prev" onClick={onClick}>
-   <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left"><FaArrowRight /></span>
+   <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left"><FaArrowLeft /></span>
   </div>
 );
 

@@ -348,8 +348,12 @@ footer .h4 br {
 /* .col-6 {
         width: 100%;
 } */
- 
-
+.product-showcase-carousel-controls--right {
+    right: 42%;
+}
+.product-showcase-carousel-controls--left {
+    left: 42%;
+}
 .ai-view ul li p {
     display: block;
     margin-left: 0;
@@ -570,7 +574,10 @@ padding: 30px;
         margin-top: 0px !important;
     }
     .product-showcase-carousel-controls--right {
-        right: 51%;
+        right: 33.5%;
+    }
+    .product-showcase-carousel-controls--left {
+        left:33.5%;
     }
     .year h4 br {
         display: none;
