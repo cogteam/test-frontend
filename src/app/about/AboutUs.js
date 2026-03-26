@@ -76,15 +76,31 @@ const BANNER_DATA = [
 export default function AboutUs() {
 
   //Custom Arrows
-const NextArrow = ({ onClick }) => (
-  <div className="custom-arrow next" onClick={onClick}>
-    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right"><FaArrowRight/></span>
+
+
+const PrevArrow = ({ onClick, currentSlide }) => (
+  <div
+    className={`custom-arrow prev ${
+      currentSlide === 0 ? "disabled" : ""
+    }`}
+    onClick={currentSlide === 0 ? null : onClick}
+  >
+    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left">
+      <FaArrowLeft />
+    </span>
   </div>
 );
 
-const PrevArrow = ({ onClick }) => (
-  <div className="custom-arrow prev" onClick={onClick}>
-   <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left"><FaArrowLeft /></span>
+const NextArrow = ({ onClick, currentSlide, slideCount }) => (
+  <div
+    className={`custom-arrow next ${
+      currentSlide === slideCount - 3 ? "disabled" : ""
+    }`}
+    onClick={currentSlide === slideCount - 3 ? null : onClick}
+  >
+    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right">
+      <FaArrowRight />
+    </span>
   </div>
 );
 
@@ -100,6 +116,8 @@ const PrevArrow = ({ onClick }) => (
   swipeToSlide: true,
   dots: false,
   focusOnSelect: true,
+  loop: false,
+  infinite: false,
   responsive: [
     {
       breakpoint: 1024, // laptop/tablet
@@ -329,7 +347,7 @@ and our mission. Without them, nothing else matters.
         <div className="jour2 position-relative">
        <Slider     
        {...aboutsettings}
-         nextArrow={<NextArrow />}
+         nextArrow={<NextArrow  />}
          prevArrow={<PrevArrow />}
         
          className="journey-slider-para mt-5">

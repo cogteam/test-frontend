@@ -3179,7 +3179,11 @@ footer p.success-msg {
 .product-showcase-carousel-controls--left {
     left: 46%;
 }
-
+.custom-arrow.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: not-allowed;
+}
 .jour2 {
   padding-bottom: 80px;
 }
