@@ -427,13 +427,14 @@ const iconStyle = {
 </h2>
       
               <div className="col-9 text-center m-auto">
+                   <Image src={chili} alt="chili" className="chili mb-4"  data-aos="fade-up" />   
                    <p>As industries evolve, workforce readiness is becoming a key driver of operational excellence — powered by immersive, scalable, and intelligent training solutions. Together with 8chili and its platform HintVR, we are transforming how organizations train, validate, and certify operators through cutting-edge AR/VR experiences.
 
 </p>
                    <p>At the core of this transformation is a Digital Workforce Operating Solution that converts SOPs and machine operations into high-fidelity digital twins. This enables organizations to accelerate skill development up to 3× faster than traditional methods while ensuring consistency, compliance, and operational efficiency.
 
 </p>
-                  <Image src={chili} alt="chili" className="chili"  data-aos="fade-up" />      
+                  
               </div>
             </Container>
       </div>

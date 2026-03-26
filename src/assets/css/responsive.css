@@ -6,10 +6,21 @@
   height: 300px;
 } */
 
+@media (max-width: 1400px){ 
+   .product-showcase-carousel-controls--right {
+    right: 45%;
+}
+
+.product-showcase-carousel-controls--left {
+    left: 45%;
+}
+}
+
 @media (max-width: 1199px){
     .aboutSection strong{
         font-size: 28px;
     }
+   
 }
 
 @media (max-width:991px) {

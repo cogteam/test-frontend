@@ -457,9 +457,10 @@ export default function TrackAndTraceClient() {
                <h2 className="h4 text-center" data-aos="fade-up">Powering End-to-End Serialization  <br/>& <span>Supply Chain Automation</span></h2>
       
               <div className="col-9 text-center m-auto">
+                  <Image src={Tracelink} alt="Tracelink" className="tracelink mb-4"  data-aos="fade-up" />      
+
                    <p>Modern supply chains are becoming more connected, intelligent, and resilient — driven by real-time visibility and seamless partner collaboration. Together with TraceLink, we help organizations leverage the Healthcare and Life Sciences industry’s largest digital network of 291,000+ members, enabling unmatched connectivity across the supply ecosystem.</p>
                    <p>At the core of this transformation is a digital supply chain platform that connects manufacturers, partners, and logistics providers on a unified network. From serialization and regulatory compliance to real-time data exchange and supply chain orchestration, every process is streamlined to deliver greater control, faster decision-making, and improved product availability.</p>
-                  <Image src={Tracelink} alt="Tracelink" className="tracelink"  data-aos="fade-up" />      
               </div>
             </Container>
       </div>

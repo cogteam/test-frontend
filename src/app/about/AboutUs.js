@@ -329,7 +329,6 @@ and our mission. Without them, nothing else matters.
         <div className="jour2 position-relative">
        <Slider     
        {...aboutsettings}
-       
          nextArrow={<NextArrow />}
          prevArrow={<PrevArrow />}
         
