@@ -26,7 +26,7 @@ import capture1 from "../assets/images/capture1.webp"
 import capture2 from "../assets/images/capture2.webp"
 
 import icon_traingle from "../assets/images/icon_traingle.svg";
-
+ 
 import { IMAGES } from "../assets/images";
 const ServicesSection = dynamic(() => import("@/components/ServicesSection/page"), { 
   ssr: true,
