@@ -79,12 +79,12 @@ export default function Footer(){
 
                 <Container className="pad80 pb-0">
                         <Row>
-                            <Col md={12} lg={4}>
+                            {/* <Col md={12} lg={4}>
                                 <Image src={logo} alt="logo" className="logo"  data-aos="fade-up"/>
-                            </Col>
+                            </Col> */}
 
-                            <Col md={12} lg={6} className="m-0">
-                                <h2 className="h4 text-center"  data-aos="fade-up">Join Our <br /><span>Newsletter</span></h2>
+                            <Col md={12} lg={12} className="m-0">
+                                <h2 className="h4 text-center"  data-aos="fade-up">Join Our <span>Newsletter</span></h2>
 
                                 <Form onSubmit={handleSubmit(onSubmit)} method="post" className="d-flex newsletter-box position-relative" data-aos="fade-up">
                 <Form.Control

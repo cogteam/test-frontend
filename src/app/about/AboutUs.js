@@ -117,17 +117,17 @@ const [slidesToShow, setSlidesToShow] = useState(3);
       arrows: true,
     infinite: false,
     // slidesToShow: slidesToShow,
+    slidesToShow: 3,
     swipeToSlide: true,
     dots: false,
-
-    nextArrow: <NextArrow />,   //slidesToShow={slidesToShow}
+    nextArrow: <NextArrow  />, //slidesToShow={slidesToShow}
     prevArrow: <PrevArrow  />,
   responsive: [
     {
       breakpoint: 1024, // laptop/tablet
       settings: {
        slidesToShow: 2,
-          beforeChange: () => setSlidesToShow(2),
+          //beforeChange: () => setSlidesToShow(2),
 
       }
     },

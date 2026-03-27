@@ -7,7 +7,7 @@ import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 // import Footer from "@/components/Footer/page";
 import Commonfrom from "@/components/Productfrom/Commonfrom/page";
 import NextPage from "@/components/NextPage/page";
-import Tracelink from "../../../assets/images/Tracelink.png";
+import Tracelink from "../../../assets/images/Tracelink2.png";
 import { IMAGES } from "@/assets/images/index.js"; 
 
 export default function TrackAndTraceClient() {
