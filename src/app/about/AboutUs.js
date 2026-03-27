@@ -109,8 +109,6 @@ const NextArrow = ({ onClick, currentSlide, slideCount }) => {
   );
 };
 
-  const [nav1, setNav1] = useState();
-  const [nav2, setNav2] = useState();
 
     const [activeTab, setActiveTab] = useState("primary");
 const [slidesToShow, setSlidesToShow] = useState(3);
@@ -118,11 +116,11 @@ const [slidesToShow, setSlidesToShow] = useState(3);
     const aboutsettings = {
       arrows: true,
     infinite: false,
-    slidesToShow: slidesToShow,
+    // slidesToShow: slidesToShow,
     swipeToSlide: true,
     dots: false,
 
-    nextArrow: <NextArrow slidesToShow={slidesToShow} />,
+    nextArrow: <NextArrow />,   //slidesToShow={slidesToShow}
     prevArrow: <PrevArrow  />,
   responsive: [
     {
