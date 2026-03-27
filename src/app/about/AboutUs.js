@@ -77,41 +77,20 @@ export default function AboutUs() {
 
   //Custom Arrows
 
-// ✅ Prev Arrow
-const PrevArrow = ({ onClick, currentSlide }) => (
-  <div
-    className={`custom-arrow prev ${currentSlide === 0 ? "disabled" : ""}`}
-    onClick={currentSlide === 0 ? null : onClick}
-  >
-   <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left">
-      <FaArrowLeft />
-    </span>
+const NextArrow = ({ onClick }) => ( 
+  <div className="custom-arrow next" onClick={onClick}> 
+    <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right"><FaArrowRight/></span>
   </div>
-);
+ );
 
-// ✅ Next Arrow (Desktop fix only)
-const NextArrow = ({ onClick, currentSlide, slideCount }) => {
-  const isDesktop = window.innerWidth > 1024; // 👈 desktop check
-
-  const isDisabled = isDesktop
-    ? currentSlide >= slideCount - 3 // 👈 desktop (slidesToShow: 3)
-    : currentSlide === slideCount - 1; // 👈 mobile simple
-
-  return (
-    <div
-      className={`custom-arrow next ${isDisabled ? "disabled" : ""}`}
-      onClick={!isDisabled ? onClick : null}
-    >
-       <span className="product-showcase-carousel-controls product-showcase-carousel-controls--right">
-      <FaArrowRight />
-    </span>
-    </div>
-  );
-};
-
+const PrevArrow = ({ onClick }) => ( 
+  <div className="custom-arrow prev" onClick={onClick}> 
+      <span className="product-showcase-carousel-controls product-showcase-carousel-controls--left"><FaArrowLeft /></span>
+  </div>
+ );
 
     const [activeTab, setActiveTab] = useState("primary");
-const [slidesToShow, setSlidesToShow] = useState(3);
+// const [slidesToShow, setSlidesToShow] = useState(3);
 
     const aboutsettings = {
       arrows: true,
@@ -135,7 +114,7 @@ const [slidesToShow, setSlidesToShow] = useState(3);
       breakpoint: 991, // tablet
       settings: {
         slidesToShow:1,
-          beforeChange: () => setSlidesToShow(1),
+          //beforeChange: () => setSlidesToShow(1),
       }
     },
     {
