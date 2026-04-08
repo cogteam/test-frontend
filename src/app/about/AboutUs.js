@@ -16,6 +16,34 @@ import c_epic from "../../assets/images/logo/c_epic.webp";
 import arcolab_logo from "../../assets/images/arcolab_logo.png";
 import logo from "../../assets/images/logo.svg";
 // 3. Lazy Load Leadership Section (Reduces initial JS bundle)
+
+
+// Client logos list using IMAGES.LOGO1 ... LOGO21
+const clientLogos = [
+    { name: "Client 1", image: IMAGES.LOGO1, alt: "Client 1 Logo" },
+    { name: "Client 2", image: IMAGES.LOGO2, alt: "Client 2 Logo" },
+    { name: "Client 3", image: IMAGES.LOGO3, alt: "Client 3 Logo" },
+    { name: "Client 4", image: IMAGES.LOGO4, alt: "Client 4 Logo" },
+    { name: "Client 5", image: IMAGES.LOGO5, alt: "Client 5 Logo" },
+    { name: "Client 6", image: IMAGES.LOGO6, alt: "Client 6 Logo" },
+    { name: "Client 7", image: IMAGES.LOGO7, alt: "Client 7 Logo" },
+    { name: "Client 8", image: IMAGES.LOGO8, alt: "Client 8 Logo" },
+    { name: "Client 9", image: IMAGES.LOGO9, alt: "Client 9 Logo" },
+    { name: "Client 10", image: IMAGES.LOGO10, alt: "Client 10 Logo" },
+    { name: "Client 11", image: IMAGES.LOGO11, alt: "Client 11 Logo" },
+    { name: "Client 12", image: IMAGES.LOGO12, alt: "Client 12 Logo" },
+    { name: "Client 13", image: IMAGES.LOGO13, alt: "Client 13 Logo" },
+    { name: "Client 14", image: IMAGES.LOGO14, alt: "Client 14 Logo" },
+    { name: "Client 15", image: IMAGES.LOGO15, alt: "Client 15 Logo" },
+    { name: "Client 16", image: IMAGES.LOGO16, alt: "Client 16 Logo" },
+    { name: "Client 17", image: IMAGES.LOGO17, alt: "Client 17 Logo" },
+    { name: "Client 18", image: IMAGES.LOGO18, alt: "Client 18 Logo" },
+    { name: "Client 19", image: IMAGES.LOGO19, alt: "Client 19 Logo" },
+    { name: "Client 20", image: IMAGES.LOGO20, alt: "Client 20 Logo" },
+    { name: "Client 21", image: IMAGES.LOGO21, alt: "Client 21 Logo" },
+];
+
+
 const LeadershipSection = dynamic(() => import("@/components/LeadershipSection/page"), {
   loading: () => <div className="grey pad80" style={{ minHeight: '500px' }}>Loading...</div>
 });
@@ -165,11 +193,93 @@ const NextArrow = ({ onClick, currentSlide, slideCount }) => {
         <Container className="d-flex align-items-center h-100 position-relative" style={{ zIndex: 1 }}>
           <div>
             <h1 className="h4 mt-0 text-black" data-aos="fade-up">LIFE SCIENCE <br /><span>innovation center</span></h1>
-            <p className="text-black" data-aos="fade-up" data-aos-delay="100">Unlock the power of streamlined operations and<br /> accelerated growth! </p>
+            <p className="text-black" data-aos="fade-up" data-aos-delay="100">Unlocking the power of streamlined operations through<br/> our deep domain expertise and next-gen innovations.
+
+ </p>
           </div>
         </Container>
       </div>
 
+
+
+<div className="pad80 grey2">
+  <Container>
+    <h2 className="h4 text-center" data-aos="fade-up">
+      OUR CORE <span>ETHOS</span>
+    </h2>
+
+    <div className="aboutSection position-relative overflow-hidden mt-4 mt-md-5">
+      
+      {/* 1. BACKGROUND IMAGES */}
+      <div className="bg-image-container">
+        {BANNER_DATA.map((item) => {
+          // Define which tab key matches which ID
+          const tabKeys = ["primary", "preprimary", "preprimaryed"];
+          const isActive = activeTab === tabKeys[item.id - 1];
+
+          return (
+            <div 
+              key={item.id} 
+              className="position-absolute w-100 h-100 top-0 start-0"
+              style={{ 
+                opacity: isActive ? 1 : 0, 
+                zIndex: 0,
+                transition: 'opacity 0.5s ease-in-out' 
+              }}
+            >
+              {/* Desktop Image: Hidden on mobile (d-none), visible on medium screens+ (d-md-block) */}
+              <div className="d-none d-md-block position-relative w-100 h-100">
+                 <Image
+    src={item.desktop}
+    alt={item.alt}
+    fill // Use the fill prop explicitly
+    style={{ objectFit: 'cover' }}
+    // sizes="100vw"
+    priority={item.id === 1}
+  />
+              </div>
+
+              {/* Mobile Image: Visible on mobile (d-block), hidden on medium screens+ (d-md-none) */}
+              <div className="d-block d-md-none position-relative w-100 h-100">
+                <Image
+    src={item.mobile}
+    alt={item.alt}
+    fill // Use the fill prop explicitly
+    style={{ objectFit: 'cover'}}
+    // sizes="100vw"
+  />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* 2. HOVER CONTENT */}
+      <div className="row" style={{ zIndex: 1}}>
+        <div className="col-md-4">
+          <div className="hover_div hover_divp boder-rt" onMouseEnter={() => setActiveTab("primary")}>
+            <strong> LIFE.</strong>
+            <p>Represents our deep-rooted commitment to human health & our purpose in enhancing lives.</p>
+          </div>
+        </div>
+
+        <div className="col-md-4">
+          <div className="hover_div hover_divp boder-rt" onMouseEnter={() => setActiveTab("preprimary")}>
+            <strong>SCIENCE.</strong>
+            <p>Reflects our data-driven approach, digital expertise, and innovation all backed by next-gen technology.</p>
+          </div>
+        </div>
+
+        <div className="col-md-4">
+          <div className="hover_div hover_divp boder-rt" onMouseEnter={() => setActiveTab("preprimaryed")}>
+            <strong>POSSIBILITIES.</strong>
+            <p>Showcase our ability to unlock new horizons for global life sciences organizations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Container>
+</div>
       {/* 5. VISION SECTION */}
       <div className="pad80 grey vision-wraper overflow-hidden" id="vision">
         <Container>
@@ -406,84 +516,7 @@ and our mission. Without them, nothing else matters.
 </div>  
 
 
-  <div className="pad80 grey2">
-  <Container>
-    <h2 className="h4 text-center" data-aos="fade-up">
-      OUR CORE <span>ETHOS</span>
-    </h2>
-
-    <div className="aboutSection position-relative overflow-hidden mt-4 mt-md-5">
-      
-      {/* 1. BACKGROUND IMAGES */}
-      <div className="bg-image-container">
-        {BANNER_DATA.map((item) => {
-          // Define which tab key matches which ID
-          const tabKeys = ["primary", "preprimary", "preprimaryed"];
-          const isActive = activeTab === tabKeys[item.id - 1];
-
-          return (
-            <div 
-              key={item.id} 
-              className="position-absolute w-100 h-100 top-0 start-0"
-              style={{ 
-                opacity: isActive ? 1 : 0, 
-                zIndex: 0,
-                transition: 'opacity 0.5s ease-in-out' 
-              }}
-            >
-              {/* Desktop Image: Hidden on mobile (d-none), visible on medium screens+ (d-md-block) */}
-              <div className="d-none d-md-block position-relative w-100 h-100">
-                 <Image
-    src={item.desktop}
-    alt={item.alt}
-    fill // Use the fill prop explicitly
-    style={{ objectFit: 'cover' }}
-    // sizes="100vw"
-    priority={item.id === 1}
-  />
-              </div>
-
-              {/* Mobile Image: Visible on mobile (d-block), hidden on medium screens+ (d-md-none) */}
-              <div className="d-block d-md-none position-relative w-100 h-100">
-                <Image
-    src={item.mobile}
-    alt={item.alt}
-    fill // Use the fill prop explicitly
-    style={{ objectFit: 'cover'}}
-    // sizes="100vw"
-  />
-              </div>
-            </div>
-          );
-        })}
-      </div>
-
-      {/* 2. HOVER CONTENT */}
-      <div className="row" style={{ zIndex: 1}}>
-        <div className="col-md-4">
-          <div className="hover_div hover_divp boder-rt" onMouseEnter={() => setActiveTab("primary")}>
-            <strong> LIFE.</strong>
-            <p>Represents our deep-rooted commitment to human health & our purpose in enhancing lives.</p>
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="hover_div hover_divp boder-rt" onMouseEnter={() => setActiveTab("preprimary")}>
-            <strong>SCIENCE.</strong>
-            <p>Reflects our data-driven approach, digital expertise, and innovation all backed by next-gen technology.</p>
-          </div>
-        </div>
-
-        <div className="col-md-4">
-          <div className="hover_div hover_divp boder-rt" onMouseEnter={() => setActiveTab("preprimaryed")}>
-            <strong>POSSIBILITIES.</strong>
-            <p>Showcase our ability to unlock new horizons for global life sciences organizations.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </Container>
-</div>
+  
 
       {/* 7. LEADERSHIP (Client Component) */}
       <LeadershipSection />
@@ -526,6 +559,35 @@ and our mission. Without them, nothing else matters.
           </Row>
         </Container>
       </div>
+
+
+
+       <main className='pad80 client-page grey' id="clients">
+                             <Container>
+
+                              <h2 className="h4 text-center" data-aos="fade-up">Clients</h2>
+          <p className="col-lg-7 text-center m-auto" data-aos="fade-up">We partner with leading organizations globally to deliver <br/>
+transformative solutions and drive success.</p>
+
+                                 <Row className="mt-5">
+                                     {clientLogos.map((client, index) => (
+                                         <Col md={2} sm={4} xs={6} key={index} data-aos="fade-up" data-aos-delay={index * 100} className='mx-0 mb-4'>
+                                             <div className='client-logo-item'>
+                                                 <div className="client-logo-img-wrapper">
+                                                     <Image
+                                                         src={client.image}
+                                                         width={150}
+                                                         height={80}
+                                                         alt={client.alt}
+                                                     />
+                                                 </div>
+                                     
+                                             </div>
+                                         </Col>
+                                     ))}
+                                 </Row>
+                             </Container>
+                         </main>
 
       {/* <Footer /> */}
     </>

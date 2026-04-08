@@ -95,7 +95,7 @@ nav {
 }
 
 .logo img {
-  width: 185px;
+  width: 155px;
   position: relative;
   top: -2px;
 }
@@ -149,12 +149,16 @@ nav {
 .banner .banner-text h1 {
     text-transform: uppercase;
     margin: 0;
-    font-size: 90px;
-    background: linear-gradient(90deg, #0f929d, #38ad66, #8bc33f);
+    font-size: 50px;
+}
+
+.banner .banner-text h1 span {
+ background: linear-gradient(90deg, #0f929d, #38ad66, #8bc33f);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
+
 
   .banner-text {
     position: absolute !important;
@@ -374,6 +378,25 @@ transform: scale(1);
 }
 .career-banner{
   background-image: url('../assets/images/banner/pivotpath-career-banner.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.solution-banner{
+  background-image: url('../assets/images/solution.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.consulting-banner{
+  background-image: url('../assets/images/consulting.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.partnerships-banner{
+  background-image: url('../assets/images/partnership.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2354,7 +2377,7 @@ width: 90px;
   border: 1px solid #eaeaea;
   padding: 20px;
   border-radius: 8px;
-  background: #fff;
+  /* background: #fff; */
   height: 140px;
   display: flex;
   flex-direction: column;
@@ -2894,6 +2917,7 @@ footer p.success-msg {
     background-size: contain;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+      /* font-size: calc(-1rem + 34vw); */
 }
 .custommodal .modal-dialog {
     max-width: 700px;
@@ -3203,4 +3227,71 @@ footer p.success-msg {
   height: auto;
     width: 190px;
     margin-top: 10px;
+}
+
+.solutions-row{
+border: solid 1px #e7e7e7;
+      cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.solution-box{
+    padding: 3rem;
+    overflow: hidden;
+}
+
+.solution-box .h5 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.solution-box p {
+    font-size: 15px;
+}
+.solution-box .btns3 {
+  color: #000;
+    border: solid 1px #000;
+}
+
+
+.solution-box .btns3 {
+    padding: 8px 15px;
+    font-size: 12px;
+    margin-top: 0px;
+}
+
+.solution-box .btns3:hover {
+  color: #fff;
+  background: #fff;
+}
+
+.solutions-row:hover {
+    background: #FCFCF5;
+}
+
+.solutions-page .solutions-row:nth-child(2n) .row {
+        flex-direction: row-reverse;
+}
+
+.solutions-page .solutions-row:nth-child(2n) .row {
+        flex-direction: row-reverse;
+}
+
+.solutions-page .solutions-row:nth-child(2n) .row img{
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.solutions-page .solutions-row .row img{
+    padding-left: 20px;
+}
+
+
+#technology-dropdown a{
+  padding: 0  !important;
+}
+
+#technology-dropdown a::before{
+  content: none;
 }

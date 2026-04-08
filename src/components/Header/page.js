@@ -13,7 +13,8 @@ import logo from "../../assets/images/logo.svg";
 export default function Header() {
   const [showAbout, setShowAbout] = useState(false);
   const [showServices, setShowServices] = useState(false);
-const [showProduct, setShowProduct] = useState(false);
+  const [showProduct, setShowProduct] = useState(false);
+  const [showTechnology, setShowTechnology] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
   const [showServices1, setShowServices1] = useState(false);
@@ -21,7 +22,7 @@ const [showProduct, setShowProduct] = useState(false);
   const [showServices3, setShowServices3] = useState(false);
   const [showServices4, setShowServices4] = useState(false);
   const [showServices5, setShowServices5] = useState(false);
-const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
+//const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
 
 
   
@@ -31,7 +32,7 @@ const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
 
         {/* Logo */}
         <Navbar.Brand as={Link} href="/" className="p-0 logo">
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" className="h-auto" />
         </Navbar.Brand>
 
         {/* Mobile Toggle */}
@@ -100,6 +101,9 @@ const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} href="/about#bod">
                   Board of Directors
+                </NavDropdown.Item>
+                 <NavDropdown.Item as={Link} href="/about#clients">
+                  Clients
                 </NavDropdown.Item>
               </NavDropdown>
 
@@ -209,12 +213,12 @@ const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
 
 {/* Product Dropdown */}
 
-              <NavDropdown
+              {/* <NavDropdown
                     title={<Link
                     href="/products"
                     className="nav-link server-dropdown text-uppercase"
                     onClick={(e) => e.stopPropagation()}
-                  > solutions</Link>  }
+                  > Consulting </Link>  }
                 id="services-dropdown"
                 show={showProduct}
               
@@ -268,12 +272,70 @@ const isMobile =  typeof window !== "undefined" && window.innerWidth < 992;
                  NovaVigil
                 </NavDropdown.Item>
                
+              </NavDropdown> */}
+
+
+              <Nav.Link as={Link} href="/consulting" className="text-uppercase">
+                Consulting
+              </Nav.Link>
+              
+
+              
+
+
+               <NavDropdown
+                    title={<Link
+                    href="/"
+                   
+                    className="nav-link server-dropdown m-0 p-0 text-uppercase"
+                    onClick={(e) => e.stopPropagation()}
+                  > Technology </Link>  }
+                id="technology-dropdown"
+                show={showTechnology}
+                className="p-0"
+              
+
+                  onMouseEnter={() => {
+    if (window.innerWidth >= 992) {
+      setShowTechnology(true);
+    }
+  }}
+  onMouseLeave={() => {
+    if (window.innerWidth >= 992) {
+      setShowTechnology(false);
+    }
+  }}
+  onToggle={(isOpen) => {
+    if (window.innerWidth < 992) {
+      setShowTechnology(isOpen);
+    }
+  }}
+              > 
+
+               
+              
+                <NavDropdown.Item
+                  as={Link}
+                  href="/technology/solutions"
+                >
+                  Solutions
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  as={Link}
+                  href="/products"
+                >
+                  Platforms
+                </NavDropdown.Item>
+
+                <NavDropdown.Item as={Link} href="/technology/partnerships">
+                 Partnerships
+                </NavDropdown.Item>
+
+               
+               
               </NavDropdown>
 
-              {/* CLIENTS */}
-              <Nav.Link as={Link} href="/clients" className="text-uppercase">
-                CLIENTS
-              </Nav.Link>
+              
 
               {/* INSIGHTS */}
               <Nav.Link as={Link} href="/insights" className="text-uppercase">

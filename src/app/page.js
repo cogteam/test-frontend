@@ -170,7 +170,7 @@ export default function Home() {
   useEffect(() => {
     if (start) {
       const timer = setTimeout(() => {
-        setValues({ first: 400, second: 30, third: 5, four: 1000 });
+        setValues({ first: 400, second: 60, third: 50, four: 1000 });
       }, 300);
       return () => clearTimeout(timer);
     }
@@ -222,12 +222,15 @@ export default function Home() {
         </Slider>
         
         <Slider {...settingsText} asNavFor={nav1} ref={slider2} className="banner-text">
-          <div><h1>LIFE.</h1> <p>Represents our deep-rooted commitment to human<br className="d-none d-md-block"/> health &  our purpose in enhancing lives.
-</p></div>
+          {/* <div><h1>LIFE.</h1> <p>Represents our deep-rooted commitment to human<br className="d-none d-md-block"/> health &  our purpose in enhancing lives.</p></div>
           <div><h1>SCIENCE.</h1><p>
             Reflects our data-driven approach, digital expertise and<br className="d-none d-md-block"/> innovation all backed by next-gen technology.</p></div>
           <div><h1>POSSIBILITIES.</h1><p>
-            Showcase our ability to unlock <br className="d-block d-md-none"/> new horizons for global <br className="d-none d-md-block"/>life<br className="d-block d-md-none"/> sciences organizations.</p></div>
+            Showcase our ability to unlock <br className="d-block d-md-none"/> new horizons for global <br className="d-none d-md-block"/>life<br className="d-block d-md-none"/> sciences organizations.</p></div> */}
+
+            <div><h1 data-aos="fade-up" data-aos-delay="100">TRANSFORMING THE FUTURE WITH <br/>DOMAIN-LED PHARMA <span>SERVICES</span></h1></div>
+            <div><h1 data-aos="fade-up" data-aos-delay="100">REINVENTING THE PATH <br/>WITH EXPERT <span>CONSULTING</span> </h1></div>
+            <div><h1 data-aos="fade-up" data-aos-delay="100">ADVANCING LIFE SCIENCES WITH <br/>INTELLIGENT <span>TECHNOLOGY</span></h1></div>
         </Slider>
       </div>
 
@@ -243,7 +246,7 @@ export default function Home() {
 
 
 
-            <div className="flex-circle position-relative d-flex mt-5 align-items-center justify-content-center">
+            {/* <div className="flex-circle position-relative d-flex mt-5 align-items-center justify-content-center">
 
               <div className="line-draw" data-aos="fade-in" data-aos-delay="150"></div>
 
@@ -260,7 +263,7 @@ export default function Home() {
               <div className="circle-item" data-aos="zoom-in" data-aos-delay="600" style={{'background': '#90c43c'}}>
                  <p>Solutions</p>
               </div>
-            </div>
+            </div> */}
 
      
           
@@ -348,8 +351,8 @@ export default function Home() {
               </Col>
               <Col md={6}>
                 <div className="bult-box">
-                  <div className="bult-number"><Odometer value={values.third} format="d" /></div>
-                  <p>CONTINENTS</p>
+                  <div className="bult-number"><Odometer value={values.third} format="d" />+</div>
+                  <p className="text-uppercase">countries</p>
                 </div>
               </Col>
               <Col md={6}>

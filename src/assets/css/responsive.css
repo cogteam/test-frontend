@@ -1,3 +1,5 @@
+
+
 .choose-icon img {
     width: 68px;
     height: 68px;
@@ -5,6 +7,8 @@
 /* .benefits-box-novavigil img{
   height: 300px;
 } */
+
+
 
 @media (max-width: 1400px){ 
    .product-showcase-carousel-controls--right {
@@ -16,6 +20,12 @@
 }
 }
 
+@media (max-width: 1500px) {
+  .e {
+    font-size: 450px;
+  }
+}
+
 @media (max-width: 1199px){
     .aboutSection strong{
         font-size: 28px;
@@ -24,6 +34,23 @@
 }
 
 @media (max-width:991px) {
+        .solutions-row .row {
+        flex-direction: column-reverse !important;
+    }
+    .solution-box {
+    padding: 2rem;
+    overflow: hidden;
+}
+    .solutions-page .solutions-row .row img {
+    padding-left: 0px;
+}
+.solutions-page .solutions-row:nth-child(2n) .row img {
+    padding-right: 0px;
+    padding-left: 0;
+}
+    .solutions-row .col-md-6{
+        width: 100%;
+    }
     .circle-item {
     width: 150px;
     height: 150px;
