@@ -13,14 +13,14 @@ export default function Partnerships() {
     const [show, setShow] = useState(false);
   return (
    <>
-    <div className='inner-head grey career-wrapper partnerships-banner'>
+    {/* <div className='inner-head grey career-wrapper partnerships-banner'>
         <Container className='d-flex align-items-center h-100 '>
             <div>
                 <h1 className='h4 text-white' data-aos="fade-up">Partnerships</h1>
                 <p data-aos="fade-up" className="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the industry's standard dummy text<br/> ever since the 1500s  </p>
             </div>
         </Container>
-    </div>
+    </div> */}
 
 
     <Careersmodal 
@@ -29,7 +29,7 @@ export default function Partnerships() {
     />
 
 
-        <div className='pad80 solutions-page ' >
+        <div className='solutions-page ' >
             <Container>
 
                 <div className='solutions-row' onClick={() => setShow(true)}>

@@ -283,7 +283,7 @@ export default function Header() {
               
 
 
-               <NavDropdown
+               {/* <NavDropdown
                     title={<Link
                     href="/"
                    
@@ -333,9 +333,12 @@ export default function Header() {
 
                
                
-              </NavDropdown>
+              </NavDropdown> */}
 
-              
+              {/* INSIGHTS */}
+              <Nav.Link as={Link} href="/technology" className="text-uppercase">
+                Technology
+              </Nav.Link>
 
               {/* INSIGHTS */}
               <Nav.Link as={Link} href="/insights" className="text-uppercase">

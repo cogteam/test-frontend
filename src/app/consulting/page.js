@@ -20,7 +20,8 @@ export default function Consulting() {
         <Container className='d-flex align-items-center h-100 '>
             <div>
                 <h1 className='h4 text-white' data-aos="fade-up">Consulting</h1>
-                <p data-aos="fade-up" className="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the industry's standard dummy text<br/> ever since the 1500s  </p>
+                <p data-aos="fade-up" className="text-white">Empowering better decisions with clear, strategic insight. <br className="d-none d-md-block" />
+Turning vision into action and impact.  </p>
             </div>
         </Container>
     </div>
