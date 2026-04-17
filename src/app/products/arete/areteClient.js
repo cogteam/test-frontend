@@ -7,8 +7,35 @@ import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
 import Bloghomepage from "@/app/blogshomepage/page";
 import Commonfrom from "@/components/Productfrom/Commonfrom/page";
 import { IMAGES } from "@/assets/images/index.js"; 
-
 import arete from '../../../assets/images/ARETE.svg';
+import Realtime from '../../../assets/images/products/arete/Real-Time.svg';
+import Realtime_white from '../../../assets/images/products/arete/Real-time-white.svg';
+import Intelligent1 from '../../../assets/images/products/arete/Intelligent.svg';
+import Intelligent_white from '../../../assets/images/products/arete/Intelligent-white.svg';
+import Seamless from '../../../assets/images/products/arete/Seamless.svg';
+import Seamless_white from '../../../assets/images/products/arete/Seamless-white.svg';
+import Configurable from '../../../assets/images/products/arete/Configurable.svg';
+import Configurable_white from '../../../assets/images/products/arete/Configurable-white.svg';
+import Limited_Visibility from '../../../assets/images/products/arete/Limited-Visibility.svg';
+
+import AI_Powered  from '../../../assets/images/products/arete/AI-Powered.svg';
+import Intelligent_candidate from '../../../assets/images/products/arete/Intelligent-candidate.svg';
+import Direct_applications from '../../../assets/images/products/arete/Direct-applications.svg';
+import Advanced_search from '../../../assets/images/products/arete/Advanced-search.svg';
+
+import Streamlined_1  from '../../../assets/images/products/arete/Streamlined_1.svg';
+import Streamlined_2 from '../../../assets/images/products/arete/Streamlined_2.svg';
+import Streamlined_3 from '../../../assets/images/products/arete/Streamlined_3.svg';
+import Streamlined_4 from '../../../assets/images/products/arete/Streamlined_4.svg';
+
+import Insights_1 from '../../../assets/images/products/arete/Insights_1.svg';
+import Insights_4 from '../../../assets/images/products/arete/Insights_4.svg';
+
+import Arete_form from '../../../assets/images/products/arete/Arete_form.webp';
+
+import Value_1 from '../../../assets/images/products/arete/Value_1.svg';
+import Value_4 from '../../../assets/images/products/arete/Value_4.svg';
+import Value_5 from '../../../assets/images/products/arete/Value_5.svg';
 
 export default function AreteClient() {
 
@@ -40,30 +67,30 @@ export default function AreteClient() {
                 <Col md={6} lg={3}>
                     <div className="compliance-box" data-aos="fade-up">
                         <p className="head">Intelligent Candidate Scoring </p>
-                        <Image src={IMAGES.AnomIQ_ProactiveMonitoring} alt="agile" className="" />
+                        <Image src={Intelligent1} alt="agile" className="" />
                         <div className="compliance-hover">
                             <p className="compliance-p">Identify the right talent faster through AI-driven insights</p>
-                            <Image src={IMAGES.AnomIQ_ProactiveMonitoringWhite} alt="agile" className="" />
+                            <Image src={Intelligent_white} alt="agile" className="" />
                         </div>
                     </div>
                 </Col>
                 <Col md={6} lg={3}>
                     <div className="compliance-box" data-aos="fade-up">
                         <p className="head">Seamless System Integration </p>
-                        <Image src={IMAGES.AnomIQ_AutomatedWorkflows} alt="agile" className="" />
+                        <Image src={Seamless} alt="agile" className="" />
                         <div className="compliance-hover">
                             <p className="compliance-p">Connect effortlessly with HRMS, job boards, and enterprise tools</p>
-                            <Image src={IMAGES.AnomIQ_AutomatedWorkflowsWhite} alt="agile" className="" />
+                            <Image src={Seamless_white} alt="agile" className="" />
                         </div>
                     </div>
                 </Col>
                 <Col md={6} lg={3}>
                     <div className="compliance-box" data-aos="fade-up">
                         <p className="head"> Configurable Hiring Workflows </p>
-                        <Image src={IMAGES.AnomIQ_ScalableOversight} alt="agile" className="" />
+                        <Image src={Configurable} alt="agile" className="" />
                         <div className="compliance-hover">
                             <p className="compliance-p">Adapt recruitment stages to organisational needs</p>
-                            <Image src={IMAGES.AnomIQ_ScalableOversightWhite} alt="agile" className="" />
+                            <Image src={Configurable_white} alt="agile" className="" />
                         </div>
                     </div>
                 </Col>
@@ -71,10 +98,10 @@ export default function AreteClient() {
                 <Col md={6} lg={3}>
                     <div className="compliance-box" data-aos="fade-up">
                         <p className="head">Real Time Collaboration</p>
-                        <Image src={IMAGES.InLumin_AiDriven} alt="agile" className="" />
+                        <Image src={Realtime} alt="agile" className="" />
                         <div className="compliance-hover">
                             <p className="compliance-p">Enable faster decision-making across hiring teams</p>
-                            <Image src={IMAGES.InLumin_AiDrivenWhite} alt="agile" className="" />
+                            <Image src={Realtime_white} alt="agile" className="" />
                         </div>
                     </div>
                 </Col>
@@ -113,7 +140,7 @@ export default function AreteClient() {
                         <p className="mb-0">Lack of integration creates data silos across platforms</p>
                     </div>
                     <div className="challenges-box" data-aos="fade-up">
-                        <Image src={IMAGES.AnomIQ_LimitedScalability} className="ComplexRegulations" alt="" />
+                        <Image src={Limited_Visibility} className="ComplexRegulations" alt="" />
                         <h6>Limited Visibility</h6>
                         <p className="mb-0">Poor tracking of candidate progress and hiring metrics</p>
                     </div>
@@ -152,30 +179,30 @@ export default function AreteClient() {
                                 <Row>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_ConfigurableParams} className="Digitised" alt="" />
+                                            <Image src={AI_Powered} className="Digitised" alt="" />
                                             <h6>AI-Powered resume repository for centralised talent management</h6>
-                                            <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_FlexibleWorkflows} className="Digitised" alt="" />
+                                            <Image src={Intelligent_candidate} className="Digitised" alt="" />
                                             <h6>Intelligent candidate scoring for improved fit analysis</h6>
-                                             <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                             {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_Categorisation} className="Digitised" alt="" />
+                                            <Image src={Direct_applications} className="Digitised" alt="" />
                                             <h6>Direct applications for simplified candidate entry</h6>
-                                              <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                              {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_Categorisation} className="Digitised" alt="" />
+                                            <Image src={Advanced_search} className="Digitised" alt="" />
                                             <h6>Advanced search & filtering for faster sourcing</h6>
-                                             <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                             {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                 </Row>
@@ -191,30 +218,30 @@ export default function AreteClient() {
                                 <Row>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_RoleBasedUser} className="Digitised" alt="" />
+                                            <Image src={Streamlined_1} className="Digitised" alt="" />
                                             <h6>Smart interview scheduling with real-time tracking</h6>
-                                         <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                         {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_AuditTrails} className="Digitised" alt="" />
+                                            <Image src={Streamlined_2} className="Digitised" alt="" />
                                             <h6>Customisable multi-stage workflows</h6>
-                                            <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_InteractiveDashboards} className="Digitised" alt="" />
+                                            <Image src={Streamlined_3} className="Digitised" alt="" />
                                             <h6>Instant feedback capture and sharing</h6>
-                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_InteractiveDashboards} className="Digitised" alt="" />
+                                            <Image src={Streamlined_4} className="Digitised" alt="" />
                                             <h6> Smart notifications for stakeholder alignment</h6>
-                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                 </Row>
@@ -231,30 +258,30 @@ export default function AreteClient() {
                                 <Row>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_PeriodicScan} className="Digitised" alt="" />
+                                            <Image src={Insights_1} className="Digitised" alt="" />
                                             <h6>HRMS and API integration for seamless connectivity</h6>
-                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={IMAGES.AnomIQ_SmartQuestionnaires} className="Digitised" alt="" />
                                             <h6>Real-time analytics and reporting</h6>
-                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={IMAGES.AnomIQ_CentralisedDashboards} className="Digitised" alt="" />
                                             <h6>Centralised dashboards for hiring performance tracking</h6>
-                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
-                                            <Image src={IMAGES.AnomIQ_CentralisedDashboards} className="Digitised" alt="" />
+                                            <Image src={Insights_4} className="Digitised" alt="" />
                                             <h6>Data-driven insights for continuous improvement</h6>
-                                            <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                            {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
                                         </div>
                                     </Col>
                                 </Row>
@@ -276,7 +303,7 @@ export default function AreteClient() {
                                     <Image src={IMAGES.AnomIQ_ComplianceAssurance} alt="tick"  />
                                 </div>
                             <div className="choose-data" data-aos="fade-up">
-                                <h6 >Lorem Ipsum</h6>
+                                {/* <h6 >Lorem Ipsum</h6> */}
                                 <p className="mb-0">Faster hiring cycles through automation and AI-driven screening</p>
                             </div>
                         </div>
@@ -287,7 +314,7 @@ export default function AreteClient() {
                                     <Image src={IMAGES.AnomIQ_OperationalEfficiency} alt="tick"   />
                                 </div>
                             <div className="choose-data" data-aos="fade-up">
-                                <h6>Lorem Ipsum</h6>
+                                {/* <h6>Lorem Ipsum</h6> */}
                                 <p className="mb-0"> Improved efficiency by eliminating manual and fragmented processes</p>
                             </div>
                         </div>
@@ -298,7 +325,7 @@ export default function AreteClient() {
                                     <Image src={IMAGES.AnomIQ_EnterpriseScalability} alt="tick"   />
                                 </div>
                             <div className="choose-data">
-                                <h6  data-aos="fade-up">Lorem Ipsum</h6>
+                                {/* <h6  data-aos="fade-up">Lorem Ipsum</h6> */}
                                 <p  data-aos="fade-up" className="mb-0">Enhanced collaboration with real-time feedback and visibility</p>
                             </div>
                         </div>
@@ -309,7 +336,7 @@ export default function AreteClient() {
                                     <Image src={IMAGES.AnomIQ_ProactiveInsights} alt="tick"   />
                                 </div>
                             <div className="choose-data">
-                                <h6  data-aos="fade-up">Lorem Ipsum</h6>
+                                {/* <h6  data-aos="fade-up">Lorem Ipsum</h6> */}
                                 <p  data-aos="fade-up" className="mb-0"> Scalable recruitment across teams and enterprise systems</p>
                             </div>
                         </div>
@@ -321,7 +348,7 @@ export default function AreteClient() {
                                     <Image src={IMAGES.AnomIQ_DataIntegrity} alt="tick"   />
                                 </div>
                             <div className="choose-data">
-                                <h6  data-aos="fade-up">Lorem Ipsum</h6>
+                                {/* <h6  data-aos="fade-up">Lorem Ipsum</h6> */}
                                 <p  data-aos="fade-up" className="mb-0">Consistent hiring quality through structured, data-led decision-making</p>
                             </div>
                         </div>
@@ -343,7 +370,7 @@ export default function AreteClient() {
 </h2>    
                             <Row className="mt-4 mt-md-5">
                                 <Col md={12} lg={6}>
-                                    <Image src={IMAGES.AnomIqf} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                                    <Image src={Arete_form} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
                                 </Col>    
                                 <Col md={12} lg={6}>
                                       <Commonfrom />
