@@ -37,6 +37,9 @@ import Value_1 from '../../../assets/images/products/arete/Value_1.svg';
 import Value_4 from '../../../assets/images/products/arete/Value_4.svg';
 import Value_5 from '../../../assets/images/products/arete/Value_5.svg';
 
+import arete_ChallengesImg from '../../../assets/images/products/arete/arete_ChallengesImg.webp';
+
+
 export default function AreteClient() {
 
 
@@ -129,7 +132,7 @@ export default function AreteClient() {
                 </Col>
                 <Col md={12} lg={4}>
                     <div className="challenges-box challenges-box2 p-0 border-0" data-aos="fade-up">
-                       <Image src={IMAGES.AnomIQ_ChallengesImg} alt="challenges" className="w-100 mb-0" />
+                       <Image src={arete_ChallengesImg} alt="challenges" className="w-100 mb-0" />
                     </div>
                 </Col>
 
@@ -295,12 +298,12 @@ export default function AreteClient() {
     <div className="grey pad80">
         <Container>
             {/* <h2 className="h4 text-center" data-aos="fade-up">Value Delivered</h2> */}
-            <h2 className="h4 text-center" data-aos="fade-up">The Value <span>Value Delivered</span></h2>
+            <h2 className="h4 text-center" data-aos="fade-up">The Value <span> Delivered</span></h2>
                 <Row className="mt-4 mt-md-5">
                     <Col md={6} lg={4} className="mb-4">
                         <div className="choose-box">
                                 <div className="choose-icon text-center" data-aos="fade-up">
-                                    <Image src={IMAGES.AnomIQ_ComplianceAssurance} alt="tick"  />
+                                    <Image src={Value_1} alt="tick"  />
                                 </div>
                             <div className="choose-data" data-aos="fade-up">
                                 {/* <h6 >Lorem Ipsum</h6> */}
@@ -333,7 +336,7 @@ export default function AreteClient() {
                     <Col md={6} lg={4} className="mb-4 mb-md-0">
                         <div className="choose-box">
                                 <div className="choose-icon text-center" data-aos="fade-up">
-                                    <Image src={IMAGES.AnomIQ_ProactiveInsights} alt="tick"   />
+                                    <Image src={Value_4} alt="tick"   />
                                 </div>
                             <div className="choose-data">
                                 {/* <h6  data-aos="fade-up">Lorem Ipsum</h6> */}
@@ -345,7 +348,7 @@ export default function AreteClient() {
                      <Col md={6} lg={4}>
                         <div className="choose-box">
                                 <div className="choose-icon text-center" data-aos="fade-up">
-                                    <Image src={IMAGES.AnomIQ_DataIntegrity} alt="tick"   />
+                                    <Image src={Value_5} alt="tick"   />
                                 </div>
                             <div className="choose-data">
                                 {/* <h6  data-aos="fade-up">Lorem Ipsum</h6> */}
