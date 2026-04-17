@@ -71,7 +71,11 @@ export default function Header() {
 
               {/* ABOUT */}
               <NavDropdown
-  title="ABOUT"
+  title={<Link
+                    href="/about"
+                    className="nav-link server-dropdown"
+                    onClick={(e) => e.stopPropagation()}
+                  > About</Link>  }
   id="about-dropdown"
   show={showAbout}
   onMouseEnter={() => {
@@ -94,7 +98,7 @@ export default function Header() {
                   Overview
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} href="/about#vision">
-                  Vision, Mission & Values
+                  Vision, Mission & Core Values
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} href="/about#leadership">
                   Leadership
@@ -283,9 +287,9 @@ export default function Header() {
               
 
 
-               {/* <NavDropdown
+               <NavDropdown
                     title={<Link
-                    href="/"
+                    href="/technology"
                    
                     className="nav-link server-dropdown m-0 p-0 text-uppercase"
                     onClick={(e) => e.stopPropagation()}
@@ -333,12 +337,9 @@ export default function Header() {
 
                
                
-              </NavDropdown> */}
+              </NavDropdown>
 
-              {/* INSIGHTS */}
-              <Nav.Link as={Link} href="/technology" className="text-uppercase">
-                Technology
-              </Nav.Link>
+           
 
               {/* INSIGHTS */}
               <Nav.Link as={Link} href="/insights" className="text-uppercase">

@@ -1,0 +1,357 @@
+"use client";
+import React, { useEffect, useState } from "react";
+import Image from "next/image";
+import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
+// import Header from "@/components/Header/page";
+// import Footer from "@/components/Footer/page";
+import Bloghomepage from "@/app/blogshomepage/page";
+import Commonfrom from "@/components/Productfrom/Commonfrom/page";
+import { IMAGES } from "@/assets/images/index.js"; 
+
+import arete from '../../../assets/images/ARETE.svg';
+
+export default function AreteClient() {
+
+
+  const [key, setKey] = useState('vms');
+
+  return (
+   <>
+   {/* <Header/> */}
+
+     <div className='inner-head inner-head-products grey product-wrapper arete-banner'>
+            <div className="banner-inner">
+                <Container className='d-flex align-items-center h-100 '>
+                <div>
+                     <Image src={arete} className="h-auto" style={{"width": "120px"}} alt="Anom IQ WHITE"  />
+                <h1 className='h4 text-white' >Hire Smarter. <span> Hire Faster.</span></h1>
+                    <p  className=" col-md-7 mb-0 text-white">A unified recruitment platform that simplifies sourcing, screening, scheduling, and evaluation through intelligent automation and connected workflows. </p>
+                </div>
+            </Container>
+            </div>
+        </div>
+
+    <div className="grey pad80">
+        <Container>
+            <h2 className="h4 text-center" data-aos="fade-up"> Faster, Smarter<br/> Hiring  <span>Operations</span></h2>
+            <p data-aos="fade-up" className="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br />Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+            <Row className="mt-4 mt-md-5 justify-content-center">
+                <Col md={6} lg={3}>
+                    <div className="compliance-box" data-aos="fade-up">
+                        <p className="head">Intelligent Candidate Scoring </p>
+                        <Image src={IMAGES.AnomIQ_ProactiveMonitoring} alt="agile" className="" />
+                        <div className="compliance-hover">
+                            <p className="compliance-p">Identify the right talent faster through AI-driven insights</p>
+                            <Image src={IMAGES.AnomIQ_ProactiveMonitoringWhite} alt="agile" className="" />
+                        </div>
+                    </div>
+                </Col>
+                <Col md={6} lg={3}>
+                    <div className="compliance-box" data-aos="fade-up">
+                        <p className="head">Seamless System Integration </p>
+                        <Image src={IMAGES.AnomIQ_AutomatedWorkflows} alt="agile" className="" />
+                        <div className="compliance-hover">
+                            <p className="compliance-p">Connect effortlessly with HRMS, job boards, and enterprise tools</p>
+                            <Image src={IMAGES.AnomIQ_AutomatedWorkflowsWhite} alt="agile" className="" />
+                        </div>
+                    </div>
+                </Col>
+                <Col md={6} lg={3}>
+                    <div className="compliance-box" data-aos="fade-up">
+                        <p className="head"> Configurable Hiring Workflows </p>
+                        <Image src={IMAGES.AnomIQ_ScalableOversight} alt="agile" className="" />
+                        <div className="compliance-hover">
+                            <p className="compliance-p">Adapt recruitment stages to organisational needs</p>
+                            <Image src={IMAGES.AnomIQ_ScalableOversightWhite} alt="agile" className="" />
+                        </div>
+                    </div>
+                </Col>
+
+                <Col md={6} lg={3}>
+                    <div className="compliance-box" data-aos="fade-up">
+                        <p className="head">Real Time Collaboration</p>
+                        <Image src={IMAGES.InLumin_AiDriven} alt="agile" className="" />
+                        <div className="compliance-hover">
+                            <p className="compliance-p">Enable faster decision-making across hiring teams</p>
+                            <Image src={IMAGES.InLumin_AiDrivenWhite} alt="agile" className="" />
+                        </div>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+    </div>
+
+    <div className="grey challenges-wrapper">
+        <Container>
+            <h2 className="h4 text-center" data-aos="fade-up"> Challenges in Modern <br /> <span>Recruitment</span></h2>
+            <p data-aos="fade-up" className="text-center col-7 m-auto">Organisations face increasing complexity in managing high-volume hiring, fragmented systems, and slow manual processes that delay decision-making and reduce hiring efficiency.</p>
+
+            <Row className="mt-4 mt-md-5">
+                <Col md={12} lg={4} className="mb-dflex">
+                    <div className="challenges-box" data-aos="fade-up">
+                        <Image src={IMAGES.AnomIQ_DelayedDetection} className="ComplexRegulations" alt="" />
+                        <h6>Slow Hiring Cycles</h6>
+                        <p className="mb-0">Delays in sourcing and evaluation impact talent acquisition speed</p>
+                    </div>
+                    <div className="challenges-box" data-aos="fade-up">
+                        <Image src={IMAGES.AnomIQ_ManualReviews} className="ComplexRegulations" alt="" />
+                        <h6>Manual Processes</h6>
+                        <p className="mb-0">Time-consuming workflows reduce efficiency and accuracy</p>
+                    </div>
+                </Col>
+                <Col md={12} lg={4}>
+                    <div className="challenges-box challenges-box2 p-0 border-0" data-aos="fade-up">
+                       <Image src={IMAGES.AnomIQ_ChallengesImg} alt="challenges" className="w-100 mb-0" />
+                    </div>
+                </Col>
+
+                <Col md={12} lg={4} className="mb-dflex">
+                    <div className="challenges-box" data-aos="fade-up">
+                        <Image src={IMAGES.AnomIQ_SiloedSystems} className="ComplexRegulations" alt="" />
+                        <h6>Disconnected Systems</h6>
+                        <p className="mb-0">Lack of integration creates data silos across platforms</p>
+                    </div>
+                    <div className="challenges-box" data-aos="fade-up">
+                        <Image src={IMAGES.AnomIQ_LimitedScalability} className="ComplexRegulations" alt="" />
+                        <h6>Limited Visibility</h6>
+                        <p className="mb-0">Poor tracking of candidate progress and hiring metrics</p>
+                    </div>
+                </Col>
+
+                <Col md={12}>
+                    <p className="text-center mt-4 mb-0" data-aos="fade-up"><b>Consequences:</b> Reduced hiring efficiency, inconsistent candidate experience, and increased time-to-fill positions.</p>
+                </Col>
+            </Row>
+        </Container>
+    </div>
+
+     <div className="grey pad80 challenges-wrapper">
+        <Container>
+            <h2 className="h4 text-center" data-aos="fade-up">Transforming Recruitment <br/> <span> with Arete</span> </h2>
+            <p data-aos="fade-up" className="text-center col-md-8 m-auto"> Arete centralises and automates the entire recruitment lifecycle, enabling structured workflows, real-time collaboration, and data-driven hiring decisions across teams and systems.
+</p>
+        </Container>
+    </div>
+
+    <div className="grey2 pad80 vms-wrapper">
+        <Container>
+           <Tabs
+                id="controlled-tab-example"
+                activeKey={key}
+                onSelect={(k) => setKey(k)}
+                className="mb-3 justify-content-center border-0"
+                >
+                <Tab eventKey="vms" title="Intelligent Sourcing & Screening">
+                        <div className="vms-tab mt-5">
+                            <h3 className="h5 text-center mb-4">Intelligent Sourcing & <br />Screening</h3>
+                            <p className="text-center col-7 m-auto">AI-powered tools streamline candidate discovery and <br/>evaluation for faster, more accurate shortlisting.</p>
+
+                            <div className="grey3">
+                                <h4 className="text-center mb-4 mb-md-5">KEY FEATURES</h4>
+                                <Row>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_ConfigurableParams} className="Digitised" alt="" />
+                                            <h6>AI-Powered resume repository for centralised talent management</h6>
+                                            <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_FlexibleWorkflows} className="Digitised" alt="" />
+                                            <h6>Intelligent candidate scoring for improved fit analysis</h6>
+                                             <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_Categorisation} className="Digitised" alt="" />
+                                            <h6>Direct applications for simplified candidate entry</h6>
+                                              <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_Categorisation} className="Digitised" alt="" />
+                                            <h6>Advanced search & filtering for faster sourcing</h6>
+                                             <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </div>
+                </Tab>
+                <Tab eventKey="dms" title="Streamlined Hiring Execution">
+                      <div className="vms-tab mt-5">
+                            <h3 className="h5 text-center mb-4">Streamlined Hiring  <br />Execution</h3>
+                            <p className="text-center">End-to-end workflow automation improves coordination, <br/>transparency and speed across recruitment stages.</p>
+                            <div className="grey3">
+                                <h4 className="text-center mb-5">KEY FEATURES</h4>
+                                <Row>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_RoleBasedUser} className="Digitised" alt="" />
+                                            <h6>Smart interview scheduling with real-time tracking</h6>
+                                         <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_AuditTrails} className="Digitised" alt="" />
+                                            <h6>Customisable multi-stage workflows</h6>
+                                            <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_InteractiveDashboards} className="Digitised" alt="" />
+                                            <h6>Instant feedback capture and sharing</h6>
+                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_InteractiveDashboards} className="Digitised" alt="" />
+                                            <h6> Smart notifications for stakeholder alignment</h6>
+                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </div>
+                </Tab>
+                <Tab eventKey="tms" title="Insights & Integration">
+                            <div className="vms-tab mt-5">
+                            <h3 className="h5 text-center mb-4"> Insights & Integration</h3>
+                            <p className="text-center">Unified dashboards and system integration ensure complete<br/> visibility and informed hiring decisions.</p>
+
+                            <div className="grey3">
+                                <h4 className="text-center mb-5 text-uppercase">Key Features</h4>
+                                <Row>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_PeriodicScan} className="Digitised" alt="" />
+                                            <h6>HRMS and API integration for seamless connectivity</h6>
+                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_SmartQuestionnaires} className="Digitised" alt="" />
+                                            <h6>Real-time analytics and reporting</h6>
+                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_CentralisedDashboards} className="Digitised" alt="" />
+                                            <h6>Centralised dashboards for hiring performance tracking</h6>
+                                           <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                    <Col lg={4} md={6}>
+                                        <div className="challenges-box vms-icon">
+                                            <Image src={IMAGES.AnomIQ_CentralisedDashboards} className="Digitised" alt="" />
+                                            <h6>Data-driven insights for continuous improvement</h6>
+                                            <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                        </div>
+                                    </Col>
+                                </Row>
+                            </div>
+                        </div>
+                </Tab>
+                </Tabs>
+        </Container>
+    </div>
+
+    <div className="grey pad80">
+        <Container>
+            {/* <h2 className="h4 text-center" data-aos="fade-up">Value Delivered</h2> */}
+            <h2 className="h4 text-center" data-aos="fade-up">The Value <span>Value Delivered</span></h2>
+                <Row className="mt-4 mt-md-5">
+                    <Col md={6} lg={4} className="mb-4">
+                        <div className="choose-box">
+                                <div className="choose-icon text-center" data-aos="fade-up">
+                                    <Image src={IMAGES.AnomIQ_ComplianceAssurance} alt="tick"  />
+                                </div>
+                            <div className="choose-data" data-aos="fade-up">
+                                <h6 >Lorem Ipsum</h6>
+                                <p className="mb-0">Faster hiring cycles through automation and AI-driven screening</p>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col md={6} lg={4} className="mb-4">
+                        <div className="choose-box">
+                                <div className="choose-icon text-center" data-aos="fade-up">
+                                    <Image src={IMAGES.AnomIQ_OperationalEfficiency} alt="tick"   />
+                                </div>
+                            <div className="choose-data" data-aos="fade-up">
+                                <h6>Lorem Ipsum</h6>
+                                <p className="mb-0"> Improved efficiency by eliminating manual and fragmented processes</p>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col md={6} lg={4} className="mb-4">
+                        <div className="choose-box">
+                                <div className="choose-icon text-center" data-aos="fade-up">
+                                    <Image src={IMAGES.AnomIQ_EnterpriseScalability} alt="tick"   />
+                                </div>
+                            <div className="choose-data">
+                                <h6  data-aos="fade-up">Lorem Ipsum</h6>
+                                <p  data-aos="fade-up" className="mb-0">Enhanced collaboration with real-time feedback and visibility</p>
+                            </div>
+                        </div>
+                    </Col>
+                    <Col md={6} lg={4} className="mb-4 mb-md-0">
+                        <div className="choose-box">
+                                <div className="choose-icon text-center" data-aos="fade-up">
+                                    <Image src={IMAGES.AnomIQ_ProactiveInsights} alt="tick"   />
+                                </div>
+                            <div className="choose-data">
+                                <h6  data-aos="fade-up">Lorem Ipsum</h6>
+                                <p  data-aos="fade-up" className="mb-0"> Scalable recruitment across teams and enterprise systems</p>
+                            </div>
+                        </div>
+                    </Col>
+
+                     <Col md={6} lg={4}>
+                        <div className="choose-box">
+                                <div className="choose-icon text-center" data-aos="fade-up">
+                                    <Image src={IMAGES.AnomIQ_DataIntegrity} alt="tick"   />
+                                </div>
+                            <div className="choose-data">
+                                <h6  data-aos="fade-up">Lorem Ipsum</h6>
+                                <p  data-aos="fade-up" className="mb-0">Consistent hiring quality through structured, data-led decision-making</p>
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
+        </Container>
+    </div>
+
+     <div className="grey  insights-wrapper ">
+        <Container>
+            <h2 className="h4 text-center mb-4 mb-md-5" data-aos="fade-up">FOR INSIGHTS  <br /><span>THAT KEEP YOU AHEAD</span></h2>
+            <Bloghomepage />
+        </Container>
+    </div>
+
+     <div className="pad80 grey discover-from">
+                        <Container>
+                            <h2 className="h4 text-center"  data-aos="fade-up">Arete transforms recruitment <br/> <span> into an intelligent</span>
+</h2>    
+                            <Row className="mt-4 mt-md-5">
+                                <Col md={12} lg={6}>
+                                    <Image src={IMAGES.AnomIqf} alt="fromimg" className="w-100 h-100 pe-5"  data-aos="fade-up" />
+                                </Col>    
+                                <Col md={12} lg={6}>
+                                      <Commonfrom />
+                                </Col>
+                            </Row>
+                        </Container>
+                    </div>
+   {/* <Footer/> */}
+   </>
+  );
+}

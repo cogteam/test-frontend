@@ -414,8 +414,7 @@ solutioning to deliver measurable outcomes for our customers.</p>
           {/* <h2 className="h4 text-center" data-aos="fade-up">Fundamental <span>VALUES</span></h2> */}
            <h2 className="mb-3 text-center" data-aos="fade-up">Fundamental <span>Values</span></h2>
           <p className="col-lg-7 text-center m-auto" data-aos="fade-up">
-              They are the foundation of trust and responsibility at Pivot Path. They are non-negotiable guardrails that protect our people, our customers,
-and our mission. Without them, nothing else matters.
+              Integrity, Respect, Accountability and Compliance define who we are. They are the foundation of trust and responsibility at Pivot Path. They are non-negotiable guardrails that protect our people, our customers and our mission.
           </p>
 
           <Row className="mt-4 mt-md-5">

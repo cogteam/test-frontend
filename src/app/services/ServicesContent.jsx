@@ -71,8 +71,11 @@ export default function ServicesContent() {
               <h2 className="h4">Drug Safety & <span>Intelligence</span></h2>
             </Col>
 
-            <Col lg={4} md={6} data-aos="fade-up">
+            <Col lg={8} md={12} data-aos="fade-up">
               <Link href="/services/global-pharmacovigilance" className="blog-list d-block">
+
+              <Row className="align-items-center">
+                <Col md={6} lg={6} className="mb-4 mb-md-0">
                 <div className="overflow-hidden">
                   <Image
                     src={IMAGES.GLOBALPHARMACOVILL}
@@ -84,9 +87,16 @@ export default function ServicesContent() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
-                <h3>Global <br/> Pharmacovigilance</h3>
+                </Col>
+                <Col md={6} lg={6} className="text-md-start">
+                 <h3>Global  Pharmacovigilance</h3>
                 <p>Ensuring global drug safety with timely, compliant vigilance.</p>
-                <Arrow />
+                <Arrow /></Col>
+                 
+              </Row>
+
+                
+               
               </Link>
             </Col>
 

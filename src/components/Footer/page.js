@@ -118,17 +118,19 @@ export default function Footer(){
                                 <div className="quick-links">
                                     <h6  data-aos="fade-up">ABOUT</h6>
                                         <ul>
-                                            <li  data-aos="fade-up"><Link href="/about#vision">Vision & Mission</Link></li>
-                                            <li  data-aos="fade-up"><Link href="/about#values">Core Value</Link></li>
+                                           <li  data-aos="fade-up"><Link href="/about">Overview</Link></li>
+                                            <li  data-aos="fade-up"><Link href="/about#vision"> Vision, Mission & Core Values</Link></li>
+                                            
                                             <li  data-aos="fade-up"><Link href="/about#leadership">Leadership</Link></li>
-                                            {/* <li  data-aos="fade-up"><Link href="/">Recognition</Link></li> */}
+                                            <li  data-aos="fade-up"><Link href="/about#bod"> Board of Directors</Link></li>
+                                            <li  data-aos="fade-up"><Link href="/about#clients">Clients</Link></li>
                                         </ul>
                                 </div>
                             </Col>
                             
                             <Col lg={4} md={3} sm={6} xs={6}>
                                 <div className="quick-links mt-3 mt-md-0">
-                                    <h6 data-aos="fade-up">SERVICES</h6>
+                                    <h6 data-aos="fade-up" className="text-uppercase">SERVICES & Consulting</h6>
                                         <ul>
                                              <li data-aos="fade-up"><Link href="/services/#drug-safety-and-intelligence" scroll={true}>Drug Safety & Intelligence</Link></li>
                                              <li data-aos="fade-up"><Link href="/services/#drug-research-and-development" scroll={true}>Integrated IP & Clinical Operations</Link></li>
@@ -140,10 +142,12 @@ export default function Footer(){
                             </Col>
                             <Col lg={3} md={3} sm={6} xs={6}>
                                 <div className="quick-links">
-                                    <h6 data-aos="fade-up" className="text-uppercase">Solutions</h6>
+                                    <h6 data-aos="fade-up" className="text-uppercase">platforms</h6>
                                         <ul>
+                                           
                                              <li data-aos="fade-up"><Link href="/products/noteiq">NoteIQ</Link></li>
                                              <li data-aos="fade-up"><Link href="/products/anomiq">AnomIQ</Link></li>
+                                             <li data-aos="fade-up"><Link href="/products/arete">Arete</Link></li>
                                              <li data-aos="fade-up"><Link href="/products/golanzar">GoLanzar</Link></li>
                                              <li data-aos="fade-up"><Link href="/products/inlumin">InLumin</Link></li>
                                              <li data-aos="fade-up"><Link href="/products/novavigil">NovaVigil</Link></li>

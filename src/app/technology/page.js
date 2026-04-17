@@ -8,6 +8,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { IMAGES } from "@/assets/images/index.js";
 import Solutions from "./solutions/page";
 import Partnerships from "./partnerships/page";
+import technology from "@/assets/images/technology-banner.webp";
 
 // --- Data Configuration ---
 const productsData = [
@@ -26,6 +27,14 @@ const productsData = [
     desc: "Proactive anomaly detection for confident compliance.",
     image: IMAGES.ANOMIQLISTING,
     link: "/products/anomiq",
+  },
+  {
+    id: "arete",
+    title: "arete",
+    titleimg: IMAGES.aretelogo,
+    desc: "Integrity, Respect, Accountability and Compliance define who we are. ",
+    image: IMAGES.areteTHUMBNAIL,
+    link: "/products/arete",
   },
    {
     id: "golanzar",
@@ -114,17 +123,13 @@ export default function ProductsClient() {
         style={{ backgroundColor: "#1a1a1a" }}
       >
         <div
-          className="position-absolute w-100 h-100 top-0 start-0"
+          className="position-absolute overlay overflow-hidden w-100 h-100 top-0 start-0"
           style={{ zIndex: 0 }}
         >
           <Image
-            src={IMAGES.Products}
-            alt="Arcolab Innovation Center"
-            fill
-            priority
-            placeholder="blur"
-            sizes="100vw"
-            style={{ objectFit: "cover", opacity: 0.6 }} // Added opacity for better text readability
+            src={technology}
+            alt="Innovation Center"
+            className="w-100"
           />
         </div>
 

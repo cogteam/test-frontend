@@ -68,6 +68,8 @@ export default function Nexgen() {
           className="main-slider-class"
         >
            {/* ... Your content slides remain exactly the same ... */}
+          
+
           <div className="next-gen-box">
             <div className="next-gen-img position-relative">
                 <div className="overflow-hidden position-relative next-gen-img2">
@@ -114,6 +116,28 @@ export default function Nexgen() {
               </div>
             </div>
           </div>
+           <div className="next-gen-box">
+            <div className="next-gen-img position-relative">
+                <div className="overflow-hidden position-relative next-gen-img2">
+                 <Image src={IMAGES.areteBanner} alt="" style={{ height: "600px" }} className="w-100" />
+                </div>
+              <div className="nextgen-data">
+                <Image src={IMAGES.aretelogo} alt="" className="dk-hide-logo"  style={{ width: "70px" }}/>
+                <Image src={IMAGES.aretelogo} alt="" className="mb-show-logo d-none" style={{ width: "70px" }} />
+                <p>
+                  A next-generation recruitment platform designed to simplify and streamline the hiring experience. Built for modern talent teams, it combines intelligent automation with seamless collaboration to help you find, engage and hire the right talent faster and more effectively.
+                </p>
+                <ul>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Faster sourcing through smarter scoring</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Seamless API-driven ecosystem integration</li>
+                  <li><Image src={IMAGES.DOTS} alt="" /> Better hiring experience though customisable workflows</li>
+                </ul>
+                <Link href="/products/arete" className="text-uppercase btns-line position-relative">
+                  KNOW MORE
+                </Link>
+              </div>
+            </div>
+          </div>
             <div className="next-gen-box">
             <div className="next-gen-img position-relative">
            <div className="overflow-hidden position-relative next-gen-img2">
@@ -137,7 +161,7 @@ export default function Nexgen() {
             </div>
           </div>
 
-<div className="next-gen-box">
+          <div className="next-gen-box">
             <div className="next-gen-img position-relative">
               <div className="overflow-hidden position-relative next-gen-img2">
               <Image src={IMAGES.INLUMINBANNER} alt="" style={{ height: "600px" }} className="w-100" />
@@ -199,9 +223,10 @@ export default function Nexgen() {
           ref={(slider) => setNav3(slider)}
           className="nextgen-head"
         >
+        
           <div className="nexgen-head2 text-uppercase"><h4>NOTEIQ</h4></div>
           <div className="nexgen-head2 text-uppercase"><h4>AnomIQ</h4></div>
-
+  <div className="nexgen-head2 text-uppercase"><h4>ARETE</h4></div>
           <div className="nexgen-head2 text-uppercase"><h4>GOLANZAR</h4></div>
           <div className="nexgen-head2 text-uppercase"><h4>INLUMIN</h4></div>
             <div className="nexgen-head2 text-uppercase"><h4>NOVAVIGIL</h4></div>

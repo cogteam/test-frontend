@@ -239,12 +239,9 @@ export default function Home() {
 
  <div className="pad80 home-ai">
   <Container>
-     <h2 className="h4 text-center" data-aos="fade-up">Shaping the future<br/> of<span> life science</span></h2>
+     <h2 className="h4 text-center" data-aos="fade-up">Shaping the future  <br/>of <span>  life sciences with<br/> technology</span></h2>
 
-     <p className="text-center" data-aos="fade-up">We are at the intersection of life science expertise & technology.</p>
-
-
-
+     {/* <p className="text-center" data-aos="fade-up">We are at the intersection of life science expertise & technology.</p> */}
 
             {/* <div className="flex-circle position-relative d-flex mt-5 align-items-center justify-content-center">
 
@@ -317,7 +314,7 @@ export default function Home() {
         <Container>
           <h2 className="h4 text-center" data-aos="fade-up">AI-POWERED NEXT-GEN <br /><span>DIGITAL INNOVATIONS</span></h2>
           <p className="text-center col-md-8 m-auto" data-aos="fade-up">
-            We solve real-world challenges in life sciences through purpose-built solutions powered by AI, machine learning, and modern technology stacks. With deep tech expertise and a digital-forward mindset, we’re reshaping the future of life sciences.
+            We solve real-world challenges in life sciences through purpose-built solutions powered <br />by AI, machine learning, and modern technology stacks. 
           </p>
           <Nexgen />
         </Container>

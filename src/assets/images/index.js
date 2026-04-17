@@ -186,6 +186,7 @@ import Noteiqf from "./noteiq-f.webp";
 import NovaVigilf from "./NovaVigil-f.webp";
 
 
+
 import Clinical from "./Clinical-Operations-f.webp";
 import Computer from "./Computer-System-Validation-f.webp";
 import Digital from "./Digital-Manufacturing-f.webp";
@@ -688,9 +689,15 @@ import About_Possibility from "./about-possibility.webp";
 
 import Vision from "./vision.webp";
 
+
+import areteBanner from "./arete-banner.webp";
+import aretelogo from "./arete-logo.svg";
+import areteTHUMBNAIL from "./arete-THUMBNAIL.webp";
+
 // ----------------------------------------------------------------------------------------
 
 export const IMAGES = {
+  areteTHUMBNAIL:areteTHUMBNAIL,
 
   Business_Aligned: Business_Aligned,
   Business_Aligned_white: Business_Aligned_white,
@@ -1258,6 +1265,9 @@ Unified1: Unified1,
   NOTEIQBANNER: NoteiqHome,
   NOVAVIGILBANNER: NovavigilHme,
   ANOMIQBANNER: AnomIQBanner,
+
+  areteBanner: areteBanner,
+  aretelogo: aretelogo,
 
   NoteIQLogoFull: NoteIQLogoFull,
   NovaVigilLogoFull: NovaVigilLogoFull,

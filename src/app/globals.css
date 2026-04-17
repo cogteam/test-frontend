@@ -316,6 +316,12 @@ transform: scale(1);
   background-position: center;
   background-repeat: no-repeat;
 }
+.arete-banner{
+  background-image: url('../assets/images/arete-banner.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .tracktrace-banner{
   background-image: url('../assets/images/track-and-trace-solutions.webp');
   background-size: cover;
@@ -767,7 +773,7 @@ input:focus {
     padding: 20px 60px;
     right: 0;
     left: 0;
-    max-width: 560px;
+    max-width: 580px;
     z-index: 1;
 }
 
@@ -787,7 +793,7 @@ input:focus {
   padding: 0;
   margin: 0;
   margin-bottom: 50px;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .nextgen-data li {
     position: relative;
@@ -3292,6 +3298,44 @@ border: solid 1px #e7e7e7;
   padding: 0  !important;
 }
 
-#technology-dropdown a::before{
+#technology-dropdown a::before, #about-dropdown a::before {
   content: none;
+}
+
+#about-dropdown a{
+  padding: 0  !important;
+  margin: 0 !important;
+  text-transform: uppercase;
+}
+
+.overlay::after{
+  content: '';
+  background: #00000030;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.product-page .inner-head{
+  display: none;
+}
+.product-page .solutions-page.pad80{
+  padding: 0 !important;
+
+}
+
+.product-page .col-lg-4:nth-child(3) .product-logo{
+  width: 40px;
+}
+
+.leadership-wrapper .col-lg-4.col-md-6:nth-child(11) .team-box .team-hoverdata {
+    padding: 20px ;
+}
+
+.leadership-wrapper .col-lg-4.col-md-6:nth-child(11) .team-box .team-scroll{
+    padding: 0px ;
+        height: 400px;
+    overflow-y: scroll;
 }

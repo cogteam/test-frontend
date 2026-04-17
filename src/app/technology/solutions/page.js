@@ -13,14 +13,15 @@ export default function Solutions() {
     const [show, setShow] = useState(false);
   return (
    <>
-    {/* <div className='inner-head grey career-wrapper solution-banner'>
+    <div className='inner-head grey career-wrapper solution-banner'>
         <Container className='d-flex align-items-center h-100 '>
             <div>
                 <h1 className='h4 text-white' data-aos="fade-up">Solutions</h1>
-                <p data-aos="fade-up" className="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting<br/> industry. Lorem Ipsum has been the industry's standard dummy text<br/> ever since the 1500s  </p>
+                <p data-aos="fade-up" className="text-white">Creating smarter solutions that transform business outcomes.<br/>
+Delivering speed, efficiency, and scalable results.  </p>
             </div>
         </Container>
-    </div> */}
+    </div> 
 
 
     <Careersmodal 
@@ -29,7 +30,7 @@ export default function Solutions() {
     />
 
 
-        <div className='solutions-page'>
+        <div className='solutions-page pad80'>
             <Container>
 
                 <div className='solutions-row' onClick={() => setShow(true)}>
@@ -90,7 +91,7 @@ export default function Solutions() {
                             <Row>
                                 <Col md={6} data-aos="fade-up" lg={6}>
                                 <div className='solution-box'>
-                            <h3 className='h5'>RPA</h3>
+                            <h3 className='h5'>Robotic Process Automation</h3>
                             <p>Repetitive, manual processes are quietly draining your organization’s time, money, and compliance confidence. Our RPA practice eliminates that drag automating everything from user identity management and CAPA task creation to regulatory compliance monitoring and finance operations.</p>
                             <p>Backed by a team of pharma manufacturing specialists and qualified engineers with stellar industry experience, we bring deep domain expertise to every automation. From setting up enterprise RPA Centres of Excellence to delivering Robotics as a Service, we build intelligent automation programs that compound in value over time, freeing your people to focus on work that truly matters.</p>
                             <div  className="text-uppercase btns3" >

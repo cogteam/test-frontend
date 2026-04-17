@@ -147,9 +147,10 @@ export const TEAM_DATA = [
     img: IMAGES.KALPESH_VOHRA,
     link: "https://www.linkedin.com/in/kalpesh-vohra/",
     bio: [
-      "19+ years of experience in driving excellence in the field of human resources.",
-      "He has led and contributed to numerous HR assignments, spanning areas such as organization design, job evaluation, HR systems and processes enhancement, performance management, and total rewards.",
-      "Before joining Pivot Path, he held the position of Cluster Business Leader and Principal Consultant in HR Consulting vertical at Mercer."
+      "Kalpesh Vohra is a seasoned Human Resources leader with over two decades of experience across human capital consulting and enterprise HR leadership. He partners with clients to solve complex people challenges across organization design and effectiveness, talent management, performance, total rewards, HR operating models, shared services, and HR digitization.",
+      "He operates at the intersection of business strategy and human capital, ensuring people agendas are closely aligned with enterprise priorities and deliver measurable impact. Prior to Arcolab, Kalpesh worked with leading consulting firms, including a decade at Mercer, where he led practices and industry clusters across sectors, building expertise in delivering large-scale, high-impact solutions.",
+      "A trusted advisor to boards and senior leadership, he has aligned HR strategy with business goals across the organizational lifecycle from greenfield setups and growth to global expansion, M&A integration, and enterprise transformation. He leads an integrated team across HR Centres of Excellence, HR technology, and shared services, combining consulting rigor with operational agility and a data-driven, commercial approach.",
+      "What sets him apart is his ability to bridge strategy and execution bringing consulting precision and disciplined delivery together to build high-impact, future-ready HR ecosystems."
     ]
   },
   {

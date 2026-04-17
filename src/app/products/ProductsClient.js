@@ -6,9 +6,11 @@ import { Col, Container, Row } from "react-bootstrap";
 // import Header from "@/components/Header/page";
 // import Footer from "@/components/Footer/page";
 import { IMAGES } from "@/assets/images/index.js";
+import ppbanner from "@/assets/images/pp-banner1.webp";
 
 // --- Data Configuration ---
 const productsData = [
+  
   {
     id: "noteiq",
     title: "NoteIQ",
@@ -24,6 +26,14 @@ const productsData = [
     desc: "Proactive anomaly detection for confident compliance.",
     image: IMAGES.ANOMIQLISTING,
     link: "/products/anomiq",
+  },
+  {
+    id: "arete",
+    title: "arete",
+    titleimg: IMAGES.aretelogo,
+    desc: "Integrity, Respect, Accountability and Compliance define who we are. ",
+    image: IMAGES.areteTHUMBNAIL,
+    link: "/products/arete",
   },
    {
     id: "golanzar",
@@ -116,8 +126,8 @@ export default function ProductsClient() {
           style={{ zIndex: 0 }}
         >
           <Image
-            src={IMAGES.Products}
-            alt="Arcolab Innovation Center"
+            src={ppbanner}
+            alt="Innovation Center"
             fill
             priority
             placeholder="blur"
@@ -132,7 +142,7 @@ export default function ProductsClient() {
         >
           <div>
             <h1 className="h4 mt-0 text-white" data-aos="fade-up">
-              products
+              platforms
             </h1>
             <p
               className="text-white"
