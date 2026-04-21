@@ -175,7 +175,8 @@ export default function AreteClient() {
                 <Tab eventKey="vms" title="Intelligent Sourcing & Screening">
                         <div className="vms-tab mt-5">
                             <h3 className="h5 text-center mb-4">Intelligent Sourcing & <br />Screening</h3>
-                            <p className="text-center col-7 m-auto">AI-powered tools streamline candidate discovery and <br/>evaluation for faster, more accurate shortlisting.</p>
+                            <p className="text-center col-md-8 m-auto">Accelerate talent discovery and shortlisting through intelligent, centralised tools that enhance visibility, improve candidate matching, and enable faster, more accurate hiring decisions.
+</p>
 
                             <div className="grey3">
                                 <h4 className="text-center mb-4 mb-md-5">KEY FEATURES</h4>
@@ -184,28 +185,30 @@ export default function AreteClient() {
                                         <div className="challenges-box vms-icon">
                                             <Image src={AI_Powered} className="Digitised" alt="" />
                                             <h6>AI-Powered resume repository for centralised talent management</h6>
-                                            {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                            <p className="mb-0">Centralises candidate data in a searchable repository for quick access and efficient talent management.
+</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={Intelligent_candidate} className="Digitised" alt="" />
                                             <h6>Intelligent candidate scoring for improved fit analysis</h6>
-                                             {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                             <p className="mb-0">Enhances candidate evaluation with data-driven scoring to identify the best-fit talent faster.</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={Direct_applications} className="Digitised" alt="" />
                                             <h6>Direct applications for simplified candidate entry</h6>
-                                              {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                              <p className="mb-0">Streamlines candidate submissions through a structured and seamless application process.</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={Advanced_search} className="Digitised" alt="" />
                                             <h6>Advanced search & filtering for faster sourcing</h6>
-                                             {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                             <p className="mb-0">Enables precise candidate discovery with powerful search and filtering capabilities.
+</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -215,36 +218,43 @@ export default function AreteClient() {
                 <Tab eventKey="dms" title="Streamlined Hiring Execution">
                       <div className="vms-tab mt-5">
                             <h3 className="h5 text-center mb-4">Streamlined Hiring  <br />Execution</h3>
-                            <p className="text-center">End-to-end workflow automation improves coordination, <br/>transparency and speed across recruitment stages.</p>
+                            <p className="text-center col-md-8 m-auto mb-4">
+                                Enhance recruitment efficiency through automated workflows that improve coordination, increase transparency, and accelerate decision-making across every stage of hiring.
+                            </p>
                             <div className="grey3">
                                 <h4 className="text-center mb-5">KEY FEATURES</h4>
+                               
                                 <Row>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={Streamlined_1} className="Digitised" alt="" />
                                             <h6>Smart interview scheduling with real-time tracking</h6>
-                                         {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                         <p className="mb-0">Simplifies interview coordination with automated scheduling and real-time visibility across hiring teams.</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={Streamlined_2} className="Digitised" alt="" />
                                             <h6>Customisable multi-stage workflows</h6>
-                                            {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                            <p className="mb-0">Adapts hiring processes with flexible workflows tailored to organisational needs.</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={Streamlined_3} className="Digitised" alt="" />
                                             <h6>Instant feedback capture and sharing</h6>
-                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                           <p className="mb-0">Enables structured, real-time feedback to support faster and more informed decisions.
+
+</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={Streamlined_4} className="Digitised" alt="" />
-                                            <h6> Smart notifications for stakeholder alignment</h6>
-                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                            <h6> Smart notifications for stakeholder alignment
+</h6>
+                                           <p className="mb-0">Ensures seamless communication with timely updates for all stakeholders throughout the hiring process.
+</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -254,7 +264,10 @@ export default function AreteClient() {
                 <Tab eventKey="tms" title="Insights & Integration">
                             <div className="vms-tab mt-5">
                             <h3 className="h5 text-center mb-4"> Insights & Integration</h3>
-                            <p className="text-center">Unified dashboards and system integration ensure complete<br/> visibility and informed hiring decisions.</p>
+                            <p className="text-center col-md-8 m-auto mb-4">
+                                Enable data-driven hiring through integrated systems and unified dashboards that provide complete visibility, real-time insights, and informed decision-making across recruitment operations.
+
+                            </p>
 
                             <div className="grey3">
                                 <h4 className="text-center mb-5 text-uppercase">Key Features</h4>
@@ -263,28 +276,32 @@ export default function AreteClient() {
                                         <div className="challenges-box vms-icon">
                                             <Image src={Insights_1} className="Digitised" alt="" />
                                             <h6>HRMS and API integration for seamless connectivity</h6>
-                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                           <p className="mb-0">Ensures smooth data flow through seamless integration with HR systems and external platforms.
+</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={IMAGES.AnomIQ_SmartQuestionnaires} className="Digitised" alt="" />
                                             <h6>Real-time analytics and reporting</h6>
-                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                           <p className="mb-0">Provides instant access to hiring data for faster, insight-driven decision-making.
+</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={IMAGES.AnomIQ_CentralisedDashboards} className="Digitised" alt="" />
                                             <h6>Centralised dashboards for hiring performance tracking</h6>
-                                           {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                           <p className="mb-0">Delivers a unified view of recruitment metrics, progress, and performance.
+</p>
                                         </div>
                                     </Col>
                                     <Col lg={4} md={6}>
                                         <div className="challenges-box vms-icon">
                                             <Image src={Insights_4} className="Digitised" alt="" />
                                             <h6>Data-driven insights for continuous improvement</h6>
-                                            {/* <p className="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> */}
+                                            <p className="mb-0">Enables ongoing optimisation of hiring strategies through actionable insights and trends.
+</p>
                                         </div>
                                     </Col>
                                 </Row>
@@ -299,6 +316,9 @@ export default function AreteClient() {
         <Container>
             {/* <h2 className="h4 text-center" data-aos="fade-up">Value Delivered</h2> */}
             <h2 className="h4 text-center" data-aos="fade-up">The Value <span> Delivered</span></h2>
+            <p data-aos="fade-up" className="text-center col-md-8 m-auto">
+                Drive faster and more consistent hiring outcomes by reducing manual effort, improving cross-team collaboration, and enabling scalable, data-driven recruitment across the organisation.
+            </p>
                 <Row className="mt-4 mt-md-5">
                     <Col md={6} lg={4} className="mb-4">
                         <div className="choose-box">
@@ -306,8 +326,8 @@ export default function AreteClient() {
                                     <Image src={Value_1} alt="tick"  />
                                 </div>
                             <div className="choose-data" data-aos="fade-up">
-                                {/* <h6 >Lorem Ipsum</h6> */}
-                                <p className="mb-0">Faster hiring cycles through automation and AI-driven screening</p>
+                                <h6>Faster hiring cycles through automation and AI-driven screening</h6>
+                                <p className="mb-0">Reduces time-to-hire by automating screening and enabling faster candidate shortlisting.</p>
                             </div>
                         </div>
                     </Col>
@@ -317,8 +337,8 @@ export default function AreteClient() {
                                     <Image src={IMAGES.AnomIQ_OperationalEfficiency} alt="tick"   />
                                 </div>
                             <div className="choose-data" data-aos="fade-up">
-                                {/* <h6>Lorem Ipsum</h6> */}
-                                <p className="mb-0"> Improved efficiency by eliminating manual and fragmented processes</p>
+                                <h6>Improved efficiency by eliminating manual and fragmented processes</h6>
+                                <p className="mb-0">Replaces disconnected workflows with a unified, automated recruitment system.</p>
                             </div>
                         </div>
                     </Col>
@@ -328,8 +348,8 @@ export default function AreteClient() {
                                     <Image src={IMAGES.AnomIQ_EnterpriseScalability} alt="tick"   />
                                 </div>
                             <div className="choose-data">
-                                {/* <h6  data-aos="fade-up">Lorem Ipsum</h6> */}
-                                <p  data-aos="fade-up" className="mb-0">Enhanced collaboration with real-time feedback and visibility</p>
+                                <h6  data-aos="fade-up">Enhanced collaboration with real-time feedback and visibility</h6>
+                                <p  data-aos="fade-up" className="mb-0">Improves team alignment through shared visibility and instant feedback exchange.</p>
                             </div>
                         </div>
                     </Col>
@@ -339,8 +359,8 @@ export default function AreteClient() {
                                     <Image src={Value_4} alt="tick"   />
                                 </div>
                             <div className="choose-data">
-                                {/* <h6  data-aos="fade-up">Lorem Ipsum</h6> */}
-                                <p  data-aos="fade-up" className="mb-0"> Scalable recruitment across teams and enterprise systems</p>
+                                <h6  data-aos="fade-up">Scalable recruitment across teams and enterprise systems</h6>
+                                <p  data-aos="fade-up" className="mb-0"> Supports high-volume hiring with scalable workflows and seamless system integration.</p>
                             </div>
                         </div>
                     </Col>
@@ -351,8 +371,10 @@ export default function AreteClient() {
                                     <Image src={Value_5} alt="tick"   />
                                 </div>
                             <div className="choose-data">
-                                {/* <h6  data-aos="fade-up">Lorem Ipsum</h6> */}
-                                <p  data-aos="fade-up" className="mb-0">Consistent hiring quality through structured, data-led decision-making</p>
+                                <h6  data-aos="fade-up">Consistent hiring quality through structured, data-led decision-making
+</h6>
+                                <p  data-aos="fade-up" className="mb-0">Ensures reliable hiring outcomes through standardised, insight-driven evaluation.
+</p>
                             </div>
                         </div>
                     </Col>
