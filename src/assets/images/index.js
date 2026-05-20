@@ -693,10 +693,14 @@ import Vision from "./vision.webp";
 import areteBanner from "./arete-banner.webp";
 import aretelogo from "./arete-logo.svg";
 import areteTHUMBNAIL from "./arete-THUMBNAIL.webp";
+import divider from '../images/divider.svg'
 
 // ----------------------------------------------------------------------------------------
 
 export const IMAGES = {
+
+
+  divider: divider,
   areteTHUMBNAIL:areteTHUMBNAIL,
 
   Business_Aligned: Business_Aligned,

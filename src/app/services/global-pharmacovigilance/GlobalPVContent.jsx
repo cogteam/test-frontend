@@ -162,6 +162,7 @@ export default function Detectharmaiq() {
         </Container>
       </div>
 
+
       <div className="grey pad80 challenges-wrapper service-value pt-0">
         <Container>
           <h2 className="h4 text-center" data-aos="fade-up">

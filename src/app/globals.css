@@ -3339,3 +3339,34 @@ border: solid 1px #e7e7e7;
         height: 400px;
     overflow-y: scroll;
 }
+
+.divider_line {
+   
+    text-align: center;
+    position: relative;
+}
+
+
+.divider_line img {
+    width: 130px;
+    background: #FCFCF5;
+    position: absolute;
+    z-index: 1;
+    padding: 0 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+}
+.divider_line::after {
+    background: linear-gradient(90deg, #0f929d, #38ad66, #8bc33f);
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 1px;
+    margin: auto;
+}

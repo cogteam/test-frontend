@@ -308,9 +308,8 @@ export default function Home() {
 </div>
 
 
-
       {/* AI NEXT GEN SECTION - Static Content doesn't need hydration usually, but AOS needs it */}
-      <div className="grey pad80 pb-0">
+      <div className="grey pad80">
         <Container>
           <h2 className="h4 text-center" data-aos="fade-up">AI-POWERED NEXT-GEN <br /><span>DIGITAL INNOVATIONS</span></h2>
           <p className="text-center col-md-8 m-auto" data-aos="fade-up">
@@ -319,6 +318,12 @@ export default function Home() {
           <Nexgen />
         </Container>
       </div>
+
+
+<div class="divider_line grey pad80 pb-0">
+  <Image src={IMAGES.divider} alt="divider" />
+</div>
+
 
       {/* DYNAMIC COMPONENT 1 */}
       <ServicesSection />
@@ -363,6 +368,11 @@ export default function Home() {
         </Container>
       </div>
 
+
+      
+<div class="divider_line grey pad80 pb-0">
+  <Image src={IMAGES.divider} alt="divider" />
+</div>
       {/* DYNAMIC COMPONENT 2 */}
       <PartnersSection />
 

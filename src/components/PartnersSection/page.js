@@ -38,7 +38,7 @@ const logoSliderSettings = {
 
 export default function PartnersSection() {
   return (
-    <div className="grey pad80 pt-0 partner-wrapper client-logos overflow-hidden">
+    <div className="grey pad80 partner-wrapper client-logos overflow-hidden">
       <Container>
         <h2 className="h4 text-center" data-aos="fade-up">TRUST THAT BUILDS <br /><span>PARTNERSHIPS</span></h2>
         <p className="text-center col-7 m-auto" data-aos="fade-up">
