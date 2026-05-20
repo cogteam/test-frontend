@@ -417,10 +417,9 @@ solutioning to deliver measurable outcomes for our customers.</p>
               Integrity, Respect, Accountability and Compliance define who we are. They are the foundation of trust and responsibility at Pivot Path. They are non-negotiable guardrails that protect our people, our customers and our mission.
           </p>
 
-          <Row className="mt-4 mt-md-5">
+          {/* <Row className="mt-4 mt-md-5">
             <Col md={12} lg={4} data-aos="fade-up">
               <div className="values-box values-box2 p-0 h-auto position-relative">
-                {/* Optimized Static Image */}
                 <Image 
                   src={IMAGES.Values1} 
                   alt="Our Values" 
@@ -436,7 +435,6 @@ solutioning to deliver measurable outcomes for our customers.</p>
                 {VALUES_DATA.map((val, i) => (
               <Col md={6} lg={6} key={i} data-aos="fade-up" data-aos-delay={i * 100}>
                 <div className="values-box values-box2">
-                  {/* Fixed width/height for icons prevents reflows */}
                   <Image src={val.icon} alt={val.title} width={60} height={60} />
                   <div className="values-caption">
                     <h6>{val.title}</h6>
@@ -447,7 +445,7 @@ solutioning to deliver measurable outcomes for our customers.</p>
             ))}
               </Row>
             </Col>
-          </Row>
+          </Row> */}
         </Container>
       </div>
 

@@ -1558,7 +1558,7 @@ object-fit: cover;
 .choose-box .choose-data{
       background: #fff;
     border-radius: 17px;
-    padding: 36px 20px;
+    padding: 36px 44px;
     text-align: center;
     height: calc(100% - 147px);
     display: flex;
